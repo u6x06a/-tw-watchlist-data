@@ -1,19 +1,16 @@
 {
-  "updated_at": "2026-09-24T22:08:10+08:00",
+  "updated_at": "2026-09-25T22:42:41+08:00",
   "sources": {
     "2408": "official-TWSE",
     "3017": "official-TWSE",
     "3324": "finmind",
-    "3653": "finmind",
+    "3653": "official-TWSE",
     "6196": "official-TWSE",
     "00735": "official-TWSE"
   },
   "errors": {
     "3324": [
       "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-    ],
-    "3653": [
-      "official-TWSE: ReadTimeout: HTTPSConnectionPool(host='www.twse.com.tw', port=443): Read timed out. (read timeout=30)"
     ]
   },
   "global_status": {
@@ -30,6 +27,6 @@
     "3324": "2026-09-24",
     "3653": "2026-09-24",
     "6196": "2026-09-24",
-    "TWDKRW=X": "2026-09-24"
+    "TWDKRW=X": "2026-09-25"
   }
 }
