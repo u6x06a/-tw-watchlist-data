@@ -57,6 +57,8 @@ GLOBAL = {
     "QQQM": "Invesco NASDAQ 100 ETF",
     "SOXX": "iShares Semiconductor ETF",
     "VOO": "Vanguard S&P 500 ETF",
+    # ---- 盯盤名單（美股）----
+    "NVDA": "NVIDIA",
 }
  
 MONTHS_BACK = 6          # 每次回抓幾個月，確保能算 60 日線
