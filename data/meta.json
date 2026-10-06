@@ -1,31 +1,31 @@
 {
-  "updated_at": "2026-10-06T23:49:25+08:00",
+  "updated_at": "2026-10-07T02:37:12+08:00",
   "sources": {
-    "2408": "official-TWSE",
-    "3017": "official-TWSE",
-    "3324": "finmind",
-    "3653": "official-TWSE",
-    "6196": "official-TWSE",
-    "00735": "official-TWSE",
-    "0050": "official-TWSE",
-    "00685L": "official-TWSE",
-    "2308": "official-TWSE",
-    "2327": "official-TWSE",
-    "2330": "official-TWSE",
-    "2357": "official-TWSE",
-    "2454": "official-TWSE",
-    "3042": "official-TWSE",
-    "3189": "official-TWSE",
-    "3711": "official-TWSE",
-    "6223": "finmind"
+    "2408": "bulk-TWSE",
+    "3017": "bulk-TWSE",
+    "3324": "bulk-TPEX",
+    "3653": "bulk-TWSE",
+    "6196": "bulk-TWSE",
+    "00735": "bulk-TWSE",
+    "3081": "bulk-TPEX",
+    "0050": "bulk-TWSE",
+    "00685L": "bulk-TWSE",
+    "2308": "bulk-TWSE",
+    "2327": "bulk-TWSE",
+    "2330": "bulk-TWSE",
+    "2357": "bulk-TWSE",
+    "2454": "bulk-TWSE",
+    "3042": "bulk-TWSE",
+    "3189": "bulk-TWSE",
+    "3711": "bulk-TWSE",
+    "6223": "bulk-TPEX"
   },
-  "errors": {
-    "3324": [
-      "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-    ],
-    "6223": [
-      "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
-    ]
+  "errors": {},
+  "bulk": {
+    "dates_requested": 123,
+    "dates_with_data": 117,
+    "rows": 157204,
+    "errors": {}
   },
   "global_status": {
     "005930.KS": "ok",
@@ -53,6 +53,7 @@
     "2454": "2026-10-06",
     "3017": "2026-10-06",
     "3042": "2026-10-06",
+    "3081": "2026-10-06",
     "3189": "2026-10-06",
     "3324": "2026-10-06",
     "3653": "2026-10-06",
@@ -67,5 +68,7 @@
     "TWDKRW=X": "2026-10-06",
     "USDTWD=X": "2026-10-06",
     "VOO": "2026-10-06"
-  }
+  },
+  "tw_latest_date": "2026-10-06",
+  "tw_codes_on_latest_date": 2331
 }
