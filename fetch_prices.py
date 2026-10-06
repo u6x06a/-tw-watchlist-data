@@ -9,6 +9,8 @@
 韓股（三星、海力士）、匯率與美股用 yfinance，失敗不影響台股。
 
 歷史資料會累積在 data/prices.csv，重複的日期以新資料覆蓋。
+注意：上櫃（TPEX）全市場資料的成交股數以千股為單位、且比逐檔舊資料低約 6~15%（疑似不含零股／盤後定價，
+未確認原因），開高低收不受影響；同一檔在回補期間內口徑一致，量比（volRatio）仍可比較。
 meta.json 的 latest_date / sources 只列 WATCHLIST 與 GLOBAL 的代號，避免檔案過大。
 """
 import csv
@@ -76,7 +78,9 @@ BACKFILL_DAYS = 170      # 全市場回補的日曆天數（約 115 個交易日
 REFETCH_RECENT = 2       # 最近幾個平日一律重抓（避免盤後資料尚未完整時抓到半套）
 COMPLETE_MIN_ROWS = 1800  # 某日台股筆數達此值視為已完整（上市約 1300 + 上櫃約 950，單一市場不會超過）
 TWSE_ALL_URL = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
-TPEX_ALL_URL = "https://www.tpex.org.tw/web/stock/aftertrading/daily_close_quotes/stk_quote_result.php"
+# 櫃買新版網址，會依 date 回傳該日資料；type=EW 為上櫃股票（不含權證）。
+# 注意：舊的 daily_close_quotes/stk_quote_result.php 會忽略日期、永遠回最新一天，不能用來回補。
+TPEX_ALL_URL = "https://www.tpex.org.tw/www/zh-tw/afterTrading/otc"
 # 只收一般股票、特別股（如 2882A）與 ETF（如 0050、00685L、00400A、006201）；
 # 權證、牛熊證、ETN、受益證券等不收。
 CODE_OK = re.compile(r"^(\d{4}[A-Z]?|00\d{2,4}[A-Z]?)$")
@@ -204,7 +208,12 @@ def fetch_tw(code, market):
  
  
 # ---------- 全市場：按日期抓上市 / 上櫃全部股票 ----------
+def _norm(fields):
+    return [str(f).strip() for f in fields]
+
+
 def _col(fields, *names):
+    fields = _norm(fields)
     for n in names:
         if n in fields:
             return fields.index(n)
@@ -231,7 +240,7 @@ def parse_twse_day(j, want_date):
     if j.get("stat") != "OK":
         return None
     t = next((t for t in j.get("tables", [])
-              if "證券代號" in t.get("fields", []) and "收盤價" in t.get("fields", [])), None)
+              if "證券代號" in _norm(t.get("fields", [])) and "收盤價" in _norm(t.get("fields", []))), None)
     if not t or not t.get("data"):
         return None
     date_iso = datetime.strptime(str(j.get("date")), "%Y%m%d").date().isoformat()
@@ -242,11 +251,11 @@ def parse_twse_day(j, want_date):
 
 
 def parse_tpex_day(j, want_date):
-    """櫃買 daily_close_quotes JSON -> row 清單；沒有資料回傳 None。"""
+    """櫃買 afterTrading/otc JSON -> row 清單；沒有資料（休市或尚未公布）回傳 None。"""
     if str(j.get("stat", "")).lower() != "ok":
         return None
     t = next((t for t in j.get("tables", [])
-              if "代號" in t.get("fields", []) and "收盤" in t.get("fields", []) and t.get("data")), None)
+              if "代號" in _norm(t.get("fields", [])) and "收盤" in _norm(t.get("fields", [])) and t.get("data")), None)
     if not t:
         return None
     date_iso = roc_to_iso(t["date"]) if t.get("date") else datetime.strptime(str(j.get("date")), "%Y%m%d").date().isoformat()
@@ -280,8 +289,7 @@ def fetch_bulk_day(session, d):
         out["TWSE"] = (None, f"{type(e).__name__}: {e}")
     time.sleep(SLEEP)
     try:
-        roc = f"{d.year - 1911}/{d.month:02d}/{d.day:02d}"
-        j = _get_json(session, TPEX_ALL_URL, {"l": "zh-tw", "d": roc, "o": "json"})
+        j = _get_json(session, TPEX_ALL_URL, {"date": d.strftime("%Y/%m/%d"), "type": "EW", "id": "", "response": "json"})
         out["TPEX"] = (parse_tpex_day(j, d), None)
     except Exception as e:  # noqa: BLE001
         out["TPEX"] = (None, f"{type(e).__name__}: {e}")
