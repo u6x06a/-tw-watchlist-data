@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T23:52:45+08:00",
+  "updated_at": "2026-10-14T00:51:51+08:00",
   "sources": {
     "2408": "bulk-TWSE",
     "3017": "bulk-TWSE",
@@ -23,8 +23,8 @@
   "errors": {},
   "bulk": {
     "dates_requested": 8,
-    "dates_with_data": 2,
-    "rows": 4668,
+    "dates_with_data": 1,
+    "rows": 2333,
     "errors": {}
   },
   "global_status": {
