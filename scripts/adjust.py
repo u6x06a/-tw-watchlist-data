@@ -135,6 +135,20 @@ def factors(table, code, date):
     return pf, vf
 
 
+def lot_price_factor(code, date, events, split_adjusted=False):
+    """把「date 當天成交」的價格換算到今天的還原價基準：乘上 date 之後所有除權息係數；
+    分割也乘（1/ratio），但成交價本來就已是分割後基準（試算表標 [1拆N]）時 split_adjusted=True 略過。"""
+    f = 1.0
+    for ev in events:
+        if ev["code"] == code and date < ev["date"]:
+            f *= ev["factor"]
+    if not split_adjusted:
+        for sp in SPLITS.get(code, []):
+            if date < sp["effective"]:
+                f /= sp["ratio"]
+    return f
+
+
 def main():
     tracked = set(WATCHLIST) | set(GLOBAL)
     rows = []
