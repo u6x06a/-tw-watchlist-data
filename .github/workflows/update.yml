@@ -25,7 +25,7 @@ jobs:
           python-version: "3.12"
  
       - name: Install dependencies
-        run: pip install requests yfinance
+        run: pip install requests yfinance exchange_calendars
  
       - name: Fetch prices
         run: python fetch_prices.py
