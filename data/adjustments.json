@@ -110,6 +110,15 @@
       "market": "TWSE"
     },
     {
+      "code": "2368",
+      "date": "2026-06-23",
+      "prev_close": 1395.0,
+      "ref": 1385.19,
+      "factor": 0.9929677419354839,
+      "kind": "息",
+      "market": "TWSE"
+    },
+    {
       "code": "2408",
       "date": "2026-07-07",
       "prev_close": 420.5,
@@ -247,5 +256,5 @@
   },
   "event_prev_close_mismatch": [],
   "not_adjusted": "GLOBAL 代號不還原；成交量只在分割時調整。",
-  "rows": 7903
+  "rows": 8298
 }
