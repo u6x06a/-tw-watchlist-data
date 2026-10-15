@@ -69,7 +69,10 @@ GLOBAL = {
 }
  
 MONTHS_BACK = 6          # 備援（逐檔月資料）每次回抓幾個月，確保能算 60 日線
-KEEP_DAYS = 200          # csv 保留的日曆天數
+KEEP_DAYS = 200          # 全市場其他代號保留的日曆天數
+KEEP_DAYS_TRACKED = 430  # WATCHLIST / GLOBAL 代號保留的日曆天數（>= 260 個交易日，算 52 週高低點用）
+BACKFILL_MONTHS = 14     # --backfill 模式：關注名單逐檔回補的月數
+BACKFILL_GLOBAL_PERIOD = "2y"
 SLEEP = 3.0              # 官方站台有頻率限制，每次請求間隔秒數
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; watchlist-bot/1.0)"}
 FIELDS = ["code", "date", "open", "high", "low", "close", "volume"]
@@ -118,9 +121,9 @@ def month_starts(n):
  
  
 # ---------- 來源 1：證交所 ----------
-def fetch_twse(code):
+def fetch_twse(code, months=MONTHS_BACK):
     rows = []
-    for y, m in month_starts(MONTHS_BACK):
+    for y, m in month_starts(months):
         url = (
             "https://www.twse.com.tw/rwd/zh/afterTrading/STOCK_DAY"
             f"?date={y}{m:02d}01&stockNo={code}&response=json"
@@ -144,9 +147,9 @@ def fetch_twse(code):
  
  
 # ---------- 來源 1：櫃買中心 ----------
-def fetch_tpex(code):
+def fetch_tpex(code, months=MONTHS_BACK):
     rows = []
-    for y, m in month_starts(MONTHS_BACK):
+    for y, m in month_starts(months):
         roc = f"{y - 1911}/{m:02d}"
         url = (
             "https://www.tpex.org.tw/web/stock/aftertrading/daily_trading_info/"
@@ -171,8 +174,8 @@ def fetch_tpex(code):
  
  
 # ---------- 來源 2：FinMind（上市上櫃皆可） ----------
-def fetch_finmind(code):
-    start = (datetime.now(TZ_TW).date() - timedelta(days=MONTHS_BACK * 31)).isoformat()
+def fetch_finmind(code, months=MONTHS_BACK):
+    start = (datetime.now(TZ_TW).date() - timedelta(days=months * 31)).isoformat()
     r = requests.get(
         "https://api.finmindtrade.com/api/v4/data",
         params={"dataset": "TaiwanStockPrice", "data_id": code, "start_date": start},
@@ -193,12 +196,12 @@ def fetch_finmind(code):
     return rows
  
  
-def fetch_tw(code, market):
+def fetch_tw(code, market, months=MONTHS_BACK):
     errors = []
     primary = fetch_twse if market == "TWSE" else fetch_tpex
     for name, fn in ((f"official-{market}", primary), ("finmind", fetch_finmind)):
         try:
-            rows = fn(code)
+            rows = fn(code, months)
             if rows:
                 return rows, name, errors
             errors.append(f"{name}: 沒有資料")
@@ -306,19 +309,133 @@ def weekdays_back(days, today):
     return out
 
 
+# ---------- 交易日曆（休市 / 尚未公布 / 盤中）----------
+CAL_NAMES = {"TWSE": "XTAI", "NYSE": "XNYS", "KRX": "XKRX"}
+
+
+def load_calendars():
+    """exchange_calendars 的 XTAI / XNYS / XKRX；沒裝或載入失敗回傳 {}（休市判斷降級為「無日曆」）。"""
+    try:
+        import exchange_calendars as xcals
+        return {k: xcals.get_calendar(v) for k, v in CAL_NAMES.items()}
+    except Exception as e:  # noqa: BLE001
+        print(f"exchange_calendars 不可用：{e}", file=sys.stderr)
+        return {}
+
+
+def is_session(cals, market, d_iso):
+    """該市場當天是否為交易日；沒有日曆回傳 None（未知）。"""
+    import pandas as pd
+    cal = cals.get(market)
+    if cal is None:
+        return None
+    try:
+        return bool(cal.is_session(pd.Timestamp(d_iso)))
+    except Exception:  # noqa: BLE001  日期超出日曆範圍
+        return None
+
+
+def is_session_open(cals, market, d_iso, now_utc):
+    """該市場 d_iso 這個交易日現在是否「已開盤但還沒收盤」（K 棒尚未完成）。"""
+    import pandas as pd
+    cal = cals.get(market)
+    if cal is None:
+        return False
+    try:
+        ts = pd.Timestamp(d_iso)
+        if not cal.is_session(ts):
+            return False
+        return cal.session_open(ts).to_pydatetime() <= now_utc < cal.session_close(ts).to_pydatetime()
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def build_calendar(cals, now, tw_counts, us_dates, n_days=14):
+    """近 n_days 個平日的狀態。
+    ok = 有資料；closed = 日曆上休市；pending = 交易日、今天、資料尚未出現/尚未收盤；
+    missing = 過去的交易日卻沒資料（應補抓或查原因）；in_session = 美股/韓股正在交易；
+    mismatch_closed_but_data = 日曆說休市但有資料（日曆可能過時，請人工確認）。"""
+    now_utc = now.astimezone(timezone.utc)
+    out = {"TWSE": {}, "NYSE": {}}
+    if not cals:
+        return {"available": False}
+    today_tw = now.date()
+    d = today_tw - timedelta(days=n_days * 2)
+    days = []
+    while d <= today_tw:
+        if d.weekday() < 5:
+            days.append(d)
+        d += timedelta(days=1)
+    for day in days[-n_days:]:
+        iso = day.isoformat()
+        sess = is_session(cals, "TWSE", iso)
+        n = tw_counts.get(iso, 0)
+        if sess is False:
+            st = "mismatch_closed_but_data" if n >= COMPLETE_MIN_ROWS else "closed"
+        elif n >= COMPLETE_MIN_ROWS:
+            st = "ok"
+        elif sess is None:
+            st = "unknown"
+        else:
+            st = "pending" if day == today_tw else "missing"
+        out["TWSE"][iso] = st
+    for day in days[-n_days - 1:]:  # 美股日期以紐約日期為準，多看一天
+        iso = day.isoformat()
+        sess = is_session(cals, "NYSE", iso)
+        has = iso in us_dates
+        if sess is False:
+            st = "mismatch_closed_but_data" if has else "closed"
+        elif is_session_open(cals, "NYSE", iso, now_utc):
+            st = "in_session"
+        elif has:
+            st = "ok"
+        elif sess is None:
+            st = "unknown"
+        else:
+            import pandas as pd
+            opened = cals["NYSE"].session_open(pd.Timestamp(iso)).to_pydatetime() <= now_utc
+            st = "missing" if opened else "not_yet_open"
+        out["NYSE"][iso] = st
+    out["available"] = True
+    out["note"] = "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
+    return out
+
+
 # ---------- 韓股與匯率 ----------
-def fetch_global():
-    out, status = [], {}
+def global_kind(sym):
+    """GLOBAL 代號的市場：KRX 韓股 / FX 匯率 / NYSE 美股（含 ETF）。"""
+    if sym.endswith(".KS"):
+        return "KRX"
+    if sym.endswith("=X"):
+        return "FX"
+    return "NYSE"
+
+
+def fetch_global(cals, now, period="6mo"):
+    """回傳 (rows, status, partial, purge)。
+    partial: {代號: [日期]} 盤中未收盤的 K 棒。美股/韓股直接排除（不寫入），並列入 purge 讓舊檔裡已存的半天資料一併移除；
+    匯率 24 小時交易、沒有「收盤」，當天這根只標記不排除（隔天會被完整資料覆蓋）。"""
+    out, status, partial, purge = [], {}, {}, []
     try:
         import yfinance as yf
     except Exception as e:  # noqa: BLE001
-        return out, {k: f"yfinance 未安裝: {e}" for k in GLOBAL}
+        return out, {k: f"yfinance 未安裝: {e}" for k in GLOBAL}, partial, purge
+    now_utc = now.astimezone(timezone.utc)
     for sym in GLOBAL:
+        kind = global_kind(sym)
         try:
-            df = yf.Ticker(sym).history(period="6mo", interval="1d", auto_adjust=False)
+            df = yf.Ticker(sym).history(period=period, interval="1d", auto_adjust=False)
             n = 0
             for idx, row in df.iterrows():
                 if row["Close"] != row["Close"]:  # NaN
+                    continue
+                d_iso = idx.strftime("%Y-%m-%d")
+                if kind == "FX":
+                    if d_iso >= now_utc.date().isoformat():
+                        partial.setdefault(sym, []).append(d_iso)
+                elif is_session_open(cals, kind, d_iso, now_utc):
+                    partial.setdefault(sym, []).append(d_iso)
+                    purge.append((sym, d_iso))
                     continue
                 out.append(
                     dict(code=sym, date=idx.strftime("%Y-%m-%d"), open=float(row["Open"]),
@@ -329,7 +446,7 @@ def fetch_global():
             status[sym] = "ok" if n else "沒有資料"
         except Exception as e:  # noqa: BLE001
             status[sym] = f"{type(e).__name__}: {e}"
-    return out, status
+    return out, status, partial, purge
  
  
 # ---------- 讀寫 csv ----------
@@ -356,7 +473,9 @@ def main():
     ok_any = False
 
     # ---- 1. 全市場（按日期）：上市 + 上櫃全部股票 ----
-    days = weekdays_back(BACKFILL_DAYS, today)
+    backfill = "--backfill" in sys.argv  # 一次性：只用逐檔來源把關注名單與海外代號補到 ~14 個月，不跑全市場
+    cals = load_calendars()
+    days = [] if backfill else weekdays_back(BACKFILL_DAYS, today)
     tw_count = Counter(d for (c, d) in merged if c not in GLOBAL)
     targets = sorted(
         {d for d in days if tw_count.get(d.isoformat(), 0) < COMPLETE_MIN_ROWS} | set(days[-REFETCH_RECENT:])
@@ -394,8 +513,8 @@ def main():
             latest_by_code[c] = d
     latest_tw = max((d for c, d in latest_by_code.items() if c not in GLOBAL), default="")
     for code, (name, market) in WATCHLIST.items():
-        if latest_by_code.get(code, "") < latest_tw or market_err[market]:
-            rows, src, errs = fetch_tw(code, market)
+        if backfill or latest_by_code.get(code, "") < latest_tw or market_err[market]:
+            rows, src, errs = fetch_tw(code, market, BACKFILL_MONTHS if backfill else MONTHS_BACK)
             meta["sources"][code] = src
             if errs:
                 meta["errors"][code] = errs
@@ -407,10 +526,13 @@ def main():
         else:
             meta["sources"][code] = f"bulk-{market}"
 
-    g_rows, g_status = fetch_global()
+    g_rows, g_status, g_partial, g_purge = fetch_global(cals, now, BACKFILL_GLOBAL_PERIOD if backfill else "6mo")
     meta["global_status"] = g_status
+    for key in g_purge:  # 先前（例如手動執行）可能已存進去的盤中半天 K 棒
+        merged.pop(key, None)
     for r in g_rows:
         put(merged, r)
+    meta["partial_bars"] = g_partial
 
     if not ok_any:
         print("所有台股來源都失敗，保留舊資料不覆寫。", file=sys.stderr)
@@ -419,7 +541,8 @@ def main():
         sys.exit(1)
 
     cutoff = (today - timedelta(days=KEEP_DAYS)).isoformat()
-    keys = sorted(k for k in merged if k[1] >= cutoff)
+    cutoff_tracked = (today - timedelta(days=KEEP_DAYS_TRACKED)).isoformat()
+    keys = sorted(k for k in merged if k[1] >= (cutoff_tracked if (k[0] in WATCHLIST or k[0] in GLOBAL) else cutoff))
     with open(PRICES_CSV, "w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(FIELDS)
@@ -435,6 +558,10 @@ def main():
     tw_latest = max((d for (c, d) in keys if c not in GLOBAL), default=None)
     meta["tw_latest_date"] = tw_latest
     meta["tw_codes_on_latest_date"] = sum(1 for (c, d) in keys if d == tw_latest and c not in GLOBAL)
+    # 休市 / 尚未公布判斷：台股以全市場筆數、美股以 NYSE 代號是否有資料為準
+    tw_counts = Counter(d for (c, d) in keys if c not in GLOBAL)
+    us_dates = {d for (c, d) in keys if global_kind(c) == "NYSE" and c in GLOBAL}
+    meta["calendar"] = build_calendar(cals, now, tw_counts, us_dates)
     with open(META_JSON, "w", encoding="utf-8") as f:
         json.dump(meta, f, ensure_ascii=False, indent=2)
     print(json.dumps(meta, ensure_ascii=False, indent=2), file=sys.stderr)
