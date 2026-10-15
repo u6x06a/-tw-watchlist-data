@@ -29,6 +29,12 @@ jobs:
  
       - name: Fetch prices
         run: python fetch_prices.py
+
+      - name: Build adjusted prices
+        run: python scripts/adjust.py
+
+      - name: Build indicators
+        run: python scripts/indicators.py
  
       - name: Commit data
         if: always()
