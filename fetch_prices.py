@@ -51,6 +51,8 @@ WATCHLIST = {
     "3189": ("景碩", "TWSE"),
     "3711": ("日月光投控", "TWSE"),
     "6223": ("旺矽", "TPEX"),
+    "2368": ("金像電", "TWSE"),
+    "009829": ("大華韓國KOSPI50", "TWSE"),
 }
 # 韓股與匯率：代碼 -> 名稱（yfinance 代號）
 GLOBAL = {
@@ -64,6 +66,7 @@ GLOBAL = {
     "QQQM": "Invesco NASDAQ 100 ETF",
     "SOXX": "iShares Semiconductor ETF",
     "VOO": "Vanguard S&P 500 ETF",
+    "SPCX": "SpaceX",
     # ---- 盯盤名單（美股）----
     "NVDA": "NVIDIA",
 }
