@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T22:29:49+08:00",
+ "generated_at": "2026-10-15T23:34:00+08:00",
  "price_basis": "prices_adj.csv（台股已還原分割/除權息；GLOBAL 為 yfinance 原始價）",
  "as_of_by_market": {
   "KR": "2026-10-15",
@@ -29,11 +29,16 @@
   "VOO": [
    "2026-10-15"
   ],
+  "SPCX": [
+   "2026-10-15"
+  ],
   "NVDA": [
    "2026-10-15"
   ]
  },
- "stale": [],
+ "stale": [
+  "009829"
+ ],
  "params": {
   "atr_period": 14,
   "atr_mult": 2.0,
@@ -54,11 +59,6 @@
    "ma60": 485.4583,
    "atr14": 24.6236,
    "atr14_pct": 5.6,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -14.49,
    "ret5_dates": [
     "2026-10-07",
@@ -85,11 +85,6 @@
    "ma60": 3075.5808,
    "atr14": 177.4308,
    "atr14_pct": 5.75,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -12.98,
    "ret5_dates": [
     "2026-10-07",
@@ -116,11 +111,6 @@
    "ma60": 1229.15,
    "atr14": 90.7011,
    "atr14_pct": 6.43,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -7.54,
    "ret5_dates": [
     "2026-10-07",
@@ -147,11 +137,6 @@
    "ma60": 5368.2212,
    "atr14": 363.2672,
    "atr14_pct": 5.37,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -0.59,
    "ret5_dates": [
     "2026-10-07",
@@ -178,11 +163,6 @@
    "ma60": 533.075,
    "atr14": 28.7896,
    "atr14_pct": 4.7,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -8.51,
    "ret5_dates": [
     "2026-10-07",
@@ -209,11 +189,6 @@
    "ma60": 102.3658,
    "atr14": 2.7063,
    "atr14_pct": 2.8,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -13.08,
    "ret5_dates": [
     "2026-10-07",
@@ -240,11 +215,6 @@
    "ma60": 2640.3333,
    "atr14": 201.3389,
    "atr14_pct": 7.63,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -15.92,
    "ret5_dates": [
     "2026-10-07",
@@ -271,11 +241,6 @@
    "ma60": 106.9933,
    "atr14": 1.8247,
    "atr14_pct": 1.68,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -6.16,
    "ret5_dates": [
     "2026-10-07",
@@ -301,11 +266,6 @@
    "ma60": 11.8852,
    "atr14": 0.4145,
    "atr14_pct": 3.38,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -11.42,
    "ret5_dates": [
     "2026-10-07",
@@ -332,11 +292,6 @@
    "ma60": 1781.4167,
    "atr14": 92.5242,
    "atr14_pct": 5.68,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -18.09,
    "ret5_dates": [
     "2026-10-07",
@@ -363,11 +318,6 @@
    "ma60": 578.9917,
    "atr14": 37.4965,
    "atr14_pct": 6.54,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -11.44,
    "ret5_dates": [
     "2026-10-07",
@@ -394,11 +344,6 @@
    "ma60": 2416.2062,
    "atr14": 41.559,
    "atr14_pct": 1.7,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -5.61,
    "ret5_dates": [
     "2026-10-07",
@@ -425,11 +370,6 @@
    "ma60": 914.1167,
    "atr14": 26.9951,
    "atr14_pct": 2.77,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -1.42,
    "ret5_dates": [
     "2026-10-07",
@@ -456,11 +396,6 @@
    "ma60": 4264.8333,
    "atr14": 205.1371,
    "atr14_pct": 4.93,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -13.86,
    "ret5_dates": [
     "2026-10-07",
@@ -487,11 +422,6 @@
    "ma60": 183.0917,
    "atr14": 13.0277,
    "atr14_pct": 6.87,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -9.98,
    "ret5_dates": [
     "2026-10-07",
@@ -518,11 +448,6 @@
    "ma60": 855.2333,
    "atr14": 59.8481,
    "atr14_pct": 6.11,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -11.0,
    "ret5_dates": [
     "2026-10-07",
@@ -549,11 +474,6 @@
    "ma60": 632.5833,
    "atr14": 31.1309,
    "atr14_pct": 4.63,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -8.06,
    "ret5_dates": [
     "2026-10-07",
@@ -580,17 +500,64 @@
    "ma60": 5599.25,
    "atr14": 349.0551,
    "atr14_pct": 6.59,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -4.16,
    "ret5_dates": [
     "2026-10-07",
     "2026-10-15"
    ],
    "rs5_vs_0050_pct": 2.0,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2368": {
+   "name": "金像電",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 1190.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 1228.0,
+   "ma10": 1206.0,
+   "ma20": 1128.2,
+   "ma60": 1036.55,
+   "atr14": 80.3525,
+   "atr14_pct": 6.75,
+   "ret5_pct": -4.42,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 1.74,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "009829": {
+   "name": "大華韓國KOSPI50",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 8.66,
+   "bars": 37,
+   "status": "insufficient_data",
+   "ma5": 9.768,
+   "ma10": 10.386,
+   "ma20": 10.555,
+   "ma60": null,
+   "atr14": 0.345,
+   "atr14_pct": 3.98,
+   "ret5_pct": -20.4,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -14.24,
    "rs5_ref_dates": [
     "2026-10-07",
     "2026-10-15"
@@ -611,11 +578,6 @@
    "ma60": 255275.0,
    "atr14": 13044.8027,
    "atr14_pct": 6.21,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -21.79,
    "ret5_dates": [
     "2026-10-07",
@@ -642,11 +604,6 @@
    "ma60": 1676716.6667,
    "atr14": 96784.2702,
    "atr14_pct": 7.67,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -26.76,
    "ret5_dates": [
     "2026-10-07",
@@ -689,11 +646,6 @@
    "ma60": 341.9938,
    "atr14": 8.261,
    "atr14_pct": 2.4,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -1.07,
    "ret5_dates": [
     "2026-10-07",
@@ -720,11 +672,6 @@
    "ma60": 206.8707,
    "atr14": 4.945,
    "atr14_pct": 2.72,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -4.32,
    "ret5_dates": [
     "2026-10-07",
@@ -751,11 +698,6 @@
    "ma60": 296.6635,
    "atr14": 3.8555,
    "atr14_pct": 1.28,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -3.79,
    "ret5_dates": [
     "2026-10-07",
@@ -782,11 +724,6 @@
    "ma60": 534.7907,
    "atr14": 16.9668,
    "atr14_pct": 3.27,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -10.88,
    "ret5_dates": [
     "2026-10-07",
@@ -813,17 +750,38 @@
    "ma60": 703.0602,
    "atr14": 5.9502,
    "atr14_pct": 0.84,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -0.97,
    "ret5_dates": [
     "2026-10-07",
     "2026-10-14"
    ],
    "rs5_vs_0050_pct": 1.66,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "SPCX": {
+   "name": "SpaceX",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 152.16,
+   "bars": 86,
+   "status": "ok",
+   "ma5": 159.052,
+   "ma10": 161.29,
+   "ma20": 155.8815,
+   "ma60": 141.4542,
+   "atr14": 6.9046,
+   "atr14_pct": 4.54,
+   "ret5_pct": -9.21,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": -6.58,
    "rs5_ref_dates": [
     "2026-10-07",
     "2026-10-14"
@@ -844,11 +802,6 @@
    "ma60": 219.7707,
    "atr14": 5.8278,
    "atr14_pct": 2.63,
-   "entry_price": null,
-   "stop_price": null,
-   "stop_pct": null,
-   "stop_basis": null,
-   "close_vs_stop_pct": null,
    "ret5_pct": -6.81,
    "ret5_dates": [
     "2026-10-07",
