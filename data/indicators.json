@@ -1,0 +1,866 @@
+{
+ "generated_at": "2026-10-15T22:29:49+08:00",
+ "price_basis": "prices_adj.csv（台股已還原分割/除權息；GLOBAL 為 yfinance 原始價）",
+ "as_of_by_market": {
+  "KR": "2026-10-15",
+  "TW": "2026-10-15",
+  "US": "2026-10-14",
+  "FX": "2026-10-14"
+ },
+ "partial_bars_excluded": {
+  "TWDKRW=X": [
+   "2026-10-15"
+  ],
+  "USDTWD=X": [
+   "2026-10-15"
+  ],
+  "GOOG": [
+   "2026-10-15"
+  ],
+  "MS": [
+   "2026-10-15"
+  ],
+  "QQQM": [
+   "2026-10-15"
+  ],
+  "SOXX": [
+   "2026-10-15"
+  ],
+  "VOO": [
+   "2026-10-15"
+  ],
+  "NVDA": [
+   "2026-10-15"
+  ]
+ },
+ "stale": [],
+ "params": {
+  "atr_period": 14,
+  "atr_mult": 2.0,
+  "max_stop_pct": 10.0,
+  "bench": "0050"
+ },
+ "indicators": {
+  "2408": {
+   "name": "南亞科",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 439.5,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 493.4,
+   "ma10": 508.1,
+   "ma20": 505.4,
+   "ma60": 485.4583,
+   "atr14": 24.6236,
+   "atr14_pct": 5.6,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -14.49,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -8.33,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3017": {
+   "name": "奇鋐",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 3085.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 3301.0,
+   "ma10": 3427.0,
+   "ma20": 3392.0,
+   "ma60": 3075.5808,
+   "atr14": 177.4308,
+   "atr14_pct": 5.75,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -12.98,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -6.81,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3324": {
+   "name": "雙鴻",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 1410.0,
+   "bars": 287,
+   "status": "ok",
+   "ma5": 1487.0,
+   "ma10": 1507.0,
+   "ma20": 1507.0,
+   "ma60": 1229.15,
+   "atr14": 90.7011,
+   "atr14_pct": 6.43,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -7.54,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -1.38,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3653": {
+   "name": "健策",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 6765.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 7030.0,
+   "ma10": 6991.5,
+   "ma20": 6499.5,
+   "ma60": 5368.2212,
+   "atr14": 363.2672,
+   "atr14_pct": 5.37,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -0.59,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 5.57,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "6196": {
+   "name": "帆宣",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 613.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 648.2,
+   "ma10": 647.3,
+   "ma20": 594.05,
+   "ma60": 533.075,
+   "atr14": 28.7896,
+   "atr14_pct": 4.7,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -8.51,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -2.35,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "00735": {
+   "name": "國泰臺韓科技",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 96.65,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 104.36,
+   "ma10": 107.705,
+   "ma20": 106.875,
+   "ma60": 102.3658,
+   "atr14": 2.7063,
+   "atr14_pct": 2.8,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -13.08,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -6.92,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3081": {
+   "name": "聯亞",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 2640.0,
+   "bars": 287,
+   "status": "ok",
+   "ma5": 2846.0,
+   "ma10": 2887.5,
+   "ma20": 2819.0,
+   "ma60": 2640.3333,
+   "atr14": 201.3389,
+   "atr14_pct": 7.63,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -15.92,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -9.76,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "0050": {
+   "name": "元大台灣50",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 108.9,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 112.81,
+   "ma10": 113.825,
+   "ma20": 112.035,
+   "ma60": 106.9933,
+   "atr14": 1.8247,
+   "atr14_pct": 1.68,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -6.16,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 0.0,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true
+  },
+  "00685L": {
+   "name": "群益臺灣加權正2",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 12.26,
+   "bars": 268,
+   "status": "ok",
+   "ma5": 13.112,
+   "ma10": 13.325,
+   "ma20": 12.886,
+   "ma60": 11.8852,
+   "atr14": 0.4145,
+   "atr14_pct": 3.38,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -11.42,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -5.26,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2308": {
+   "name": "台達電",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 1630.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 1811.0,
+   "ma10": 1889.0,
+   "ma20": 1850.0,
+   "ma60": 1781.4167,
+   "atr14": 92.5242,
+   "atr14_pct": 5.68,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -18.09,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -11.93,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2327": {
+   "name": "國巨",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 573.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 614.0,
+   "ma10": 619.6,
+   "ma20": 586.25,
+   "ma60": 578.9917,
+   "atr14": 37.4965,
+   "atr14_pct": 6.54,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -11.44,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -5.28,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2330": {
+   "name": "台積電",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 2440.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 2502.0,
+   "ma10": 2526.5,
+   "ma20": 2488.8995,
+   "ma60": 2416.2062,
+   "atr14": 41.559,
+   "atr14_pct": 1.7,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -5.61,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 0.55,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2357": {
+   "name": "華碩",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 975.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 980.8,
+   "ma10": 981.5,
+   "ma20": 966.2,
+   "ma60": 914.1167,
+   "atr14": 26.9951,
+   "atr14_pct": 2.77,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -1.42,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 4.75,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "2454": {
+   "name": "聯發科",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 4165.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 4496.0,
+   "ma10": 4733.0,
+   "ma20": 4799.5,
+   "ma60": 4264.8333,
+   "atr14": 205.1371,
+   "atr14_pct": 4.93,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -13.86,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -7.7,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3042": {
+   "name": "晶技",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 189.5,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 201.1,
+   "ma10": 209.15,
+   "ma20": 200.375,
+   "ma60": 183.0917,
+   "atr14": 13.0277,
+   "atr14_pct": 6.87,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -9.98,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -3.82,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3189": {
+   "name": "景碩",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 979.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 1040.8,
+   "ma10": 1052.9,
+   "ma20": 965.5,
+   "ma60": 855.2333,
+   "atr14": 59.8481,
+   "atr14_pct": 6.11,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -11.0,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -4.84,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "3711": {
+   "name": "日月光投控",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 673.0,
+   "bars": 272,
+   "status": "ok",
+   "ma5": 733.2,
+   "ma10": 730.7,
+   "ma20": 694.7,
+   "ma60": 632.5833,
+   "atr14": 31.1309,
+   "atr14_pct": 4.63,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -8.06,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -1.9,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "6223": {
+   "name": "旺矽",
+   "market": "TW",
+   "data_date": "2026-10-15",
+   "close": 5300.0,
+   "bars": 287,
+   "status": "ok",
+   "ma5": 5766.0,
+   "ma10": 5589.0,
+   "ma20": 5520.75,
+   "ma60": 5599.25,
+   "atr14": 349.0551,
+   "atr14_pct": 6.59,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -4.16,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": 2.0,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "005930.KS": {
+   "name": "三星電子",
+   "market": "KR",
+   "data_date": "2026-10-15",
+   "close": 210000.0,
+   "bars": 285,
+   "status": "ok",
+   "ma5": 237300.0,
+   "ma10": 254750.0,
+   "ma20": 259525.0,
+   "ma60": 255275.0,
+   "atr14": 13044.8027,
+   "atr14_pct": 6.21,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -21.79,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -15.63,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "000660.KS": {
+   "name": "SK海力士",
+   "market": "KR",
+   "data_date": "2026-10-15",
+   "close": 1262000.0,
+   "bars": 285,
+   "status": "ok",
+   "ma5": 1482000.0,
+   "ma10": 1635600.0,
+   "ma20": 1710350.0,
+   "ma60": 1676716.6667,
+   "atr14": 96784.2702,
+   "atr14_pct": 7.67,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -26.76,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_vs_0050_pct": -20.59,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-15"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -6.16
+  },
+  "TWDKRW=X": {
+   "name": "台幣兌韓元",
+   "market": "FX",
+   "data_date": "2026-10-14",
+   "close": 41.7277,
+   "bars": 306,
+   "status": "ok"
+  },
+  "USDTWD=X": {
+   "name": "美元兌台幣",
+   "market": "FX",
+   "data_date": "2026-10-14",
+   "close": 32.105,
+   "bars": 306,
+   "status": "ok"
+  },
+  "GOOG": {
+   "name": "Alphabet C",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 343.65,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 346.972,
+   "ma10": 344.593,
+   "ma20": 343.2295,
+   "ma60": 341.9938,
+   "atr14": 8.261,
+   "atr14_pct": 2.4,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -1.07,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": 1.56,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "MS": {
+   "name": "Morgan Stanley",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 181.51,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 187.126,
+   "ma10": 188.487,
+   "ma20": 193.1385,
+   "ma60": 206.8707,
+   "atr14": 4.945,
+   "atr14_pct": 2.72,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -4.32,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": -1.69,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "QQQM": {
+   "name": "Invesco NASDAQ 100 ETF",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 300.13,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 306.144,
+   "ma10": 308.108,
+   "ma20": 305.741,
+   "ma60": 296.6635,
+   "atr14": 3.8555,
+   "atr14_pct": 1.28,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -3.79,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": -1.16,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "SOXX": {
+   "name": "iShares Semiconductor ETF",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 519.42,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 546.17,
+   "ma10": 565.786,
+   "ma20": 562.1745,
+   "ma60": 534.7907,
+   "atr14": 16.9668,
+   "atr14_pct": 3.27,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -10.88,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": -8.25,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "VOO": {
+   "name": "Vanguard S&P 500 ETF",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 707.43,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 712.926,
+   "ma10": 711.738,
+   "ma20": 708.903,
+   "ma60": 703.0602,
+   "atr14": 5.9502,
+   "atr14_pct": 0.84,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -0.97,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": 1.66,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  },
+  "NVDA": {
+   "name": "NVIDIA",
+   "market": "US",
+   "data_date": "2026-10-14",
+   "close": 221.3,
+   "bars": 297,
+   "status": "ok",
+   "ma5": 227.18,
+   "ma10": 231.632,
+   "ma20": 228.6895,
+   "ma60": 219.7707,
+   "atr14": 5.8278,
+   "atr14_pct": 2.63,
+   "entry_price": null,
+   "stop_price": null,
+   "stop_pct": null,
+   "stop_basis": null,
+   "close_vs_stop_pct": null,
+   "ret5_pct": -6.81,
+   "ret5_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_vs_0050_pct": -4.18,
+   "rs5_ref_dates": [
+    "2026-10-07",
+    "2026-10-14"
+   ],
+   "rs5_aligned": true,
+   "bench_ret5_pct": -2.63
+  }
+ }
+}

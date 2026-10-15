@@ -1,0 +1,236 @@
+[
+ {
+  "code": "0050",
+  "date": "2026-01-22",
+  "prev_close": 71.85,
+  "ref": 70.85,
+  "factor": 0.9860821155184412,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "0050",
+  "date": "2026-07-21",
+  "prev_close": 99.2,
+  "ref": 98.6,
+  "factor": 0.9939516129032258,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "00735",
+  "date": "2026-01-20",
+  "prev_close": 60.3,
+  "ref": 59.3,
+  "factor": 0.9834162520729685,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "00735",
+  "date": "2026-07-16",
+  "prev_close": 106.9,
+  "ref": 103.9,
+  "factor": 0.9719363891487371,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2308",
+  "date": "2026-06-17",
+  "prev_close": 2230.0,
+  "ref": 2218.4,
+  "factor": 0.994798206278027,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2327",
+  "date": "2026-06-12",
+  "prev_close": 842.0,
+  "ref": 836.0,
+  "factor": 0.9928741092636579,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2330",
+  "date": "2025-09-16",
+  "prev_close": 1255.0,
+  "ref": 1249.99,
+  "factor": 0.99600796812749,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2330",
+  "date": "2025-12-11",
+  "prev_close": 1505.0,
+  "ref": 1499.99,
+  "factor": 0.996671096345515,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2330",
+  "date": "2026-03-17",
+  "prev_close": 1845.0,
+  "ref": 1838.99,
+  "factor": 0.9967425474254743,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2330",
+  "date": "2026-06-11",
+  "prev_close": 2255.0,
+  "ref": 2248.99,
+  "factor": 0.9973348115299334,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2330",
+  "date": "2026-09-16",
+  "prev_close": 2385.0,
+  "ref": 2377.99,
+  "factor": 0.9970607966457022,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2357",
+  "date": "2026-07-01",
+  "prev_close": 700.0,
+  "ref": 658.0,
+  "factor": 0.94,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2408",
+  "date": "2026-07-07",
+  "prev_close": 420.5,
+  "ref": 419.15,
+  "factor": 0.9967895362663496,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2454",
+  "date": "2026-01-06",
+  "prev_close": 1525.0,
+  "ref": 1496.0,
+  "factor": 0.980983606557377,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "2454",
+  "date": "2026-07-07",
+  "prev_close": 4125.0,
+  "ref": 4100.49,
+  "factor": 0.9940581818181817,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3017",
+  "date": "2025-08-19",
+  "prev_close": 1145.0,
+  "ref": 1135.06,
+  "factor": 0.9913187772925763,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3017",
+  "date": "2026-08-19",
+  "prev_close": 3035.0,
+  "ref": 3014.11,
+  "factor": 0.9931169686985173,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3042",
+  "date": "2026-06-16",
+  "prev_close": 243.5,
+  "ref": 238.7,
+  "factor": 0.9802874743326488,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3081",
+  "date": "2026-07-15",
+  "prev_close": 1925.0,
+  "ref": 1747.27,
+  "factor": 0.9076727272727273,
+  "kind": "除權息",
+  "market": "TPEX"
+ },
+ {
+  "code": "3189",
+  "date": "2026-01-26",
+  "prev_close": 214.0,
+  "ref": 204.83,
+  "factor": 0.9571495327102805,
+  "kind": "權",
+  "market": "TWSE"
+ },
+ {
+  "code": "3189",
+  "date": "2026-07-02",
+  "prev_close": 888.0,
+  "ref": 886.48,
+  "factor": 0.9982882882882883,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3324",
+  "date": "2026-06-17",
+  "prev_close": 1050.0,
+  "ref": 1038.1,
+  "factor": 0.9886666666666666,
+  "kind": "除息",
+  "market": "TPEX"
+ },
+ {
+  "code": "3653",
+  "date": "2026-07-22",
+  "prev_close": 3520.0,
+  "ref": 3498.27,
+  "factor": 0.9938267045454545,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "3711",
+  "date": "2026-07-03",
+  "prev_close": 727.0,
+  "ref": 720.41,
+  "factor": 0.9909353507565336,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "6196",
+  "date": "2026-06-24",
+  "prev_close": 541.0,
+  "ref": 534.55,
+  "factor": 0.9880776340110905,
+  "kind": "息",
+  "market": "TWSE"
+ },
+ {
+  "code": "6223",
+  "date": "2026-07-09",
+  "prev_close": 6460.0,
+  "ref": 6438.0,
+  "factor": 0.996594427244582,
+  "kind": "除息",
+  "market": "TPEX"
+ }
+]
