@@ -1,30 +1,40 @@
 {
-  "updated_at": "2026-10-15T20:36:50+08:00",
+  "updated_at": "2026-10-15T21:00:42+08:00",
   "sources": {
-    "2408": "bulk-TWSE",
-    "3017": "bulk-TWSE",
-    "3324": "bulk-TPEX",
-    "3653": "bulk-TWSE",
-    "6196": "bulk-TWSE",
-    "00735": "bulk-TWSE",
-    "3081": "bulk-TPEX",
-    "0050": "bulk-TWSE",
-    "00685L": "bulk-TWSE",
-    "2308": "bulk-TWSE",
-    "2327": "bulk-TWSE",
-    "2330": "bulk-TWSE",
-    "2357": "bulk-TWSE",
-    "2454": "bulk-TWSE",
-    "3042": "bulk-TWSE",
-    "3189": "bulk-TWSE",
-    "3711": "bulk-TWSE",
-    "6223": "bulk-TPEX"
+    "2408": "official-TWSE",
+    "3017": "official-TWSE",
+    "3324": "finmind",
+    "3653": "official-TWSE",
+    "6196": "official-TWSE",
+    "00735": "official-TWSE",
+    "3081": "finmind",
+    "0050": "official-TWSE",
+    "00685L": "official-TWSE",
+    "2308": "official-TWSE",
+    "2327": "official-TWSE",
+    "2330": "official-TWSE",
+    "2357": "official-TWSE",
+    "2454": "official-TWSE",
+    "3042": "official-TWSE",
+    "3189": "official-TWSE",
+    "3711": "official-TWSE",
+    "6223": "finmind"
   },
-  "errors": {},
+  "errors": {
+    "3324": [
+      "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    ],
+    "3081": [
+      "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    ],
+    "6223": [
+      "official-TPEX: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
+    ]
+  },
   "bulk": {
-    "dates_requested": 8,
-    "dates_with_data": 2,
-    "rows": 4669,
+    "dates_requested": 0,
+    "dates_with_data": 0,
+    "rows": 0,
     "errors": {}
   },
   "global_status": {
