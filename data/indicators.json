@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T15:32:42+08:00",
+ "generated_at": "2026-10-16T20:18:42+08:00",
  "price_basis": "prices_adj.csv（台股已還原分割/除權息；GLOBAL 為 yfinance 原始價）",
  "as_of_by_market": {
   "KR": "2026-10-16",
