@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-18T23:35:51+08:00",
+ "updated_at": "2026-10-19T03:41:20+08:00",
  "sources": {
   "2408": "bulk-TWSE",
   "3017": "bulk-TWSE",
@@ -24,25 +24,25 @@
  },
  "errors": {},
  "bulk": {
-  "dates_requested": 8,
-  "dates_with_data": 2,
-  "rows": 4666,
+  "dates_requested": 7,
+  "dates_with_data": 1,
+  "rows": 2329,
   "errors": {},
   "by_date": {
-   "2026-10-15": {
-    "TWSE": "ok:1346",
-    "TPEX": "ok:991"
-   },
    "2026-10-16": {
     "TWSE": "ok:1345",
     "TPEX": "ok:984"
+   },
+   "2026-10-19": {
+    "TWSE": "no_data",
+    "TPEX": "no_data"
    }
   }
  },
  "ref_events": {
   "status": "ok",
-  "rows_checked": 4666,
-  "events": 40
+  "rows_checked": 2329,
+  "events": 24
  },
  "global_status": {
   "005930.KS": "ok",
@@ -103,7 +103,6 @@
  "tw_codes_on_latest_date": 2329,
  "calendar": {
   "TWSE": {
-   "2026-09-29": "ok",
    "2026-09-30": "ok",
    "2026-10-01": "ok",
    "2026-10-02": "ok",
@@ -116,10 +115,10 @@
    "2026-10-13": "ok",
    "2026-10-14": "ok",
    "2026-10-15": "ok",
-   "2026-10-16": "ok"
+   "2026-10-16": "ok",
+   "2026-10-19": "pending"
   },
   "NYSE": {
-   "2026-09-28": "ok",
    "2026-09-29": "ok",
    "2026-09-30": "ok",
    "2026-10-01": "ok",
@@ -133,13 +132,32 @@
    "2026-10-13": "ok",
    "2026-10-14": "ok",
    "2026-10-15": "ok",
-   "2026-10-16": "ok"
+   "2026-10-16": "ok",
+   "2026-10-19": "not_yet_open"
   },
   "available": true,
   "note": "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
  },
+ "pipeline": {
+  "fetch_prices": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-19T03:41:17+08:00",
+   "finished_at": "2026-10-19T03:42:18+08:00",
+   "seconds": 60.8,
+   "output_data_date": "2026-10-16"
+  },
+  "market_status": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-19T03:42:18+08:00",
+   "finished_at": "2026-10-19T03:42:21+08:00",
+   "seconds": 2.6,
+   "output_data_date": "2026-10-16"
+  }
+ },
  "markets": {
-  "generated_at": "2026-10-19T00:34:30+08:00",
+  "generated_at": "2026-10-19T03:42:18+08:00",
   "TWSE": {
    "expected_latest": "2026-10-16",
    "data_latest": "2026-10-16",
