@@ -269,7 +269,7 @@ def main():
     if a["output_scope"] == "tracked":
         from fetch_prices import GLOBAL, WATCHLIST
         keep &= adj["code"].isin(set(WATCHLIST) | set(GLOBAL)).values
-    adj[keep].to_csv(DST + ".tmp", index=False)
+    adj[keep].to_csv(DST + ".tmp", index=False, lineterminator="\r\n")   # 與 prices.csv 相同的 CRLF
     os.replace(DST + ".tmp", DST)
 
     # ---- 事件前收盤 vs CSV 前一交易日收盤（不一致代表資料缺口或事件來源有誤）----
