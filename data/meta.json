@@ -139,32 +139,41 @@
   "note": "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
  },
  "markets": {
-  "generated_at": "2026-10-18T23:36:58+08:00",
-  "TW": {
+  "generated_at": "2026-10-19T00:34:30+08:00",
+  "TWSE": {
    "expected_latest": "2026-10-16",
    "data_latest": "2026-10-16",
    "data_matches_expected": true,
-   "status": "休市",
-   "reason": "今天不是台股交易日（證交所休市表 / XTAI / 臨時休市設定）",
-   "codes_on_latest": 2329,
-   "today_is_session": false,
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
+   "codes_on_latest": 1345,
+   "today_is_session": true,
+   "previous_session": "2026-10-16"
+  },
+  "TPEX": {
+   "expected_latest": "2026-10-16",
+   "data_latest": "2026-10-16",
+   "data_matches_expected": true,
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
+   "codes_on_latest": 984,
+   "today_is_session": true,
    "previous_session": "2026-10-16"
   },
   "tw_calendar": {
-   "source": "2026:fetched",
+   "source": "2026:cache",
    "xtai_vs_twse_conflicts": [],
    "extra_closed": [
     "2026-07-10"
    ],
    "recent_sessions": [
-    "2026-10-12",
     "2026-10-13",
     "2026-10-14",
     "2026-10-15",
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-19"
    ]
   },
-  "note": "沒有 data/companies.csv，台股不分上市上櫃",
   "NYSE": {
    "expected_latest": "2026-10-16",
    "data_latest": "2026-10-16",
