@@ -1,0 +1,108 @@
+{
+ "bench": "0050",
+ "data_date": "2026-10-16",
+ "close": 109.0,
+ "ma20": 112.1725,
+ "ma60": 107.1017,
+ "above_ma60": true,
+ "ma60_slope": 0.7674,
+ "ma60_slope_pct": 0.72,
+ "change_pct": 0.09,
+ "range_pct": 0.73,
+ "high_60d": {
+  "date": "2026-10-06",
+  "close": 116.5
+ },
+ "drawdown_from_60d_high_pct": -6.44,
+ "ladder": {
+  "since_high_date": "2026-10-06",
+  "level": 2,
+  "steps": [
+   {
+    "type": "daily_drop>=3%",
+    "date": "2026-10-15",
+    "change_pct": -3.63,
+    "level": 1
+   },
+   {
+    "type": "drawdown>=5%",
+    "date": "2026-10-15",
+    "drawdown_pct": -6.52,
+    "level": 2
+   }
+  ],
+  "new_step_today": []
+ },
+ "panic_day": {
+  "date": "2026-10-15",
+  "change_pct": -3.63,
+  "high": 110.15,
+  "low": 108.55,
+  "days_since": 1,
+  "reclaimed_high": false,
+  "reclaimed_high_date": null,
+  "broke_low": false,
+  "broke_low_date": null,
+  "currently_below_low": false
+ },
+ "follow_through": {
+  "low_date": "2026-07-30",
+  "low_close": 93.5,
+  "rally_day": 53,
+  "ftd": {
+   "date": "2026-08-05",
+   "day_from_low": 4,
+   "change_pct": 3.13
+  },
+  "low_undercut_after": false
+ },
+ "institutional_twse": {
+  "data_date": "2026-10-16",
+  "unit": "TWD",
+  "foreign_net": -46147162837.0,
+  "trust_net": 11047506970.0,
+  "foreign_streak": -8,
+  "trust_streak": 6,
+  "days_available": 284
+ },
+ "margin_total": {
+  "data_date": "2026-10-16",
+  "unit": "千元（上市 + 上櫃融資金額）",
+  "value_k": 863844167.0,
+  "chg_20d_pct": 10.79,
+  "days_available": 284
+ },
+ "status": "正常",
+ "status_reasons": [],
+ "market_data_status": {
+  "status": "尚未公布",
+  "expected_latest": "2026-10-16",
+  "data_matches_expected": true
+ },
+ "generated_at": "2026-10-19T03:45:42+08:00",
+ "params": {
+  "bench": "0050",
+  "ma_short": 20,
+  "ma_long": 60,
+  "slope_lookback": 5,
+  "high_lookback": 60,
+  "ladder": {
+   "daily_drop_pct": 3,
+   "drawdown_steps_pct": [
+    5,
+    10,
+    15
+   ]
+  },
+  "panic": {
+   "daily_drop_pct": 3,
+   "lookback_days": 60
+  },
+  "follow_through": {
+   "min_day": 4,
+   "min_gain_pct": 1.25,
+   "low_lookback": 60
+  },
+  "margin_change_window": 20
+ }
+}
