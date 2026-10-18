@@ -208,10 +208,13 @@ class DailyStore:
         return len({r["date"] for r in out})
 
 
-def write_json(p, obj):
+def write_json(p, obj, compact=False):
     tmp = p + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(obj, f, ensure_ascii=False, indent=1)
+        if compact:   # 大檔：不縮排，減少約 4 成大小
+            json.dump(obj, f, ensure_ascii=False, separators=(",", ":"))
+        else:
+            json.dump(obj, f, ensure_ascii=False, indent=1)
     os.replace(tmp, p)
 
 

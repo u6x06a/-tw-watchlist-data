@@ -43,3 +43,17 @@
 | `margin.csv` | `scripts/fetch_chips.py` | 每日 | 融資融券（張）與借券賣出（`sbl_*`，股）餘額與當日增減；`code=_MARKET` 含全市場融資金額 `margin_value_k`（仟元） |
 | `tdcc.csv` | `scripts/fetch_chips.py` | 每週 | `date,code,holders,shares,pct_400plus,pct_1000plus,holders_400plus,holders_1000plus`（只能從開始執行起每週累積） |
 | `*_status.json` | 各腳本 | — | 來源狀態、最新資料日期 |
+
+## 指標、選股、模擬帳戶（階段 2–4）
+
+| 檔案 | 產生者 | 內容 |
+|---|---|---|
+| `indicators.json` | `scripts/indicators.py` | `stocks`：全部台股普通股與 ETF 的均線/斜率、ATR、量比、20 日均值、52 週高低、相對 0050、RS 排名、趨勢模板（逐項）、階段、市值、`chips`（法人、外資持股、融資融券、借券、集保與籌碼狀態，各自帶 data_date）、`revenue`；`industries`：產業 5/20 日報酬中位數、RS 中位數、排名；`indicators`：舊版區塊（關注名單 + 海外代號，格式不變）。精簡 JSON（不縮排） |
+| `market.json` | `scripts/indicators.py` | 0050 還原收盤、MA20/MA60、季線斜率、單日漲跌與振幅、距 60 日高點回檔、543 階梯、恐慌日追蹤、追蹤日、全市場外資/投信與連續天數、全市場融資與 20 日變化、結論（正常 / 過濾中） |
+| `signals.json` | `scripts/screen.py` | 當日 R1/L1/L2/E1/C1 訊號（關鍵數字、參考進場價、停損、每股風險、產業排名、RS 排名、needs_news_check、market_filtered、chips_confirm/chips_warning） |
+| `flags.json` | `scripts/screen.py` | 全市場流動股的賣出與警示旗標、market_wide_selloff |
+| `paper.json` | `scripts/paper.py` | 規則模擬帳戶：持倉、成交明細、每日淨值與 0050 基準、各規則統計、總報酬、最大回撤 |
+| `reports/backtest_YYYYMMDD.md` | `scripts/backtest.py` | 回測報告（手動執行；不提供買賣建議） |
+
+選股、模擬帳戶、回測共用 `scripts/panel.py`（全市場矩陣）與 `scripts/rules.py`（規則），回測與每日選股是同一套邏輯。
+`meta.json` 的 `pipeline` 區塊記錄每個步驟的狀態、時間、耗時與輸出檔的資料日期（`scripts/run_step.py`）。

@@ -99,3 +99,172 @@ chips:
 backfill:
   # 1-4 補歷史資料目標：最近這麼多個台股交易日（實際上限為 data.keep_calendar_days_all 範圍內）
   target_trading_days: 300
+
+# ============================================================
+# 階段 2：每日指標（scripts/indicators.py → data/indicators.json、data/market.json）
+# ============================================================
+indicators:
+  universe: [stock, etf, etf_leveraged, etf_inverse, etf_bond]   # 輸出的證券類型（companies.csv sec_type）
+  ma_periods: [5, 10, 20, 60, 150, 240]   # 150 ≈ 30 週、240 ≈ 一年
+  slope_lookback: 5           # 均線斜率 = 今日均線 − N 根前均線（另附 %）
+  atr_period: 14
+  hl52_days: 250              # 52 週高低點用的交易日數；不足時標 insufficient、數值為 null
+  rel_periods: [5, 20, 60]    # 相對 0050 強弱（個股報酬 − 0050 同期報酬，百分點）
+  bench: "0050"
+  rs_rank:
+    weights: {60: 0.5, 120: 0.5}   # RS 分數 = Σ 權重 × N 日報酬；全市場百分位（0~100，越高越強）
+    universe: [stock]              # 參與排名的類型；其他類型以同一分布換算百分位
+  trend_template:             # Minervini 精簡版
+    ma240_rising_lookback: 20       # MA240 上揚 = 今日 MA240 > N 根前
+    min_above_52w_low_pct: 30       # 距 52 週低點 ≥ 30%
+    max_below_52w_high_pct: 25      # 距 52 週高點 ≤ 25%
+    min_rs_rank: 70
+  stage:                      # Weinstein 精簡版：依 MA150 斜率與收盤位置
+    ma: 150
+    slope_lookback: 20        # MA150 斜率 = 今日 vs N 根前（%）
+    flat_pct: 1.0             # |斜率| ≤ 此值視為走平
+    prior_lookback: 60        # 走平時，看 N 根前 MA150 斜率判斷是做頭（先前上揚）或打底（先前下跌）
+  industry:
+    min_members: 3            # 成員少於此數的產業不排名
+    rank_by: rs_rank_median   # 產業排名依據：rs_rank_median / ret20_median
+  quarter_end_window_days: 10 # 季底月份最後 N 個交易日，投信買超標「可能作帳」
+
+chips_indicators:
+  net_windows: [1, 5, 20]           # 外資、投信買賣超累計天數（張；另附占 20 日均量比例）
+  trust_adopt:                      # 投信認養：近 N 日投信買超占股本 ≥ 門檻
+    window: 20
+    min_pct_of_shares: 0.5
+  foreign_pct_change_window: 20     # 外資持股比率變化（百分點）
+  margin_change_windows: [5, 20]    # 融資餘額變化率（%）
+  sbl_change_window: 5              # 借券賣出餘額變化（股、%）
+  tdcc_change_weeks: 4              # 大戶（1000 張以上）持股比例近 N 週變化（百分點）
+  states:
+    sync_buy: {window: 5}                                        # 法人同步買：外資與投信 N 日皆買超
+    retail_catch_knife: {window: 5, min_margin_increase_pct: 5}  # 散戶接刀：股價 N 日下跌、融資 N 日增加 ≥ 門檻
+    washout: {window: 10, min_margin_decrease_pct: 5, max_vol_ratio_5_20: 0.8}  # 籌碼清洗：下跌期間融資降、量縮
+    big_holder_increase: {weeks: 2}                              # 大戶增持：大戶比例連 N 週上升（受 chips.tdcc_rules 控制）
+
+market:
+  bench: "0050"
+  ma_short: 20
+  ma_long: 60                 # 季線
+  slope_lookback: 5
+  high_lookback: 60           # 回檔幅度基準：近 N 日最高收盤
+  ladder:                     # 543 階梯（之後再調）：本輪回檔（自近 60 日高點起）觸發到第幾階
+    daily_drop_pct: 3         # 單日跌 ≥ 3% 記一階（每次都算）
+    drawdown_steps_pct: [5, 10, 15]   # 自高點回檔 5/10/15% 各一階
+  panic:
+    daily_drop_pct: 3         # 恐慌日：0050 單日跌 ≥ 3%
+    lookback_days: 60         # 只追蹤近 N 個交易日內的恐慌日
+  follow_through:             # O'Neil 追蹤日：自低點反彈第 N 天以後，單日漲 ≥ 門檻且量大於前一日
+    min_day: 4
+    min_gain_pct: 1.25
+    low_lookback: 60          # 低點 = 近 N 日最低收盤
+  margin_change_window: 20    # 全市場融資餘額變化（%）
+
+# ============================================================
+# 階段 3：選股（scripts/screen.py → data/signals.json、data/flags.json）
+# ============================================================
+screen:
+  liquidity:                    # 3-0 所有規則共用
+    sec_types: [stock]          # ETF 只在 E1 使用
+    exclude_full_delivery: true
+    min_avg_value_20: 50000000  # 20 日平均成交值（元）
+    min_bars: 60
+  skip_adj_uncertain_days: 5    # 近 N 根內有 adj_uncertain 的 K 棒 → 不產生訊號（config adjust.skip_adj_uncertain）
+  r1:                           # 右側：量縮後價量齊揚紅 K
+    squeeze_ratio: 0.7          # 前一日 5 日均量 < 20 日均量 × 0.7
+    min_gain_pct: 2
+    vol_mult: 1.5               # 今日量 > 前 5 日均量 × 1.5
+    stop_atr_mult: 2
+    stop_max_pct: 10            # 停損取 進場 − 2×ATR 與 進場 × (1 − 10%) 的較高者
+    chips_confirm_days: 4       # 觸發當日或前 3 日（共 4 日）外資或投信有買超
+    chips_warning_foreign_sell_streak: 5
+  l1:                           # 左側：權值股遇集體賣壓
+    top_market_cap: 50
+    quality_min_yoy_3m: 0
+    deep_atr_mult: 3            # 收盤 ≤ 20 日最高價 − 3×ATR
+    deep_ma20_ratio: 0.92       # 或 收盤 < MA20 × 0.92
+    systemic_mult: 1.5          # 近 5 日跌幅不超過 0050 同期跌幅 × 1.5，或所屬產業同步下跌
+    lower_shadow_body_mult: 1.5
+    foreign_sell_shrink_pct: 50 # 外資賣超金額比前 3 日均值縮小 ≥ 50%
+    invalidation_lookback: 60   # 失效價位：下跌起點（20 日高點）前 60 日最低點
+    cost_stop_pct: 15           # 平均成本 −15%（由儀表板端計算，這裡只輸出參數）
+  l2:                           # 左側：同業出事被拖累（只列候選）
+    industry_drop_pct: -4       # 產業 1~3 日報酬中位數 ≤ −4%
+    windows: [1, 2, 3]
+  e1:                           # ETF：543 階梯
+    codes: ["0050", "00685L"]
+    ratio: {"0050": 2, "00685L": 1}   # 可改 1.5:1
+    decay_window: 20            # 00685L 磨損估計：近 20 日 00685L 報酬 − 2 × 0050 報酬（以 0050 近似加權指數）
+  c1:                           # 籌碼轉強（只觀察；集保未滿 chips.tdcc_rules.min_weeks 週前停用）
+    ma60_band_pct: 5
+    min_days: 20
+    trust_buy_window: 5
+  flags:
+    limit_up_pct: 9.5
+    heavy_vol_mult: 1.5
+    upper_shadow_body_mult: 2
+    near_high_pct: 10           # 高檔土洋對作：距 52 週高點 ≤ 10%
+    opposite_streak: 3
+    weak_vs_market_window: 5
+    good_news_yoy_pct: 30
+    good_news_days: 10
+    market_selloff_pct: -2      # 0050 當日跌 ≥ 2% → market_wide_selloff
+    trust_abandon_prior_buy_days: 3   # 投信棄養：先連 ≥ N 日買超，之後連 3 日賣超
+    trust_abandon_sell_days: 3
+    foreign_pct_drop_pp: 1.0    # 外資持股比率 20 日下降超過 1 個百分點
+    margin_surge_pct: 10        # 創 20 日新高但融資 5 日增加 ≥ 10% 且法人 5 日賣超
+
+# ============================================================
+# 階段 4：規則模擬帳戶（scripts/paper.py → data/paper.json）；階段 5 回測共用同一套邏輯
+# ============================================================
+paper:
+  initial_capital: 350000
+  start_date: "2026-07-01"        # 模擬帳戶起始日（之後的第一個交易日開盤開始）
+  etf_budget_ratio: 0.3           # ETF 帳戶（E1）占初始資金比例；其餘為個股帳戶（R1、L1、L2）
+  costs:
+    fee_rate: 0.001425            # 手續費（買賣皆收）
+    fee_discount: 1.0             # 券商折扣（例如 0.28 = 2.8 折）
+    min_fee: 20                   # 最低手續費（元）；零股多數券商為 1 元，可改
+    tax_stock: 0.003              # 證交稅（賣出）普通股
+    tax_etf: 0.001                # ETF
+  sizing:
+    risk_per_trade_pct: 0.5       # 每筆停損時最多虧總資產 0.5%
+    max_position_pct: 10          # 單一個股 ≤ 10%
+    max_industry_pct: 25          # 單一產業 ≤ 25%
+    min_cash_pct: 10              # 現金至少保留 10%
+    min_order_value: 5000         # 單筆買進金額低於此值就不買（避免最低手續費吃掉零碎部位）
+  execute:                        # 哪些規則的訊號實際下單（其餘只記錄）
+    R1: true
+    L1: true
+    L2: false
+    E1: true
+    C1: false
+    needs_news_check: false       # needs_news_check=true 的訊號預設不執行（L1、L2 都是）；設 true 用來比較
+    skip_market_filtered: false   # 大盤過濾中時是否不進場（預設照常進場、只標記）
+  r1_exit:
+    partial_1_r: 1.5              # +1.5R 賣 1/3
+    partial_2_r: 3.0              # +3R 再賣 1/3
+    trail_ma: 10                  # 剩餘部位收盤跌破 MA10 出場
+    time_stop_days: 5             # 進場 5 個交易日內未創新高且報酬在 ±3% 內 → 賣一半
+    time_stop_band_pct: 3
+  l1_exit:
+    cost_stop_pct: 15             # 平均成本 −15% 全出
+    take_1_3_at: ma20             # 反彈到 MA20（或恐慌前高點）賣 1/3，剩餘改用右側出場規則
+    max_batches: 3
+  e1:
+    step_budget_pct: 25           # 每觸發一階，投入 ETF 帳戶總資產的 25%（現金不足則用剩餘）
+    max_lev_ratio: 0.34           # 0050 回到前高時，00685L 市值占 ETF 帳戶超過此比例的部分換回 0050
+
+backtest:
+  warmup_days: 60                 # 回測從第 N 個交易日開始（前面留給均線等指標暖機）
+  sample_min: 20                  # 樣本少於此數的統計標「樣本不足，僅供參考」
+  split_ratio: 0.667              # 前 2/3 調參、後 1/3 驗證
+  sensitivity:                    # 只對 3 個關鍵參數各試 3 個值
+    r1_vol_mult: [1.3, 1.5, 2.0]
+    r1_stop_atr_mult: [1.5, 2.0, 3.0]
+    l1_deep_atr_mult: [2.5, 3.0, 3.5]
+  panic_study:
+    drop_pct: 3
+    horizons: [1, 3, 5, 10]
