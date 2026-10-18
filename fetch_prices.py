@@ -23,7 +23,13 @@ from collections import Counter
 from datetime import datetime, timedelta, timezone
 
 import requests
- 
+
+try:  # 反推參考價（scripts/refprice.py）是附加功能，載入失敗不影響抓價
+    from scripts import refprice as _refprice
+except Exception as _e:  # noqa: BLE001
+    print(f"scripts/refprice.py 載入失敗，略過參考價紀錄：{_e}", file=sys.stderr)
+    _refprice = None
+
 TZ_TW = timezone(timedelta(hours=8))
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
@@ -39,7 +45,6 @@ WATCHLIST = {
     "6196": ("帆宣", "TWSE"),
     "00735": ("國泰臺韓科技", "TWSE"),
     "3081": ("聯亞", "TPEX"),
-    # ---- 發財儀表板持股（台股）----
     "0050": ("元大台灣50", "TWSE"),
     "00685L": ("群益臺灣加權正2", "TWSE"),
     "2308": ("台達電", "TWSE"),
@@ -54,12 +59,11 @@ WATCHLIST = {
     "2368": ("金像電", "TWSE"),
     "009829": ("大華韓國KOSPI50", "TWSE"),
 }
-# 韓股與匯率：代碼 -> 名稱（yfinance 代號）
+# 海外代號（韓股、美股、匯率）：代碼 -> 名稱（yfinance 代號）
 GLOBAL = {
     "005930.KS": "三星電子",
     "000660.KS": "SK海力士",
     "TWDKRW=X": "台幣兌韓元",
-    # ---- 發財儀表板持股（美股）與匯率 ----
     "USDTWD=X": "美元兌台幣",
     "GOOG": "Alphabet C",
     "MS": "Morgan Stanley",
@@ -67,22 +71,34 @@ GLOBAL = {
     "SOXX": "iShares Semiconductor ETF",
     "VOO": "Vanguard S&P 500 ETF",
     "SPCX": "SpaceX",
-    # ---- 盯盤名單（美股）----
     "NVDA": "NVIDIA",
 }
  
+def _load_data_config():
+    """config/rules.yaml 的 data 區塊；讀不到（檔案不存在、沒裝 pyyaml、格式錯）就回傳 {}，
+    下面改用內建值，確保每日抓價流程不因設定檔問題中斷。"""
+    try:
+        import yaml
+        with open(os.path.join(HERE, "config", "rules.yaml"), encoding="utf-8") as f:
+            return (yaml.safe_load(f) or {}).get("data") or {}
+    except Exception as e:  # noqa: BLE001
+        print(f"config/rules.yaml 讀取失敗，使用內建值：{type(e).__name__}: {e}", file=sys.stderr)
+        return {}
+
+
+_CFG = _load_data_config()
 MONTHS_BACK = 6          # 備援（逐檔月資料）每次回抓幾個月，確保能算 60 日線
-KEEP_DAYS = 200          # 全市場其他代號保留的日曆天數
-KEEP_DAYS_TRACKED = 430  # WATCHLIST / GLOBAL 代號保留的日曆天數（>= 260 個交易日，算 52 週高低點用）
+KEEP_DAYS = int(_CFG.get("keep_calendar_days_all", 200))           # 全市場代號保留的日曆天數
+KEEP_DAYS_TRACKED = int(_CFG.get("keep_calendar_days_tracked", 430))  # WATCHLIST / GLOBAL 代號保留的日曆天數
 BACKFILL_MONTHS = 14     # --backfill 模式：關注名單逐檔回補的月數
 BACKFILL_GLOBAL_PERIOD = "2y"
-SLEEP = 3.0              # 官方站台有頻率限制，每次請求間隔秒數
+SLEEP = float(_CFG.get("request_sleep_sec", 3.0))  # 官方站台有頻率限制，每次請求間隔秒數
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; watchlist-bot/1.0)"}
 FIELDS = ["code", "date", "open", "high", "low", "close", "volume"]
 
-BACKFILL_DAYS = 170      # 全市場回補的日曆天數（約 115 個交易日，確保 >= 100 個交易日）
+BACKFILL_DAYS = int(_CFG.get("recheck_calendar_days", 170))  # 每日檢查並補抓的日曆天數
 REFETCH_RECENT = 2       # 最近幾個平日一律重抓（避免盤後資料尚未完整時抓到半套）
-COMPLETE_MIN_ROWS = 1800  # 某日台股筆數達此值視為已完整（上市約 1300 + 上櫃約 950，單一市場不會超過）
+COMPLETE_MIN_ROWS = int(_CFG.get("complete_min_rows", 1800))  # 某日台股筆數達此值視為已完整
 TWSE_ALL_URL = "https://www.twse.com.tw/rwd/zh/afterTrading/MI_INDEX"
 # 櫃買新版網址，會依 date 回傳該日資料；type=EW 為上櫃股票（不含權證）。
 # 注意：舊的 daily_close_quotes/stk_quote_result.php 會忽略日期、永遠回最新一天，不能用來回補。
@@ -226,9 +242,18 @@ def _col(fields, *names):
     raise KeyError(f"找不到欄位 {names}，實際欄位：{fields}")
 
 
-def _rows_from_table(fields, data, date_iso, c_code, c_open, c_high, c_low, c_close, c_vol):
-    """把一張全市場表轉成 row 清單；沒成交（價格 '--'）或不收的代號會略過。"""
+def _rows_from_table(fields, data, date_iso, c_code, c_open, c_high, c_low, c_close, c_vol,
+                     market=None, c_sign=None, c_chg=None):
+    """把一張全市場表轉成 row 清單；沒成交（價格 '--'）或不收的代號會略過。
+    有給 c_chg 時另外帶 _chg / _mark（漲跌與除權息標記，供 scripts/refprice.py 反推參考價；不寫入 prices.csv）。"""
     i_code, i_o, i_h, i_l, i_c, i_v = (_col(fields, *c) for c in (c_code, c_open, c_high, c_low, c_close, c_vol))
+    i_sign = i_chg = None
+    if c_chg:
+        try:
+            i_chg = _col(fields, *c_chg)
+            i_sign = _col(fields, *c_sign) if c_sign else None
+        except KeyError:
+            i_chg = None
     rows = []
     for d in data:
         code = str(d[i_code]).strip()
@@ -237,7 +262,15 @@ def _rows_from_table(fields, data, date_iso, c_code, c_open, c_high, c_low, c_cl
         o, h, l, c, v = num(d[i_o]), num(d[i_h]), num(d[i_l]), num(d[i_c]), num(d[i_v])
         if None in (o, h, l, c):
             continue
-        rows.append(dict(code=code, date=date_iso, open=o, high=h, low=l, close=c, volume=v))
+        row = dict(code=code, date=date_iso, open=o, high=h, low=l, close=c, volume=v)
+        if i_chg is not None and _refprice is not None:
+            try:
+                row["market"] = market
+                row["_chg"], row["_mark"] = _refprice.parse_change(
+                    market, d[i_sign] if i_sign is not None else None, d[i_chg])
+            except Exception:  # noqa: BLE001  反推參考價是附加功能，失敗不影響價格
+                pass
+        rows.append(row)
     return rows
 
 
@@ -253,7 +286,8 @@ def parse_twse_day(j, want_date):
     if date_iso != want_date.isoformat():
         return None
     return _rows_from_table(t["fields"], t["data"], date_iso, ("證券代號",), ("開盤價",), ("最高價",),
-                            ("最低價",), ("收盤價",), ("成交股數",))
+                            ("最低價",), ("收盤價",), ("成交股數",),
+                            market="TWSE", c_sign=("漲跌(+/-)",), c_chg=("漲跌價差",))
 
 
 def parse_tpex_day(j, want_date):
@@ -268,7 +302,12 @@ def parse_tpex_day(j, want_date):
     if date_iso != want_date.isoformat():
         return None
     return _rows_from_table(t["fields"], t["data"], date_iso, ("代號",), ("開盤",), ("最高",),
-                            ("最低",), ("收盤",), ("成交股數",))
+                            ("最低",), ("收盤",), ("成交股數",),
+                            market="TPEX", c_chg=("漲跌",))
+
+
+class Blocked(Exception):
+    """被交易所擋下（HTTP 403/429，或該回 JSON 卻回 HTML 頁面）。不重試，呼叫端應停止繼續請求。"""
 
 
 def _get_json(session, url, params, tries=3):
@@ -276,8 +315,14 @@ def _get_json(session, url, params, tries=3):
     for i in range(tries):
         try:
             r = session.get(url, params=params, headers=HEADERS, timeout=30)
+            if r.status_code in (403, 429):
+                raise Blocked(f"HTTP {r.status_code} {url}")
             r.raise_for_status()
+            if r.text.lstrip()[:1] == "<":
+                raise Blocked(f"回應是 HTML 而不是 JSON（疑似被擋）{url}")
             return r.json()
+        except Blocked:
+            raise
         except Exception as e:  # noqa: BLE001
             last = e
             time.sleep(SLEEP * (i + 2))
@@ -351,6 +396,22 @@ def is_session_open(cals, market, d_iso, now_utc):
         return cal.session_open(ts).to_pydatetime() <= now_utc < cal.session_close(ts).to_pydatetime()
     except Exception:  # noqa: BLE001
         return False
+
+
+def is_bar_incomplete(cals, market, d_iso, now_utc):
+    """d_iso 這根日 K 是否「還沒收盤」：盤中，或尚未開盤卻已出現（盤前報價）。
+    沒有日曆時退回保守判斷：日期 >= 今天（UTC）視為未完成。"""
+    import pandas as pd
+    cal = cals.get(market)
+    if cal is None:
+        return d_iso >= now_utc.date().isoformat()
+    try:
+        ts = pd.Timestamp(d_iso)
+        if not cal.is_session(ts):
+            return False
+        return now_utc < cal.session_close(ts).to_pydatetime()
+    except Exception:  # noqa: BLE001  日期超出日曆範圍
+        return d_iso >= now_utc.date().isoformat()
 
 
 def build_calendar(cals, now, tw_counts, us_dates, n_days=14):
@@ -436,7 +497,7 @@ def fetch_global(cals, now, period="6mo"):
                 if kind == "FX":
                     if d_iso >= now_utc.date().isoformat():
                         partial.setdefault(sym, []).append(d_iso)
-                elif is_session_open(cals, kind, d_iso, now_utc):
+                elif is_bar_incomplete(cals, kind, d_iso, now_utc):
                     partial.setdefault(sym, []).append(d_iso)
                     purge.append((sym, d_iso))
                     continue
@@ -461,6 +522,26 @@ def load_existing():
             for r in csv.DictReader(f):
                 data[(r["code"], r["date"])] = [r["open"], r["high"], r["low"], r["close"], r["volume"]]
     return data
+
+
+FALLBACK_CSV = os.path.join(DATA_DIR, "price_fallback_rows.csv")
+
+
+def update_fallback_rows(new, bulk_keys, kept):
+    """data/price_fallback_rows.csv：code,date,source。加入本次逐檔補入的列；
+    本次已由全市場來源取得、或已不在 prices.csv 的列移除。回傳目前筆數。"""
+    cur = {}
+    if os.path.exists(FALLBACK_CSV):
+        with open(FALLBACK_CSV, newline="", encoding="utf-8") as f:
+            cur = {(r["code"], r["date"]): r["source"] for r in csv.DictReader(f)}
+    cur.update(new)
+    cur = {k: v for k, v in cur.items() if k in kept and k not in bulk_keys}
+    with open(FALLBACK_CSV, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["code", "date", "source"])
+        for (c, d) in sorted(cur):
+            w.writerow([c, d, cur[(c, d)]])
+    return len(cur)
 
 
 def put(merged, r):
@@ -488,16 +569,26 @@ def main():
     bulk = {"dates_requested": len(targets), "dates_with_data": 0, "rows": 0, "errors": {}}
     print(f"全市場：需要抓 {len(targets)} 個平日", file=sys.stderr)
     session = requests.Session()
+    raw_rows = []      # 含漲跌欄的列，供反推參考價
+    bulk_keys = set()  # 本次由全市場來源取得的 (code, date)
+    fallback_new = {}  # 本次由逐檔備援補入的 (code, date) -> 來源
+    by_date = {}       # 最近 5 個平日各市場的結果：ok:筆數 / no_data / error:訊息（scripts/market_status.py 判斷狀態用）
     for i, d in enumerate(targets, 1):
         res = fetch_bulk_day(session, d)
         got = 0
         for market, (rows, err) in res.items():
+            if d in recent5:
+                by_date.setdefault(d.isoformat(), {})[market] = (
+                    f"error:{err}" if err else (f"ok:{len(rows)}" if rows else "no_data"))
             if err:
                 bulk["errors"].setdefault(d.isoformat(), []).append(f"{market}: {err}")
                 if d in recent5:
                     market_err[market] = True
             for r in rows or []:
                 put(merged, r)
+                bulk_keys.add((r["code"], r["date"]))
+                if "_chg" in r:
+                    raw_rows.append(r)
                 got += 1
         if got:
             bulk["dates_with_data"] += 1
@@ -507,7 +598,15 @@ def main():
         print(f"[{i}/{len(targets)}] {d} {got} 筆{flag}", file=sys.stderr)
     # 錯誤紀錄只留最近 10 天，避免 meta 過長
     bulk["errors"] = dict(sorted(bulk["errors"].items())[-10:])
+    bulk["by_date"] = dict(sorted(by_date.items()))
     meta["bulk"] = bulk
+    if raw_rows and _refprice is not None:
+        try:
+            n_ev = _refprice.update(merged, raw_rows, complete_min_rows=COMPLETE_MIN_ROWS)
+            meta["ref_events"] = {"status": "ok", "rows_checked": len(raw_rows), "events": n_ev}
+        except Exception as e:  # noqa: BLE001  不影響 prices.csv
+            meta["ref_events"] = {"status": f"error: {type(e).__name__}: {e}"}
+            print(f"參考價紀錄失敗（不影響價格）：{e}", file=sys.stderr)
 
     # ---- 2. 備援：關注名單個股若全市場缺資料，改走逐檔來源（官方月資料 → FinMind）----
     latest_by_code = {}
@@ -521,9 +620,15 @@ def main():
             meta["sources"][code] = src
             if errs:
                 meta["errors"][code] = errs
-            print(f"{code} {name}: 備援 {len(rows)} 筆, 來源={src}", file=sys.stderr)
+            # 只補全市場資料沒有的日子，不覆蓋：逐檔來源的成交量口徑與全市場不同（上櫃約差 5~15%），
+            # 補進來的列記在 data/price_fallback_rows.csv，之後全市場資料出現時會被取代並移除紀錄
+            added = 0
             for r in rows:
-                put(merged, r)
+                if (r["code"], r["date"]) not in merged:
+                    put(merged, r)
+                    fallback_new[(r["code"], r["date"])] = src
+                    added += 1
+            print(f"{code} {name}: 備援 {len(rows)} 筆（補入 {added} 筆）, 來源={src}", file=sys.stderr)
             ok_any = ok_any or bool(rows)
             time.sleep(SLEEP)
         else:
@@ -551,6 +656,10 @@ def main():
         w.writerow(FIELDS)
         for (c, d) in keys:
             w.writerow([c, d, *merged[(c, d)]])
+    try:  # 成交量口徑標記：哪些列來自逐檔備援（非全市場來源）。附加功能，失敗不影響價格
+        meta["fallback_rows"] = update_fallback_rows(fallback_new, bulk_keys, set(keys))
+    except Exception as e:  # noqa: BLE001
+        meta["fallback_rows"] = f"error: {type(e).__name__}: {e}"
 
     # 每檔最新日期（只列關注名單與海外代號），方便快速確認資料是否到位
     latest = {}

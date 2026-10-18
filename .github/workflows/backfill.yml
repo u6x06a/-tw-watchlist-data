@@ -1,17 +1,36 @@
 name: backfill-history
 
-# 一次性手動執行：把關注名單（逐檔官方月資料）與海外代號（yfinance 2y）補到約 14 個月，供 52 週高低點使用。
-# 沒有排程，不影響 update.yml。約 250 個請求、每次間隔 3 秒，預估 15 分鐘內完成。
+# 手動執行：補歷史資料（階段 1-4）。沒有排程，不影響 update.yml。依序分次執行並逐次驗證：
+#   plan             只列出計畫與請求數（不抓、不提交）
+#   prices-with-ref  全市場價格補到 config backfill.target_trading_days 個交易日，並重抓既有日期
+#                    （統一成交量來源、記錄參考價）。約 560 個請求、40 分鐘
+#   prices           只補缺價格的交易日
+#   chips            法人、外資持股、融資融券、借券補最近 chips_days 個交易日（每日 10 個請求）
+#   revenue          月營收補到 13 個月（約 50 個請求）
+#   watchlist-legacy 舊行為：只用逐檔來源補關注名單與海外代號（fetch_prices.py --backfill）
+# 任何一步遇到 HTTP 403/429 或被擋，腳本會立刻存檔並以代碼 2 結束（不重試）；已抓到的部分仍會提交。
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        default: plan
+        options: [plan, prices-with-ref, prices, chips, revenue, watchlist-legacy]
+      chips_days:
+        description: "chips 模式：補最近幾個交易日"
+        default: "300"
 
 permissions:
   contents: write
 
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 300
     steps:
       - uses: actions/checkout@v4
 
@@ -20,22 +39,49 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install requests yfinance exchange_calendars
+        run: pip install requests yfinance exchange_calendars pyyaml pandas
 
-      - name: Backfill watchlist history
+      - name: Plan
+        run: python scripts/backfill.py plan
+
+      - name: Backfill prices
+        if: inputs.mode == 'prices' || inputs.mode == 'prices-with-ref'
+        run: python scripts/backfill.py prices ${{ inputs.mode == 'prices-with-ref' && '--with-ref' || '' }}
+
+      - name: Backfill watchlist (legacy)
+        if: inputs.mode == 'watchlist-legacy'
         run: python fetch_prices.py --backfill
 
-      - name: Build adjusted prices
-        run: python scripts/adjust.py --check
+      - name: Backfill institutional
+        if: inputs.mode == 'chips'
+        run: python scripts/fetch_institutional.py --days ${{ inputs.chips_days }}
+
+      - name: Backfill chips
+        if: inputs.mode == 'chips'
+        run: python scripts/fetch_chips.py --days ${{ inputs.chips_days }}
+
+      - name: Backfill revenue
+        if: inputs.mode == 'revenue'
+        run: python scripts/fetch_revenue.py --history
+
+      - name: Rebuild derived data
+        if: always() && (inputs.mode == 'prices' || inputs.mode == 'prices-with-ref' || inputs.mode == 'watchlist-legacy')
+        continue-on-error: true
+        run: |
+          python scripts/fetch_companies.py --force
+          python scripts/adjust.py --report
+          python scripts/indicators.py
+          python scripts/market_status.py
 
       - name: Commit data
+        if: always() && inputs.mode != 'plan'
         run: |
           git config user.name "watchlist-bot"
           git config user.email "watchlist-bot@users.noreply.github.com"
-          git add data/
+          git add data/ reports/
           if git diff --cached --quiet; then
             echo "no changes"
           else
-            git commit -m "backfill history $(TZ=Asia/Taipei date +%F)"
-            git push
+            git commit -m "backfill ${{ inputs.mode }} $(TZ=Asia/Taipei date +%F)"
+            git push || (git pull --rebase && git push)
           fi

@@ -1,0 +1,101 @@
+﻿# 所有規則參數集中在這裡。程式只讀這個檔，不寫死數字。
+# 修改後下一次 workflow 執行即生效。缺少某個鍵時，程式會報錯而不是默默用預設值
+# （fetch_prices.py 例外：config 讀不到時退回舊版內建值，確保每日抓價不中斷）。
+
+# ============================================================
+# 階段 1：資料
+# ============================================================
+data:
+  # prices.csv 保留的日曆天數。430 天 ≈ 280 個台股交易日（52 週高點、MA240 需要 ≥ 260 日）
+  keep_calendar_days_all: 430
+  keep_calendar_days_tracked: 430   # WATCHLIST / GLOBAL
+  # 每日抓價：檢查最近幾個日曆天內「筆數不足」的平日並補抓
+  recheck_calendar_days: 170
+  # 某日台股筆數達此值視為完整（上市約 1,330 + 上櫃約 1,000）
+  complete_min_rows: 1800
+  # 官方站台請求間隔（秒）；證交所約每 5 秒 3 次以上會被暫時封鎖
+  request_sleep_sec: 3.0
+
+calendar:
+  # 台股資料「應已公布」的時間（台北）。早於此時間，預期最新交易日 = 前一個交易日
+  tw_publish_after: "14:30"
+  # 超過此時間仍沒有當日資料 → 視為抓取失敗（而不是尚未公布）
+  tw_fail_after: "17:30"
+  # 美股收盤後幾小時內資料還沒出現 → 尚未公布；超過 → 抓取失敗
+  us_grace_hours: 3
+  # 證交所休市日曆快取幾天後重抓
+  holiday_cache_days: 7
+  # 不在證交所休市表、XTAI 也認為是交易日，但交易所資料確認「沒有交易」的臨時休市日（颱風等）
+  tw_extra_closed:
+    - "2026-07-10"   # 巴威颱風，臺北市政府宣布停止上班，證交所宣布集中市場全日休市（櫃買、期貨同步休市）。
+                     # 來源：ETtoday 財經 https://finance.ettoday.net/news/3198381 ；資料面：MI_INDEX 無資料、STOCK_DAY 跳過此日
+
+adjust:
+  # 單日漲跌超過「該檔漲跌幅限制 + tolerance」才列入跳動檢查（百分點）
+  jump_tolerance_pct: 0.05
+  # 查不到該檔漲跌幅限制時的預設值（%）。實際值優先取 companies.csv 的 limit_pct
+  # （證交所 TWT84U / 櫃買次日漲跌停價反推；已實測 00685L 為 ±20%、00735 無限制）
+  default_limit_pct:
+    stock: 10
+    etf: 10
+  # 參考價與前一日收盤差異小於此值視為無事件（元）
+  ref_diff_tolerance: 0.005
+  # 除權息還原用哪個參考價：
+  #   dividend_only = 減除股利參考價（只扣股票股利與現金股利；交易所漲跌停基準即此值）
+  #   full          = 除權息參考價（另含現金增資認購權）。兩者只在有現金增資認購時不同
+  exright_ref: dividend_only
+  # 參考價與前收的變動超過此比例（且除權息表沒有）→ 推定為分割/面額變更（< 前收）或減資（> 前收），成交量反向調整
+  split_like_min_change: 0.2
+  # 新上市首 N 個交易日無漲跌幅限制
+  ipo_no_limit_days: 5
+  # 交易所除權息表、MI_INDEX 漲跌反推都沒有涵蓋的事件，手動登錄（需附來源）
+  # ratio：1 拆 ratio；生效日（含）起為新價
+  manual_events:
+    - code: "00685L"
+      date: "2026-07-07"
+      type: split
+      ratio: 24
+      source: "TWSE STOCK_DAY 2026-07-07：前收 306.00，參考價 12.75（收盤 12.23、漲跌 -0.52）"
+  # 經人工確認為壞資料、要從還原資料中剔除的 K 棒：[{code, date, reason}]
+  bad_rows: []
+  # prices_adj.csv 的範圍：tracked = 只有 WATCHLIST + GLOBAL（舊行為、小檔，相容既有讀取）；all = 全市場（不提交進 repo）
+  # 全市場還原價一律由 scripts/adjlib.py 以 prices.csv + adj_factors.csv 即時計算
+  output_scope: tracked
+  # 還原後仍超過漲跌幅限制、還原基準有疑義的事件（adj_factors.csv adj_uncertain=Y，例如現金增資除權）：
+  # 選股與回測預設略過受影響的 K 棒
+  skip_adj_uncertain: true
+
+companies:
+  refresh_days: 7          # companies.csv 超過幾天才重抓（每週更新）
+
+revenue:
+  months: 13               # 保留最近幾個月
+  # 每月 1 日到此日每天抓最新營收（公司陸續公布，法定期限為每月 10 日）
+  daily_until_day: 15
+
+institutional:
+  # data/institutional.csv 只放最近 recent_trading_days 個交易日（避免單檔過大、每日整檔重寫）；
+  # 完整歷史依月份存在 data/history/institutional/YYYY-MM.csv。archive_history=false → 改回單一檔案
+  recent_trading_days: 60
+  archive_history: true
+  keep_trading_days_stock: 300     # 個股法人資料保留交易日數（與價格同長度）
+  keep_trading_days_market: 300    # 全市場合計保留交易日數（算連續買賣超天數用）
+  refetch_recent_days: 3           # 每次重抓最近幾個交易日（T86 約 16:00 後才公布）
+
+chips:
+  recent_trading_days: 60          # data/foreign_holding.csv、margin.csv 只放最近幾個交易日
+  archive_history: true            # 完整歷史依月份存在 data/history/<名稱>/YYYY-MM.csv
+  keep_trading_days: 300           # 外資持股、融資融券、借券賣出保留交易日數（與價格同長度）
+  refetch_recent_days: 3           # 每次重抓最近幾個交易日
+  tdcc_keep_weeks: 60              # 集保股權分散保留週數（只能每週累積，無法全市場回補）
+
+  # 依賴集保資料的規則：集保只能從開始執行起每週累積，未滿 min_weeks 週前一律停用
+  # （階段 3 的 C1「籌碼轉強」與「大戶增持」狀態；回測報告須註明停用原因）
+  tdcc_rules:
+    min_weeks: 8
+    c1_enabled: false
+    big_holder_increase_enabled: false
+
+backfill:
+  # 1-4 補歷史資料目標：最近這麼多個台股交易日（實際上限為 data.keep_calendar_days_all 範圍內）
+  target_trading_days: 300

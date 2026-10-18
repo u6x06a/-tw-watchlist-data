@@ -84,9 +84,10 @@ def main():
     max_stop = float(pos.get("max_stop_pct", 10))
 
     bars = {}
+    tracked = set(WATCHLIST) | set(GLOBAL)   # prices_adj.csv 已含全市場；本檔只處理關注名單與海外代號
     with open(PRICES_ADJ, newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            if r["date"] in partial.get(r["code"], []):
+            if r["code"] not in tracked or r["date"] in partial.get(r["code"], []):
                 continue
             try:
                 bars.setdefault(r["code"], []).append(
