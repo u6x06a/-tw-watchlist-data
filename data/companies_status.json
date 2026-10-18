@@ -1,0 +1,24 @@
+{
+ "generated_at": "2026-10-18T23:37:41+08:00",
+ "rows": 2369,
+ "by_type": {
+  "stock": 1983,
+  "etf": 216,
+  "etf_leveraged": 21,
+  "etf_inverse": 20,
+  "etf_bond": 102,
+  "preferred": 27
+ },
+ "sources": {
+  "t187ap03_L": "ok",
+  "t187ap03_O": "ok",
+  "t187ap05_L": "ok",
+  "t187ap05_O": "ok",
+  "TWT84U": "ok（2026-10-18 當日）",
+  "tpex_otc": "ok（2026-10-16）",
+  "TWT85U": "ok（10 檔）",
+  "tpex_cmode": "ok（變更交易 16 檔）"
+ },
+ "industry_name_conflicts": {},
+ "industry_unmapped": []
+}
