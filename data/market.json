@@ -57,20 +57,20 @@
   "low_undercut_after": false
  },
  "institutional_twse": {
-  "data_date": "2026-10-16",
+  "data_date": "2026-10-19",
   "unit": "TWD",
-  "foreign_net": -46147162837.0,
-  "trust_net": 11047506970.0,
-  "foreign_streak": -8,
-  "trust_streak": 6,
-  "days_available": 284
+  "foreign_net": -76742735769.0,
+  "trust_net": 24141627951.0,
+  "foreign_streak": -9,
+  "trust_streak": 7,
+  "days_available": 285
  },
  "margin_total": {
-  "data_date": "2026-10-16",
+  "data_date": "2026-10-19",
   "unit": "千元（上市 + 上櫃融資金額）",
-  "value_k": 863844167.0,
-  "chg_20d_pct": 10.79,
-  "days_available": 284
+  "value_k": 855838557.0,
+  "chg_20d_pct": 8.9,
+  "days_available": 285
  },
  "status": "過濾中",
  "status_reasons": [
@@ -81,7 +81,7 @@
   "expected_latest": "2026-10-19",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-19T15:38:05+08:00",
+ "generated_at": "2026-10-19T22:40:30+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,

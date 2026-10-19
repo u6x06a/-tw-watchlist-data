@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T15:38:17+08:00",
+ "generated_at": "2026-10-19T22:40:40+08:00",
  "data_date": "2026-10-19",
  "expected_latest": "2026-10-19",
  "data_stale": false,
@@ -8,7 +8,7 @@
  "quarter_end_window": false,
  "chips_data_available": {
   "institutional": true,
-  "margin": false
+  "margin": true
  },
  "counts": {
   "R1": 6,
@@ -117,7 +117,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 57.1,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -145,7 +145,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 458.0,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -173,7 +173,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 466.0,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -257,7 +257,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 24.2,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -304,7 +304,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -317,7 +317,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -333,11 +333,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 436.0,
     "batch2_lower_1atr": 411.0567,
     "batch2_reclaim_ma5": 458.3,
     "batch3_reclaim_ma20": 501.675
@@ -351,8 +351,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -364,7 +366,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -380,11 +382,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 4205.0,
     "batch2_lower_1atr": 4007.6879,
     "batch2_reclaim_ma5": 4324.0,
     "batch3_reclaim_ma20": 4774.25
@@ -398,8 +400,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -411,7 +415,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -427,11 +431,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 264.0,
     "batch2_lower_1atr": 251.8446,
     "batch2_reclaim_ma5": 271.1,
     "batch3_reclaim_ma20": 283.4
@@ -445,7 +449,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -474,7 +478,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -492,7 +496,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -539,7 +543,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -586,8 +590,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -599,7 +605,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -615,11 +621,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 534.0,
     "batch2_lower_1atr": 496.2402,
     "batch2_reclaim_ma5": 580.0,
     "batch3_reclaim_ma20": 587.65
@@ -633,7 +639,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -646,7 +652,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -662,11 +668,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 670.0,
     "batch2_lower_1atr": 638.8616,
     "batch2_reclaim_ma5": 700.2,
     "batch3_reclaim_ma20": 701.9
@@ -680,8 +686,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -727,8 +735,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -740,7 +750,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -756,11 +766,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 5125.0,
     "batch2_lower_1atr": 4818.472,
     "batch2_reclaim_ma5": 5295.0,
     "batch3_reclaim_ma20": 5284.75
@@ -774,8 +784,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -787,7 +799,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -803,11 +815,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 2420.0,
     "batch2_lower_1atr": 2380.365,
     "batch2_reclaim_ma5": 2452.0,
     "batch3_reclaim_ma20": 2493.0
@@ -821,8 +833,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -868,8 +882,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -881,7 +897,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -897,11 +913,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 239.5,
     "batch2_lower_1atr": 233.8811,
     "batch2_reclaim_ma5": 241.2,
     "batch3_reclaim_ma20": 248.95
@@ -915,7 +931,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -944,7 +960,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -962,7 +978,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -991,7 +1007,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -1009,7 +1025,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1056,7 +1072,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1069,7 +1085,7 @@
    "rule": "L1",
    "data_date": "2026-10-19",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -1085,11 +1101,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 1640.0,
     "batch2_lower_1atr": 1553.2572,
     "batch2_reclaim_ma5": 1693.0,
     "batch3_reclaim_ma20": 1844.75
@@ -1103,8 +1119,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
