@@ -548,7 +548,8 @@ def main():
            "notes": ["外資買賣超可能包含 ETF 被動調整與避險部位，單日數字的意義有限，宜看多日累計與連續天數",
                      "籌碼各區塊有各自的 data_date（融資融券與外資持股常晚一個交易日公布）",
                      "集保股權分散只能從開始執行起每週累積；大戶相關規則在累積滿 config 週數前停用"],
-           "params": {k: cfg[k] for k in ("indicators", "chips_indicators")},
+           "params": {**(legacy.get("params") or {}),   # 舊欄位（atr_period、atr_mult、max_stop_pct、bench）：儀表板同步任務會讀
+                      **{k: cfg[k] for k in ("indicators", "chips_indicators")}},
            "counts": {"stocks": len(stocks), "ok": sum(v["status"] == "ok" for v in stocks.values())},
            "stocks": strip_private(stocks), "industries": ind,
            "price_basis_legacy": legacy.get("price_basis"), "as_of_by_market": legacy.get("as_of_by_market"),
