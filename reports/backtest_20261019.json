@@ -1,0 +1,482 @@
+{
+ "period": [
+  "2025-11-13",
+  "2026-10-16"
+ ],
+ "trading_days": 224,
+ "split_date": "2026-06-29",
+ "sample_min": 20,
+ "base": {
+  "overall": {
+   "trades": 291,
+   "win_rate_pct": 41.9,
+   "avg_r": 0.346,
+   "total_pnl": 131495.0,
+   "note": "",
+   "total_return_pct": 76.27,
+   "max_drawdown_pct": -19.2,
+   "bench_return_pct": 77.09,
+   "bench_max_drawdown_pct": -15.37
+  },
+  "by_rule": {
+   "R1": {
+    "trades": 291,
+    "win_rate_pct": 41.9,
+    "avg_r": 0.346,
+    "avg_hold_days": 17.0,
+    "max_loss": -5349.0,
+    "total_pnl": 131495.0,
+    "sample_note": ""
+   }
+  },
+  "accounts": {
+   "stock": {
+    "equity": 426530.0,
+    "cash": 42362.0,
+    "max_drawdown_pct": -18.88
+   },
+   "etf": {
+    "equity": 190415.0,
+    "cash": 136.0,
+    "max_drawdown_pct": -21.49
+   }
+  },
+  "not_executed_counts": {
+   "L1：needs_news_check（預設不執行）": 2218,
+   "R1：部位上限 / 現金不足": 922,
+   "R1：金額低於 min_order_value": 1057,
+   "R1：已持有或已掛單": 202,
+   "L2：config paper.execute.L2=false": 8182,
+   "E1：金額低於 min_order_value": 32,
+   "E1：部位上限 / 現金不足": 6
+  }
+ },
+ "r1_chips": {
+  "chips_confirm=true": {
+   "trades": 276,
+   "win_rate_pct": 42.4,
+   "avg_r": 0.35,
+   "total_pnl": 130951.0,
+   "note": ""
+  },
+  "chips_confirm=false": {
+   "trades": 15,
+   "win_rate_pct": 33.3,
+   "avg_r": 0.273,
+   "total_pnl": 544.0,
+   "note": "樣本不足，僅供參考"
+  },
+  "chips_confirm=null（無籌碼資料）": {
+   "trades": 0,
+   "note": "沒有交易"
+  },
+  "chips_warning=true": {
+   "trades": 18,
+   "win_rate_pct": 44.4,
+   "avg_r": 0.423,
+   "total_pnl": 5461.0,
+   "note": "樣本不足，僅供參考"
+  },
+  "chips_warning=false": {
+   "trades": 273,
+   "win_rate_pct": 41.8,
+   "avg_r": 0.34,
+   "total_pnl": 126034.0,
+   "note": ""
+  }
+ },
+ "chips_toggle_l1": {
+  "L1 執行、止穩條件 c 使用籌碼": {
+   "trades": 13,
+   "win_rate_pct": 38.5,
+   "avg_r": -0.324,
+   "avg_hold_days": 29.5,
+   "max_loss": -1626.0,
+   "total_pnl": 13360.0,
+   "sample_note": "樣本不足，僅供參考"
+  },
+  "L1 執行、止穩條件 c 關閉（a、b 都要）": {
+   "trades": 6,
+   "win_rate_pct": 16.7,
+   "avg_r": -0.759,
+   "avg_hold_days": 4.7,
+   "max_loss": -2026.0,
+   "total_pnl": -4440.0,
+   "sample_note": "樣本不足，僅供參考"
+  },
+  "note": "L1 需讀新聞確認，模擬帳戶預設不執行；此比較假設全部執行（未經新聞判斷）"
+ },
+ "panic_study": {
+  "summary": {
+   "events": 10,
+   "0050_1d_mean": 0.29,
+   "0050_1d_median": -0.06,
+   "0050_1d_positive_pct": 50.0,
+   "00685L_1d_mean": 0.9,
+   "00685L_1d_median": 0.41,
+   "00685L_1d_positive_pct": 60.0,
+   "0050_3d_mean": 3.66,
+   "0050_3d_median": 4.33,
+   "0050_3d_positive_pct": 77.8,
+   "00685L_3d_mean": 6.4,
+   "00685L_3d_median": 8.52,
+   "00685L_3d_positive_pct": 75.0,
+   "0050_5d_mean": 4.66,
+   "0050_5d_median": 4.18,
+   "0050_5d_positive_pct": 100.0,
+   "00685L_5d_mean": 9.67,
+   "00685L_5d_median": 8.79,
+   "00685L_5d_positive_pct": 100.0,
+   "0050_10d_mean": 5.63,
+   "0050_10d_median": 4.85,
+   "0050_10d_positive_pct": 100.0,
+   "00685L_10d_mean": 11.46,
+   "00685L_10d_median": 11.02,
+   "00685L_10d_positive_pct": 100.0,
+   "reclaimed_high_pct": 90.0,
+   "days_to_reclaim_median": 2.0,
+   "broke_low_within_10d_pct": 40.0,
+   "note": "樣本不足，僅供參考"
+  },
+  "events": [
+   {
+    "date": "2025-11-21",
+    "change_pct": -3.31,
+    "0050_1d": -0.5,
+    "00685L_1d": 0.32,
+    "0050_3d": 2.51,
+    "00685L_3d": 5.95,
+    "0050_5d": 4.18,
+    "00685L_5d": 9.7,
+    "0050_10d": 4.85,
+    "00685L_10d": 11.02,
+    "days_to_reclaim_high": 2,
+    "broke_low_within_10d": false
+   },
+   {
+    "date": "2026-03-04",
+    "change_pct": -4.0,
+    "0050_1d": 2.38,
+    "00685L_1d": 4.85,
+    "0050_3d": -2.65,
+    "00685L_3d": -5.66,
+    "0050_5d": 3.44,
+    "00685L_5d": 6.64,
+    "0050_10d": 2.91,
+    "00685L_10d": 8.64,
+    "days_to_reclaim_high": 5,
+    "broke_low_within_10d": true
+   },
+   {
+    "date": "2026-03-09",
+    "change_pct": -4.23,
+    "0050_1d": 2.17,
+    "00685L_1d": 4.63,
+    "0050_3d": 4.08,
+    "00685L_3d": 9.32,
+    "0050_5d": 2.72,
+    "00685L_5d": 7.88,
+    "0050_10d": 0.88,
+    "00685L_10d": 2.77,
+    "days_to_reclaim_high": 1,
+    "broke_low_within_10d": false
+   },
+   {
+    "date": "2026-06-08",
+    "change_pct": -3.07,
+    "0050_1d": 2.53,
+    "00685L_1d": 5.79,
+    "0050_3d": -1.09,
+    "00685L_3d": -0.97,
+    "0050_5d": 4.26,
+    "00685L_5d": 10.9,
+    "0050_10d": 9.06,
+    "00685L_10d": 19.37,
+    "days_to_reclaim_high": 1,
+    "broke_low_within_10d": false
+   },
+   {
+    "date": "2026-06-10",
+    "change_pct": -3.14,
+    "0050_1d": -0.4,
+    "00685L_1d": -0.92,
+    "0050_3d": 4.99,
+    "00685L_3d": 10.97,
+    "0050_5d": 5.74,
+    "00685L_5d": 12.11,
+    "0050_10d": 6.93,
+    "00685L_10d": 14.38,
+    "days_to_reclaim_high": 3,
+    "broke_low_within_10d": true
+   },
+   {
+    "date": "2026-06-26",
+    "change_pct": -3.82,
+    "0050_1d": 1.31,
+    "00685L_1d": 2.85,
+    "0050_3d": 6.06,
+    "00685L_3d": null,
+    "0050_5d": 5.09,
+    "00685L_5d": null,
+    "0050_10d": 2.81,
+    "00685L_10d": 3.41,
+    "days_to_reclaim_high": 2,
+    "broke_low_within_10d": false
+   },
+   {
+    "date": "2026-07-17",
+    "change_pct": -5.87,
+    "0050_1d": -0.95,
+    "00685L_1d": -1.23,
+    "0050_3d": 4.33,
+    "00685L_3d": 7.97,
+    "0050_5d": 2.17,
+    "00685L_5d": 3.89,
+    "0050_10d": 3.32,
+    "00685L_10d": 2.75,
+    "days_to_reclaim_high": 2,
+    "broke_low_within_10d": true
+   },
+   {
+    "date": "2026-07-28",
+    "change_pct": -4.24,
+    "0050_1d": -3.55,
+    "00685L_1d": -7.15,
+    "0050_3d": 5.87,
+    "00685L_3d": 9.06,
+    "0050_5d": 3.6,
+    "00685L_5d": 5.64,
+    "0050_10d": 7.67,
+    "00685L_10d": 15.01,
+    "days_to_reclaim_high": 3,
+    "broke_low_within_10d": true
+   },
+   {
+    "date": "2026-07-29",
+    "change_pct": -3.55,
+    "0050_1d": -0.21,
+    "00685L_1d": -0.65,
+    "0050_3d": 8.86,
+    "00685L_3d": 14.53,
+    "0050_5d": 10.78,
+    "00685L_5d": 20.61,
+    "0050_10d": 12.27,
+    "00685L_10d": 25.81,
+    "days_to_reclaim_high": 2,
+    "broke_low_within_10d": false
+   },
+   {
+    "date": "2026-10-15",
+    "change_pct": -3.63,
+    "0050_1d": 0.09,
+    "00685L_1d": 0.49,
+    "0050_3d": null,
+    "00685L_3d": null,
+    "0050_5d": null,
+    "00685L_5d": null,
+    "0050_10d": null,
+    "00685L_10d": null,
+    "days_to_reclaim_high": null,
+    "broke_low_within_10d": false
+   }
+  ]
+ },
+ "sensitivity": {
+  "r1_vol_mult": {
+   "rule": "R1",
+   "default": 1.5,
+   "best_in_sample_by_avg_r": 2.0,
+   "rows": [
+    {
+     "value": 1.3,
+     "in_sample": {
+      "trades": 201,
+      "win_rate_pct": 44.8,
+      "avg_r": 0.529,
+      "avg_hold_days": 17.5,
+      "max_loss": -4567.0,
+      "total_pnl": 134083.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 55,
+      "win_rate_pct": 25.5,
+      "avg_r": -0.326,
+      "avg_hold_days": 11.1,
+      "max_loss": -2473.0,
+      "total_pnl": -18429.0,
+      "sample_note": ""
+     }
+    },
+    {
+     "value": 1.5,
+     "in_sample": {
+      "trades": 209,
+      "win_rate_pct": 45.9,
+      "avg_r": 0.596,
+      "avg_hold_days": 17.3,
+      "max_loss": -4798.0,
+      "total_pnl": 157834.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 57,
+      "win_rate_pct": 17.5,
+      "avg_r": -0.577,
+      "avg_hold_days": 11.3,
+      "max_loss": -3017.0,
+      "total_pnl": -33622.0,
+      "sample_note": ""
+     }
+    },
+    {
+     "value": 2.0,
+     "in_sample": {
+      "trades": 194,
+      "win_rate_pct": 47.4,
+      "avg_r": 0.643,
+      "avg_hold_days": 18.4,
+      "max_loss": -4749.0,
+      "total_pnl": 154126.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 59,
+      "win_rate_pct": 20.3,
+      "avg_r": -0.567,
+      "avg_hold_days": 10.3,
+      "max_loss": -3144.0,
+      "total_pnl": -36880.0,
+      "sample_note": ""
+     }
+    }
+   ]
+  },
+  "r1_stop_atr_mult": {
+   "rule": "R1",
+   "default": 2,
+   "best_in_sample_by_avg_r": 2.0,
+   "rows": [
+    {
+     "value": 1.5,
+     "in_sample": {
+      "trades": 235,
+      "win_rate_pct": 43.8,
+      "avg_r": 0.502,
+      "avg_hold_days": 14.1,
+      "max_loss": -5526.0,
+      "total_pnl": 145790.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 79,
+      "win_rate_pct": 24.1,
+      "avg_r": -0.389,
+      "avg_hold_days": 10.2,
+      "max_loss": -3089.0,
+      "total_pnl": -35715.0,
+      "sample_note": ""
+     }
+    },
+    {
+     "value": 2.0,
+     "in_sample": {
+      "trades": 209,
+      "win_rate_pct": 45.9,
+      "avg_r": 0.596,
+      "avg_hold_days": 17.3,
+      "max_loss": -4798.0,
+      "total_pnl": 157834.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 57,
+      "win_rate_pct": 17.5,
+      "avg_r": -0.577,
+      "avg_hold_days": 11.3,
+      "max_loss": -3017.0,
+      "total_pnl": -33622.0,
+      "sample_note": ""
+     }
+    },
+    {
+     "value": 3.0,
+     "in_sample": {
+      "trades": 193,
+      "win_rate_pct": 44.0,
+      "avg_r": 0.511,
+      "avg_hold_days": 18.5,
+      "max_loss": -4550.0,
+      "total_pnl": 134058.0,
+      "sample_note": ""
+     },
+     "out_of_sample": {
+      "trades": 49,
+      "win_rate_pct": 20.4,
+      "avg_r": -0.55,
+      "avg_hold_days": 11.8,
+      "max_loss": -3238.0,
+      "total_pnl": -27027.0,
+      "sample_note": ""
+     }
+    }
+   ]
+  },
+  "l1_deep_atr_mult": {
+   "rule": "L1",
+   "default": 3,
+   "best_in_sample_by_avg_r": 2.5,
+   "rows": [
+    {
+     "value": 2.5,
+     "in_sample": {
+      "trades": 9,
+      "win_rate_pct": 55.6,
+      "avg_r": 0.253,
+      "avg_hold_days": 37.4,
+      "max_loss": -1743.0,
+      "total_pnl": 3400.0,
+      "sample_note": "樣本不足，僅供參考"
+     },
+     "out_of_sample": {
+      "trades": 0
+     }
+    },
+    {
+     "value": 3.0,
+     "in_sample": {
+      "trades": 10,
+      "win_rate_pct": 30.0,
+      "avg_r": 0.166,
+      "avg_hold_days": 31.6,
+      "max_loss": -1626.0,
+      "total_pnl": 6744.0,
+      "sample_note": "樣本不足，僅供參考"
+     },
+     "out_of_sample": {
+      "trades": 0
+     }
+    },
+    {
+     "value": 3.5,
+     "in_sample": {
+      "trades": 8,
+      "win_rate_pct": 25.0,
+      "avg_r": 0.148,
+      "avg_hold_days": 16.4,
+      "max_loss": -1841.0,
+      "total_pnl": 4460.0,
+      "sample_note": "樣本不足，僅供參考"
+     },
+     "out_of_sample": {
+      "trades": 0
+     }
+    }
+   ]
+  }
+ },
+ "disabled_rules": {
+  "C1": "停用：集保股權分散只能從開始執行起每週累積，未滿 config chips.tdcc_rules.min_weeks 週",
+  "big_holder_increase": "同上"
+ }
+}

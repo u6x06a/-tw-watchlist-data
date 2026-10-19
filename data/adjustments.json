@@ -1,260 +1,388 @@
 {
-  "events_status": "fetched",
-  "events": [
-    {
-      "code": "0050",
-      "date": "2026-01-22",
-      "prev_close": 71.85,
-      "ref": 70.85,
-      "factor": 0.9860821155184412,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "0050",
-      "date": "2026-07-21",
-      "prev_close": 99.2,
-      "ref": 98.6,
-      "factor": 0.9939516129032258,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "00735",
-      "date": "2026-01-20",
-      "prev_close": 60.3,
-      "ref": 59.3,
-      "factor": 0.9834162520729685,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "00735",
-      "date": "2026-07-16",
-      "prev_close": 106.9,
-      "ref": 103.9,
-      "factor": 0.9719363891487371,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2308",
-      "date": "2026-06-17",
-      "prev_close": 2230.0,
-      "ref": 2218.4,
-      "factor": 0.994798206278027,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2327",
-      "date": "2026-06-12",
-      "prev_close": 842.0,
-      "ref": 836.0,
-      "factor": 0.9928741092636579,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2330",
-      "date": "2025-09-16",
-      "prev_close": 1255.0,
-      "ref": 1249.99,
-      "factor": 0.99600796812749,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2330",
-      "date": "2025-12-11",
-      "prev_close": 1505.0,
-      "ref": 1499.99,
-      "factor": 0.996671096345515,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2330",
-      "date": "2026-03-17",
-      "prev_close": 1845.0,
-      "ref": 1838.99,
-      "factor": 0.9967425474254743,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2330",
-      "date": "2026-06-11",
-      "prev_close": 2255.0,
-      "ref": 2248.99,
-      "factor": 0.9973348115299334,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2330",
-      "date": "2026-09-16",
-      "prev_close": 2385.0,
-      "ref": 2377.99,
-      "factor": 0.9970607966457022,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2357",
-      "date": "2026-07-01",
-      "prev_close": 700.0,
-      "ref": 658.0,
-      "factor": 0.94,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2368",
-      "date": "2026-06-23",
-      "prev_close": 1395.0,
-      "ref": 1385.19,
-      "factor": 0.9929677419354839,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2408",
-      "date": "2026-07-07",
-      "prev_close": 420.5,
-      "ref": 419.15,
-      "factor": 0.9967895362663496,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2454",
-      "date": "2026-01-06",
-      "prev_close": 1525.0,
-      "ref": 1496.0,
-      "factor": 0.980983606557377,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "2454",
-      "date": "2026-07-07",
-      "prev_close": 4125.0,
-      "ref": 4100.49,
-      "factor": 0.9940581818181817,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3017",
-      "date": "2025-08-19",
-      "prev_close": 1145.0,
-      "ref": 1135.06,
-      "factor": 0.9913187772925763,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3017",
-      "date": "2026-08-19",
-      "prev_close": 3035.0,
-      "ref": 3014.11,
-      "factor": 0.9931169686985173,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3042",
-      "date": "2026-06-16",
-      "prev_close": 243.5,
-      "ref": 238.7,
-      "factor": 0.9802874743326488,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3081",
-      "date": "2026-07-15",
-      "prev_close": 1925.0,
-      "ref": 1747.27,
-      "factor": 0.9076727272727273,
-      "kind": "除權息",
-      "market": "TPEX"
-    },
-    {
-      "code": "3189",
-      "date": "2026-01-26",
-      "prev_close": 214.0,
-      "ref": 204.83,
-      "factor": 0.9571495327102805,
-      "kind": "權",
-      "market": "TWSE"
-    },
-    {
-      "code": "3189",
-      "date": "2026-07-02",
-      "prev_close": 888.0,
-      "ref": 886.48,
-      "factor": 0.9982882882882883,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3324",
-      "date": "2026-06-17",
-      "prev_close": 1050.0,
-      "ref": 1038.1,
-      "factor": 0.9886666666666666,
-      "kind": "除息",
-      "market": "TPEX"
-    },
-    {
-      "code": "3653",
-      "date": "2026-07-22",
-      "prev_close": 3520.0,
-      "ref": 3498.27,
-      "factor": 0.9938267045454545,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "3711",
-      "date": "2026-07-03",
-      "prev_close": 727.0,
-      "ref": 720.41,
-      "factor": 0.9909353507565336,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "6196",
-      "date": "2026-06-24",
-      "prev_close": 541.0,
-      "ref": 534.55,
-      "factor": 0.9880776340110905,
-      "kind": "息",
-      "market": "TWSE"
-    },
-    {
-      "code": "6223",
-      "date": "2026-07-09",
-      "prev_close": 6460.0,
-      "ref": 6438.0,
-      "factor": 0.996594427244582,
-      "kind": "除息",
-      "market": "TPEX"
-    }
+ "generated_at": "2026-10-19T03:45:29+08:00",
+ "data_date": "2026-10-16",
+ "price_basis": "台股：還原分割/減資/除權息（往前乘係數）；GLOBAL：yfinance 原值",
+ "events_status": "fetched",
+ "events_by_reason": {
+  "除權息（息）": 1525,
+  "除權息（除息）": 1388,
+  "除權息（權息）": 76,
+  "除權息（除權息）": 76,
+  "除權息（除權）": 35,
+  "除權息（權）": 34,
+  "減資（彌補虧損）": 26,
+  "減資（退還股款）": 17,
+  "分割或面額變更（推定：參考價低於前收）": 8,
+  "減資（推定：參考價高於前收）": 5,
+  "變更面額": 4,
+  "減資（現金減資）": 4,
+  "分割 1 拆 24（手動登錄）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 172.43；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 47.02；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 13.4；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 22.37；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 18.17；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 20.57；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 21.78；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 69.3；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 101.31；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 75.96；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 45.11；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 91.59；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 257.64；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 34.96；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 79.11；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 145.96；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 24.12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 182.3；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 72.07；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 16.13；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 15.96；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 21.85；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 12.6；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 6.08；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 44.97；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 134.37；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 97.94；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 101.8；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 71.72；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 176.67；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 86.68；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 59.73；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 204.83；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 173.9；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權息），含現金增資認購（除權息參考價 373.35；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 117.22；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 41.84；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 18.97；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 14.55；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 17.58；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 107.46；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 394.89；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 19.67；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 34.05；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 17.44；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 26.32；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 42.18；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 14.36；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 169.27；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 186.27；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 63.06；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 72.89；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 86.35；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 116.75；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 21.7；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 77.39；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 35.32；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 24.87；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 71.47；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 59.31；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 12.85；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 54.35；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 66.75；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權息），含現金增資認購（除權息參考價 915.12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 304.28；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 200.77；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 17.29；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 27.38；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 168.61；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 77.86；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 189.42；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 49.05；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 22.69；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 35.5；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 91.67；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 96.92；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 334.81；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 315.7；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 62.24；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 39.26；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 15.83；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 78.13；依 exright_ref=dividend_only 還原）": 1,
+  "其他參考價調整（除權息表未列）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 26.89；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 84.59；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 14.11；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 25.66；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 36.35；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 32.92；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 30.04；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 61.68；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 39.81；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 120.92；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 295.76；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 255.83；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權息），含現金增資認購（除權息參考價 101.69；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 98.34；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 214.3；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 31.02；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 355.94；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權息），含現金增資認購（除權息參考價 55.05；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 37.8；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 51.89；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 102.64；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 18.27；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 528.83；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 115.48；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 348.11；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 71.73；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 30.73；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 179.86；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 2181.01；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 37.18；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 216.11；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 555.45；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 137.66；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 112.52；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 78.95；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 20.36；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權息），含現金增資認購（除權息參考價 88.73；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 46.12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 38.69；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 87.53；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權息），含現金增資認購（除權息參考價 44.12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 14.68；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 44.92；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 22.49；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（權），含現金增資認購（除權息參考價 100.57；依 exright_ref=dividend_only 還原）": 1
+ },
+ "ref_events_coverage": {
+  "TWSE": [
+   "2025-08-14",
+   "2026-10-16",
+   285
   ],
-  "splits": {
-    "00685L": [
-      {
-        "effective": "2026-07-07",
-        "ratio": 24,
-        "source": "TWSE STOCK_DAY 2026-07-07：前收 306.00，參考價 12.75（收盤 12.23、漲跌 -0.52）"
-      }
-    ]
+  "TPEX": [
+   "2025-08-14",
+   "2026-10-16",
+   285
+  ]
+ },
+ "manual_events": [
+  {
+   "code": "00685L",
+   "date": "2026-07-07",
+   "type": "split",
+   "ratio": 24,
+   "source": "TWSE STOCK_DAY 2026-07-07：前收 306.00，參考價 12.75（收盤 12.23、漲跌 -0.52）"
+  }
+ ],
+ "bad_rows_excluded": [],
+ "event_prev_close_mismatch": [
+  {
+   "code": "1259",
+   "date": "2026-06-25",
+   "event_prev_close": 57.6,
+   "csv_prev_close": 58.0,
+   "source": "exDailyQ"
+  }
+ ],
+ "tpex_no_trade_ref_diff_skipped": {
+  "count": 1615,
+  "note": "櫃買無成交日後的漲跌基準差異，非公司事件，未還原",
+  "examples": [
+   {
+    "code": "00687C",
+    "date": "2025-09-16",
+    "prev_date": "2025-09-12",
+    "pct": -0.52
+   },
+   {
+    "code": "00687C",
+    "date": "2025-10-29",
+    "prev_date": "2025-10-27",
+    "pct": 1.14
+   },
+   {
+    "code": "00687C",
+    "date": "2026-03-02",
+    "prev_date": "2026-02-25",
+    "pct": 0.1
+   },
+   {
+    "code": "00687C",
+    "date": "2026-04-14",
+    "prev_date": "2026-04-10",
+    "pct": -0.64
+   },
+   {
+    "code": "00687C",
+    "date": "2026-04-22",
+    "prev_date": "2026-04-20",
+    "pct": 0.53
+   },
+   {
+    "code": "00687C",
+    "date": "2026-05-11",
+    "prev_date": "2026-05-07",
+    "pct": -0.21
+   },
+   {
+    "code": "00687C",
+    "date": "2026-05-14",
+    "prev_date": "2026-05-12",
+    "pct": -0.22
+   },
+   {
+    "code": "00734B",
+    "date": "2025-12-18",
+    "prev_date": "2025-12-16",
+    "pct": 0.31
+   },
+   {
+    "code": "00734B",
+    "date": "2026-03-13",
+    "prev_date": "2026-03-11",
+    "pct": -0.25
+   },
+   {
+    "code": "00734B",
+    "date": "2026-04-08",
+    "prev_date": "2026-04-02",
+    "pct": 0.44
+   },
+   {
+    "code": "00734B",
+    "date": "2026-06-11",
+    "prev_date": "2026-06-08",
+    "pct": -0.19
+   },
+   {
+    "code": "00734B",
+    "date": "2026-07-20",
+    "prev_date": "2026-07-15",
+    "pct": 0.83
+   },
+   {
+    "code": "00734B",
+    "date": "2026-07-24",
+    "prev_date": "2026-07-22",
+    "pct": -0.5
+   },
+   {
+    "code": "00734B",
+    "date": "2026-08-10",
+    "prev_date": "2026-08-05",
+    "pct": -0.25
+   },
+   {
+    "code": "00734B",
+    "date": "2026-10-08",
+    "prev_date": "2026-10-06",
+    "pct": 0.68
+   },
+   {
+    "code": "00750B",
+    "date": "2026-01-05",
+    "prev_date": "2025-12-31",
+    "pct": -0.44
+   },
+   {
+    "code": "00778B",
+    "date": "2026-01-05",
+    "prev_date": "2025-12-31",
+    "pct": -0.57
+   },
+   {
+    "code": "00780B",
+    "date": "2026-01-05",
+    "prev_date": "2025-12-31",
+    "pct": -0.26
+   },
+   {
+    "code": "00786B",
+    "date": "2026-06-05",
+    "prev_date": "2026-06-03",
+    "pct": -0.03
+   },
+   {
+    "code": "00787B",
+    "date": "2025-11-03",
+    "prev_date": "2025-10-30",
+    "pct": -0.49
+   }
+  ]
+ },
+ "jump_review": {
+  "rows": 338,
+  "by_category": {
+   "無漲跌幅限制（國外成分 ETF 等）": 66,
+   "除權息（息）": 46,
+   "除權息（除權息）": 38,
+   "新上市首 5 日無漲跌幅限制": 29,
+   "除權息（權息）": 26,
+   "減資（彌補虧損）": 24,
+   "除權息（除息）": 23,
+   "櫃買無成交日後恢復成交（多日累積漲跌，非公司事件）": 22,
+   "在該檔漲跌幅限制 20% 內（槓桿/反向 ETF）": 13,
+   "減資（退還股款）": 10,
+   "分割或面額變更（推定：參考價低於前收）": 8,
+   "除權息（除權）": 8,
+   "除權息（權）": 7,
+   "減資（推定：參考價高於前收）": 5,
+   "變更面額": 3,
+   "減資（現金減資）": 2,
+   "交易所標示除權息，但除權息表查無參考價": 1,
+   "分割 1 拆 24（手動登錄）": 1,
+   "除權息（權息），含現金增資認購（除權息參考價 16.13；依 exright_ref=dividend_only 還原）": 1,
+   "除權息（權），含現金增資認購（除權息參考價 86.68；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制": 1,
+   "除權息（權），含現金增資認購（除權息參考價 18.97；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制": 1,
+   "除權息（除權），含現金增資認購（除權息參考價 35.32；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制": 1,
+   "除權息（權），含現金增資認購（除權息參考價 98.34；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制": 1,
+   "除權息（權），含現金增資認購（除權息參考價 355.94；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制": 1
   },
-  "event_prev_close_mismatch": [],
-  "not_adjusted": "GLOBAL 代號不還原；成交量只在分割時調整。",
-  "rows": 8299
+  "needs_confirm": [
+   {
+    "code": "00643K",
+    "name": "群益深証中小+R",
+    "date": "2026-05-05",
+    "ret_pct": 13.98,
+    "adj_ret_pct": 13.98,
+    "category": "交易所標示除權息，但除權息表查無參考價"
+   },
+   {
+    "code": "3149",
+    "name": "正達",
+    "date": "2026-07-17",
+    "ret_pct": -14.87,
+    "adj_ret_pct": -14.87,
+    "category": "除權息（權），含現金增資認購（除權息參考價 86.68；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制"
+   },
+   {
+    "code": "3321",
+    "name": "同泰",
+    "date": "2025-12-05",
+    "ret_pct": -10.22,
+    "adj_ret_pct": -10.22,
+    "category": "除權息（權），含現金增資認購（除權息參考價 18.97；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制"
+   },
+   {
+    "code": "4130",
+    "name": "",
+    "date": "2026-01-14",
+    "ret_pct": -12.91,
+    "adj_ret_pct": -12.91,
+    "category": "除權息（除權），含現金增資認購（除權息參考價 35.32；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制"
+   },
+   {
+    "code": "6591",
+    "name": "動力-KY",
+    "date": "2025-09-01",
+    "ret_pct": -11.84,
+    "adj_ret_pct": -11.84,
+    "category": "除權息（權），含現金增資認購（除權息參考價 98.34；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制"
+   },
+   {
+    "code": "6715",
+    "name": "嘉基",
+    "date": "2026-07-29",
+    "ret_pct": -10.97,
+    "adj_ret_pct": -10.97,
+    "category": "除權息（權），含現金增資認購（除權息參考價 355.94；依 exright_ref=dividend_only 還原）；還原後仍超過漲跌幅限制"
+   }
+  ]
+ },
+ "output_scope": "tracked",
+ "rows": 8456
 }

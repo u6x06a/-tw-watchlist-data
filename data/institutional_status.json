@@ -1,0 +1,24 @@
+{
+ "generated_at": "2026-10-19T03:43:15+08:00",
+ "latest_date": {
+  "TWSE": "2026-10-16",
+  "TPEX": "2026-10-16"
+ },
+ "expected_latest_trading_date": "2026-10-16",
+ "recent_file_days": 284,
+ "by_date": {
+  "2026-10-14": {
+   "TWSE": "ok:1327",
+   "TPEX": "ok:898"
+  },
+  "2026-10-15": {
+   "TWSE": "ok:1326",
+   "TPEX": "ok:895"
+  },
+  "2026-10-16": {
+   "TWSE": "ok:1318",
+   "TPEX": "ok:886"
+  }
+ },
+ "blocked": null
+}

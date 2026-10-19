@@ -1,6 +1,6 @@
 
 name: update-prices
- 
+
 on:
   schedule:
     # 台灣時間週一至週五 15:07、16:07、17:07（UTC 07:07、08:07、09:07）。
@@ -9,43 +9,115 @@ on:
     - cron: "7 7 * * 1-5"
     - cron: "7 8 * * 1-5"
     - cron: "7 9 * * 1-5"
-  workflow_dispatch: {}   # 可在 Actions 頁面手動執行
- 
+  workflow_dispatch: {}   # 可在 Actions 頁面手動執行（可選分支測試）
+
 permissions:
   contents: write
- 
+
+# 與 backfill-history 共用同一組：兩個 workflow 不會同時改 data/ 而互相推送失敗
+concurrency:
+  group: data-writer
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
- 
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
- 
+
       - name: Install dependencies
-        run: pip install requests yfinance exchange_calendars
- 
+        run: pip install requests yfinance exchange_calendars pyyaml pandas
+
+      # ================= 第一段：價格（最先完成並提交） =================
       - name: Fetch prices
-        run: python fetch_prices.py
+        id: prices
+        run: python scripts/run_step.py fetch_prices python fetch_prices.py
 
-      - name: Build adjusted prices
-        run: python scripts/adjust.py
+      - name: Market status
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python scripts/run_step.py market_status python scripts/market_status.py
 
-      - name: Build indicators
-        run: python scripts/indicators.py
- 
-      - name: Commit data
+      - name: Commit prices and meta
         if: always()
         run: |
           git config user.name "watchlist-bot"
           git config user.email "watchlist-bot@users.noreply.github.com"
-          git add data/
+          for f in data/prices.csv data/meta.json data/ref_events.csv data/ref_events_coverage.json \
+                   data/price_fallback_rows.csv data/holidays_twse.json; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then
-            echo "沒有變動"
+            echo "價格沒有變動"
           else
             git commit -m "update prices $(TZ=Asia/Taipei date +%F)"
-            git push
+            git push || (git pull --rebase && git push)
           fi
- 
+          echo "價格提交完成：$(TZ=Asia/Taipei date '+%F %T')"
+
+      # ================= 第二段：衍生資料（失敗不影響上面已完成的提交） =================
+      - name: Companies (weekly)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py companies python scripts/fetch_companies.py
+
+      - name: Monthly revenue (latest month only)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py revenue python scripts/fetch_revenue.py
+
+      - name: Institutional investors
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py institutional python scripts/fetch_institutional.py
+
+      - name: Chips (foreign holding, margin, SBL, TDCC)
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 8
+        run: python scripts/run_step.py chips python scripts/fetch_chips.py
+
+      - name: Adjustment factors
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py adjust python scripts/adjust.py
+
+      - name: Build indicators
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py indicators python scripts/indicators.py
+
+      - name: Screen signals
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 5
+        run: python scripts/run_step.py screen python scripts/screen.py
+
+      - name: Paper account
+        if: always()
+        continue-on-error: true
+        timeout-minutes: 10
+        run: python scripts/run_step.py paper python scripts/paper.py
+
+      - name: Commit derived data
+        if: always()
+        run: |
+          git add data/
+          if git diff --cached --quiet; then
+            echo "衍生資料沒有變動"
+          else
+            git commit -m "update derived data $(TZ=Asia/Taipei date +%F)"
+            git push || (git pull --rebase && git push)
+          fi
+

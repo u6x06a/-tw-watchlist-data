@@ -31,7 +31,8 @@ def norm(c):
     return str(c).strip()
 
 
-IGNORE = {"QQQ"}  # 已全數賣出、試算表沒有股數的標的
+# 要略過的代號由命令列 --ignore A,B 指定（不寫在公開 repo）
+IGNORE = set(sys.argv[sys.argv.index("--ignore") + 1].split(",")) if "--ignore" in sys.argv else set()
 PRICES = os.path.join(ROOT, "data", "prices.csv")
 
 

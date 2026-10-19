@@ -1,0 +1,1249 @@
+{
+ "generated_at": "2026-10-19T03:45:54+08:00",
+ "data_date": "2026-10-16",
+ "expected_latest": "2026-10-16",
+ "data_stale": false,
+ "market_filtered": false,
+ "market_wide_selloff": false,
+ "quarter_end_window": false,
+ "chips_data_available": {
+  "institutional": true,
+  "margin": true
+ },
+ "counts": {
+  "R1": 12,
+  "L1": 17
+ },
+ "c1_note": "C1 停用：集保資料需累積 8 週（config chips.tdcc_rules.c1_enabled）",
+ "skipped_adj_uncertain": [],
+ "notes": [
+  "訊號只代表規則條件成立，不是買賣建議；needs_news_check=true 的項目需讀新聞確認沒有個股專屬利空",
+  "market_filtered=true：大盤過濾中（收盤在季線下或跌破恐慌日低點），訊號照常列出供參考",
+  "外資買賣超可能含 ETF 被動調整與避險，單日數字意義有限"
+ ],
+ "params": {
+  "liquidity": {
+   "sec_types": [
+    "stock"
+   ],
+   "exclude_full_delivery": true,
+   "min_avg_value_20": 50000000,
+   "min_bars": 60
+  },
+  "skip_adj_uncertain_days": 5,
+  "r1": {
+   "squeeze_ratio": 0.7,
+   "min_gain_pct": 2,
+   "vol_mult": 1.5,
+   "stop_atr_mult": 2,
+   "stop_max_pct": 10,
+   "chips_confirm_days": 4,
+   "chips_warning_foreign_sell_streak": 5
+  },
+  "l1": {
+   "top_market_cap": 50,
+   "quality_min_yoy_3m": 0,
+   "deep_atr_mult": 3,
+   "deep_ma20_ratio": 0.92,
+   "systemic_mult": 1.5,
+   "lower_shadow_body_mult": 1.5,
+   "foreign_sell_shrink_pct": 50,
+   "invalidation_lookback": 60,
+   "cost_stop_pct": 15
+  },
+  "l2": {
+   "industry_drop_pct": -4,
+   "windows": [
+    1,
+    2,
+    3
+   ]
+  },
+  "e1": {
+   "codes": [
+    "0050",
+    "00685L"
+   ],
+   "ratio": {
+    "0050": 2,
+    "00685L": 1
+   },
+   "decay_window": 20
+  },
+  "c1": {
+   "ma60_band_pct": 5,
+   "min_days": 20,
+   "trust_buy_window": 5
+  },
+  "flags": {
+   "limit_up_pct": 9.5,
+   "heavy_vol_mult": 1.5,
+   "upper_shadow_body_mult": 2,
+   "near_high_pct": 10,
+   "opposite_streak": 3,
+   "weak_vs_market_window": 5,
+   "good_news_yoy_pct": 30,
+   "good_news_days": 10,
+   "market_selloff_pct": -2,
+   "trust_abandon_prior_buy_days": 3,
+   "trust_abandon_sell_days": 3,
+   "foreign_pct_drop_pp": 1.0,
+   "margin_surge_pct": 10
+  }
+ },
+ "signals": [
+  {
+   "code": "6957",
+   "name": "裕慶-KY",
+   "industry": "其他",
+   "industry_rank": 28.0,
+   "rs_rank": 99.2,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": true,
+   "key": {
+    "gain_pct": 2.48,
+    "vol_vs_ma5_prev": 2.18,
+    "vol_ma5_vs_ma20_prev": 0.547,
+    "ma20": 375.525,
+    "atr14": 21.9942
+   },
+   "entry_ref": 474.5,
+   "stop": 430.5115,
+   "risk_per_share": 43.9885,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 452.0,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "4556",
+   "name": "旭然",
+   "industry": "其他",
+   "industry_rank": 28.0,
+   "rs_rank": 99.1,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": null,
+   "key": {
+    "gain_pct": 6.91,
+    "vol_vs_ma5_prev": 1.72,
+    "vol_ma5_vs_ma20_prev": 0.509,
+    "ma20": 112.395,
+    "atr14": 10.6506
+   },
+   "entry_ref": 131.5,
+   "stop": 118.35,
+   "risk_per_share": 13.15,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 119.5,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "6620",
+   "name": "漢達",
+   "industry": "生技醫療業",
+   "industry_rank": 31.0,
+   "rs_rank": 97.7,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": null,
+   "key": {
+    "gain_pct": 9.96,
+    "vol_vs_ma5_prev": 2.2,
+    "vol_ma5_vs_ma20_prev": 0.601,
+    "ma20": 135.35,
+    "atr14": 9.6897
+   },
+   "entry_ref": 143.5,
+   "stop": 129.15,
+   "risk_per_share": 14.35,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 133.5,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "6533",
+   "name": "晶心科",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 90.8,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 9.85,
+    "vol_vs_ma5_prev": 1.52,
+    "vol_ma5_vs_ma20_prev": 0.413,
+    "ma20": 306.375,
+    "atr14": 19.7274
+   },
+   "entry_ref": 323.5,
+   "stop": 291.15,
+   "risk_per_share": 32.35,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 297.5,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "6148",
+   "name": "驊宏資",
+   "industry": "資訊服務業",
+   "industry_rank": 15.0,
+   "rs_rank": 90.4,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 2,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 9.96,
+    "vol_vs_ma5_prev": 2.87,
+    "vol_ma5_vs_ma20_prev": 0.801,
+    "ma20": 38.175,
+    "atr14": 2.2209
+   },
+   "entry_ref": 41.95,
+   "stop": 37.755,
+   "risk_per_share": 4.195,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 38.15,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "2413",
+   "name": "環科",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 88.0,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 9.04,
+    "vol_vs_ma5_prev": 1.61,
+    "vol_ma5_vs_ma20_prev": 0.306,
+    "ma20": 53.445,
+    "atr14": 2.8421
+   },
+   "entry_ref": 55.5,
+   "stop": 49.95,
+   "risk_per_share": 5.55,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 51.1,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "3701",
+   "name": "大眾控",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 10.0,
+   "rs_rank": 87.7,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 9.98,
+    "vol_vs_ma5_prev": 2.62,
+    "vol_ma5_vs_ma20_prev": 0.605,
+    "ma20": 52.0,
+    "atr14": 3.5884
+   },
+   "entry_ref": 66.1,
+   "stop": 59.49,
+   "risk_per_share": 6.61,
+   "stop_basis": "entry-10%",
+   "signal_bar_low": 61.0,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "6112",
+   "name": "邁達特",
+   "industry": "資訊服務業",
+   "industry_rank": 15.0,
+   "rs_rank": 76.6,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 8.13,
+    "vol_vs_ma5_prev": 11.67,
+    "vol_ma5_vs_ma20_prev": 0.24,
+    "ma20": 47.425,
+    "atr14": 1.6675
+   },
+   "entry_ref": 49.2,
+   "stop": 45.8651,
+   "risk_per_share": 3.3349,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 46.55,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "4763",
+   "name": "材料*-KY",
+   "industry": "化學工業",
+   "industry_rank": 8.0,
+   "rs_rank": 70.7,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 2.47,
+    "vol_vs_ma5_prev": 1.87,
+    "vol_ma5_vs_ma20_prev": 0.489,
+    "ma20": 47.2075,
+    "atr14": 1.528
+   },
+   "entry_ref": 47.65,
+   "stop": 44.594,
+   "risk_per_share": 3.056,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 46.8,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "3704",
+   "name": "合勤控",
+   "industry": "通信網路業",
+   "industry_rank": 26.0,
+   "rs_rank": 54.7,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 4.16,
+    "vol_vs_ma5_prev": 1.91,
+    "vol_ma5_vs_ma20_prev": 0.666,
+    "ma20": 40.3125,
+    "atr14": 1.2294
+   },
+   "entry_ref": 41.35,
+   "stop": 38.8912,
+   "risk_per_share": 2.4588,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 40.35,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "3380",
+   "name": "明泰",
+   "industry": "通信網路業",
+   "industry_rank": 26.0,
+   "rs_rank": 38.9,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 2.39,
+    "vol_vs_ma5_prev": 1.72,
+    "vol_ma5_vs_ma20_prev": 0.59,
+    "ma20": 31.355,
+    "atr14": 1.0156
+   },
+   "entry_ref": 32.15,
+   "stop": 30.1188,
+   "risk_per_share": 2.0312,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 31.6,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "4960",
+   "name": "誠美材",
+   "industry": "光電業",
+   "industry_rank": 13.0,
+   "rs_rank": 21.7,
+   "rule": "R1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "nth_after_squeeze": 1,
+   "trend_template_pass": false,
+   "key": {
+    "gain_pct": 6.75,
+    "vol_vs_ma5_prev": 3.48,
+    "vol_ma5_vs_ma20_prev": 0.612,
+    "ma20": 23.4925,
+    "atr14": 1.1541
+   },
+   "entry_ref": 25.3,
+   "stop": 22.9918,
+   "risk_per_share": 2.3082,
+   "stop_basis": "entry-2ATR",
+   "signal_bar_low": 23.6,
+   "chips_confirm": true,
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": false
+  },
+  {
+   "code": "2059",
+   "name": "川湖",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 98.7,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 9955.0,
+    "high_20d": 13500.0,
+    "atr14": 661.9376,
+    "ma20": 11718.75,
+    "ret5_pct": -6.22,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -2.29,
+    "revenue_yoy_3m_avg": 306.82
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 9955.0,
+    "batch2_lower_1atr": 9293.0624,
+    "batch2_reclaim_ma5": 10064.0,
+    "batch3_reclaim_ma20": 11718.75
+   },
+   "entry_ref": 9955.0,
+   "stop": 6815.9586,
+   "risk_per_share": 3139.0414,
+   "invalidation": {
+    "price": 6815.9586,
+    "basis": "下跌起點 2026-10-06 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "2408",
+   "name": "南亞科",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 96.5,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 447.5,
+    "high_20d": 537.0,
+    "atr14": 24.4005,
+    "ma20": 504.5,
+    "ret5_pct": -15.88,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 633.93
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 447.5,
+    "batch2_lower_1atr": 423.0995,
+    "batch2_reclaim_ma5": 476.5,
+    "batch3_reclaim_ma20": 504.5
+   },
+   "entry_ref": 447.5,
+   "stop": 322.0,
+   "risk_per_share": 125.5,
+   "invalidation": {
+    "price": 322.0,
+    "basis": "下跌起點 2026-10-08 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2454",
+   "name": "聯發科",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 94.9,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 4250.0,
+    "high_20d": 5480.0,
+    "atr14": 204.4131,
+    "ma20": 4790.5,
+    "ret5_pct": -9.38,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 19.68
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 4250.0,
+    "batch2_lower_1atr": 4045.5869,
+    "batch2_reclaim_ma5": 4408.0,
+    "batch3_reclaim_ma20": 4790.5
+   },
+   "entry_ref": 4250.0,
+   "stop": 2990.0,
+   "risk_per_share": 1260.0,
+   "invalidation": {
+    "price": 2990.0,
+    "basis": "下跌起點 2026-09-22 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2301",
+   "name": "光寶科",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 10.0,
+   "rs_rank": 93.5,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "跌深觀察",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 264.5,
+    "high_20d": 304.5,
+    "atr14": 12.0135,
+    "ma20": 284.05,
+    "ret5_pct": -11.09,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -0.44,
+    "revenue_yoy_3m_avg": 33.26
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": false,
+    "c_foreign_shrink_or_trust_turn": false,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": null,
+    "batch2_lower_1atr": 252.4865,
+    "batch2_reclaim_ma5": 275.9,
+    "batch3_reclaim_ma20": 284.05
+   },
+   "entry_ref": 264.5,
+   "stop": 174.8867,
+   "risk_per_share": 89.6133,
+   "invalidation": {
+    "price": 174.8867,
+    "basis": "下跌起點 2026-10-07 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "2303",
+   "name": "聯電",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 92.4,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 133.0,
+    "high_20d": 168.5,
+    "atr14": 6.4765,
+    "ma20": 149.95,
+    "ret5_pct": -9.83,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 24.18
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 133.0,
+    "batch2_lower_1atr": 126.5235,
+    "batch2_reclaim_ma5": 139.1,
+    "batch3_reclaim_ma20": 149.95
+   },
+   "entry_ref": 133.0,
+   "stop": 102.5,
+   "risk_per_share": 30.5,
+   "invalidation": {
+    "price": 102.5,
+    "basis": "下跌起點 2026-09-22 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "3037",
+   "name": "欣興",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 92.3,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "跌深觀察",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 1090.0,
+    "high_20d": 1420.0,
+    "atr14": 66.1201,
+    "ma20": 1161.1,
+    "ret5_pct": -14.17,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -2.29,
+    "revenue_yoy_3m_avg": 45.42
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": false,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": null,
+    "batch2_lower_1atr": 1023.8799,
+    "batch2_reclaim_ma5": 1157.0,
+    "batch3_reclaim_ma20": 1161.1
+   },
+   "entry_ref": 1090.0,
+   "stop": 653.0,
+   "risk_per_share": 437.0,
+   "invalidation": {
+    "price": 653.0,
+    "basis": "下跌起點 2026-10-05 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2327",
+   "name": "國巨*",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 91.6,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 567.0,
+    "high_20d": 686.0,
+    "atr14": 36.8182,
+    "ma20": 587.75,
+    "ret5_pct": -10.71,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -2.29,
+    "revenue_yoy_3m_avg": 47.41
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 567.0,
+    "batch2_lower_1atr": 530.1818,
+    "batch2_reclaim_ma5": 600.4,
+    "batch3_reclaim_ma20": 587.75
+   },
+   "entry_ref": 567.0,
+   "stop": 456.5,
+   "risk_per_share": 110.5,
+   "invalidation": {
+    "price": 456.5,
+    "basis": "下跌起點 2026-10-07 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "3711",
+   "name": "日月光投控",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 85.8,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 671.0,
+    "high_20d": 765.0,
+    "atr14": 30.7644,
+    "ma20": 698.65,
+    "ret5_pct": -9.81,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 40.56
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 671.0,
+    "batch2_lower_1atr": 640.2356,
+    "batch2_reclaim_ma5": 718.6,
+    "batch3_reclaim_ma20": 698.65
+   },
+   "entry_ref": 671.0,
+   "stop": 465.5,
+   "risk_per_share": 205.5,
+   "invalidation": {
+    "price": 465.5,
+    "basis": "下跌起點 2026-10-12 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "6669",
+   "name": "緯穎",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 10.0,
+   "rs_rank": 83.3,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "跌深觀察",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 1845.0,
+    "high_20d": 2335.0,
+    "atr14": 110.8133,
+    "ma20": 2128.25,
+    "ret5_pct": -17.63,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -0.44,
+    "revenue_yoy_3m_avg": 39.79
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": false,
+    "c_foreign_shrink_or_trust_turn": false,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": null,
+    "batch2_lower_1atr": 1734.1867,
+    "batch2_reclaim_ma5": 2067.0,
+    "batch3_reclaim_ma20": 2128.25
+   },
+   "entry_ref": 1845.0,
+   "stop": 1548.8787,
+   "risk_per_share": 296.1213,
+   "invalidation": {
+    "price": 1548.8787,
+    "basis": "下跌起點 2026-10-06 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2383",
+   "name": "台光電",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 79.9,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 5165.0,
+    "high_20d": 6325.0,
+    "atr14": 313.9533,
+    "ma20": 5282.75,
+    "ret5_pct": -13.92,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -2.29,
+    "revenue_yoy_3m_avg": 126.65
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 5165.0,
+    "batch2_lower_1atr": 4851.0467,
+    "batch2_reclaim_ma5": 5500.0,
+    "batch3_reclaim_ma20": 5282.75
+   },
+   "entry_ref": 5165.0,
+   "stop": 3912.1364,
+   "risk_per_share": 1252.8636,
+   "invalidation": {
+    "price": 3912.1364,
+    "basis": "下跌起點 2026-10-07 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "5274",
+   "name": "信驊",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 79.4,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 16480.0,
+    "high_20d": 21800.0,
+    "atr14": 1110.2876,
+    "ma20": 18569.5,
+    "ret5_pct": -5.75,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 94.49
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 16480.0,
+    "batch2_lower_1atr": 15369.7124,
+    "batch2_reclaim_ma5": 16994.0,
+    "batch3_reclaim_ma20": 18569.5
+   },
+   "entry_ref": 16480.0,
+   "stop": 11880.0,
+   "risk_per_share": 4600.0,
+   "invalidation": {
+    "price": 11880.0,
+    "basis": "下跌起點 2026-09-22 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2330",
+   "name": "台積電",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 69.3,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "跌深觀察",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 2420.0,
+    "high_20d": 2590.0,
+    "atr14": 40.3762,
+    "ma20": 2491.0,
+    "ret5_pct": -5.1,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 55.29
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": false,
+    "c_foreign_shrink_or_trust_turn": false,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": null,
+    "batch2_lower_1atr": 2379.6238,
+    "batch2_reclaim_ma5": 2476.0,
+    "batch3_reclaim_ma20": 2491.0
+   },
+   "entry_ref": 2420.0,
+   "stop": 2173.5925,
+   "risk_per_share": 246.4075,
+   "invalidation": {
+    "price": 2173.5925,
+    "basis": "下跌起點 2026-10-06 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  },
+  {
+   "code": "2317",
+   "name": "鴻海",
+   "industry": "其他電子業",
+   "industry_rank": 20.0,
+   "rs_rank": 62.9,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 244.0,
+    "high_20d": 266.5,
+    "atr14": 5.628,
+    "ma20": 249.375,
+    "ret5_pct": -2.01,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -3.58,
+    "revenue_yoy_3m_avg": 52.76
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": false,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 244.0,
+    "batch2_lower_1atr": 238.372,
+    "batch2_reclaim_ma5": 242.2,
+    "batch3_reclaim_ma20": 249.375
+   },
+   "entry_ref": 244.0,
+   "stop": 226.5,
+   "risk_per_share": 17.5,
+   "invalidation": {
+    "price": 226.5,
+    "basis": "下跌起點 2026-10-06 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "2382",
+   "name": "廣達",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 10.0,
+   "rs_rank": 54.3,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 322.0,
+    "high_20d": 349.0,
+    "atr14": 7.7583,
+    "ma20": 333.075,
+    "ret5_pct": -1.08,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -0.44,
+    "revenue_yoy_3m_avg": 137.21
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 322.0,
+    "batch2_lower_1atr": 314.2417,
+    "batch2_reclaim_ma5": 321.3,
+    "batch3_reclaim_ma20": 333.075
+   },
+   "entry_ref": 322.0,
+   "stop": 279.0,
+   "risk_per_share": 43.0,
+   "invalidation": {
+    "price": 279.0,
+    "basis": "下跌起點 2026-09-22 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "2360",
+   "name": "致茂",
+   "industry": "其他電子業",
+   "industry_rank": 20.0,
+   "rs_rank": 53.5,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "跌深觀察",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 2000.0,
+    "high_20d": 2560.0,
+    "atr14": 144.261,
+    "ma20": 2236.75,
+    "ret5_pct": -14.16,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -3.58,
+    "revenue_yoy_3m_avg": 134.86
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": false,
+    "c_foreign_shrink_or_trust_turn": false,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": null,
+    "batch2_lower_1atr": 1855.739,
+    "batch2_reclaim_ma5": 2168.0,
+    "batch3_reclaim_ma20": 2236.75
+   },
+   "entry_ref": 2000.0,
+   "stop": 1730.0,
+   "risk_per_share": 270.0,
+   "invalidation": {
+    "price": 1730.0,
+    "basis": "下跌起點 2026-10-07 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "7769",
+   "name": "鴻勁",
+   "industry": "半導體業",
+   "industry_rank": 14.0,
+   "rs_rank": 37.2,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 5285.0,
+    "high_20d": 6615.0,
+    "atr14": 343.3211,
+    "ma20": 5857.0,
+    "ret5_pct": -10.8,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -4.84,
+    "revenue_yoy_3m_avg": 99.65
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": true,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 5285.0,
+    "batch2_lower_1atr": 4941.6789,
+    "batch2_reclaim_ma5": 5770.0,
+    "batch3_reclaim_ma20": 5857.0
+   },
+   "entry_ref": 5285.0,
+   "stop": 5060.0,
+   "risk_per_share": 225.0,
+   "invalidation": {
+    "price": 5060.0,
+    "basis": "下跌起點 2026-09-17 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": false,
+   "chips_warning_reasons": [],
+   "needs_news_check": true
+  },
+  {
+   "code": "2308",
+   "name": "台達電",
+   "industry": "電子零組件業",
+   "industry_rank": 4.0,
+   "rs_rank": 11.4,
+   "rule": "L1",
+   "data_date": "2026-10-16",
+   "market_filtered": false,
+   "status": "可分批第一批",
+   "quality": "ok",
+   "idiosyncratic": false,
+   "key": {
+    "close": 1635.0,
+    "high_20d": 2115.0,
+    "atr14": 88.4153,
+    "ma20": 1848.25,
+    "ret5_pct": -16.79,
+    "bench_ret5_pct": -5.18,
+    "industry_ret5_median_pct": -2.29,
+    "revenue_yoy_3m_avg": 46.04
+   },
+   "stabilize": {
+    "a_shadow_or_above_prev_high": false,
+    "b_vol_below_3d_avg": true,
+    "c_foreign_shrink_or_trust_turn": true,
+    "rule": "三項中兩項"
+   },
+   "plan": {
+    "batch1": 1635.0,
+    "batch2_lower_1atr": 1546.5847,
+    "batch2_reclaim_ma5": 1745.0,
+    "batch3_reclaim_ma20": 1848.25
+   },
+   "entry_ref": 1635.0,
+   "stop": 1425.0,
+   "risk_per_share": 210.0,
+   "invalidation": {
+    "price": 1425.0,
+    "basis": "下跌起點 2026-10-06 前 60 日最低點",
+    "cost_stop_pct": 15.0,
+    "cost_stop_note": "平均成本 −15% 由儀表板端計算"
+   },
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
+   "needs_news_check": true
+  }
+ ]
+}
