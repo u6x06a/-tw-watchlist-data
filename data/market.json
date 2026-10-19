@@ -77,11 +77,11 @@
   "收盤低於恐慌日（2026-10-15）低點"
  ],
  "market_data_status": {
-  "status": "正常",
+  "status": "尚未公布",
   "expected_latest": "2026-10-19",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-19T23:36:48+08:00",
+ "generated_at": "2026-10-20T00:28:38+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
