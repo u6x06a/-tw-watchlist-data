@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:35:45+08:00",
+ "generated_at": "2026-10-20T17:05:48+08:00",
  "data_date": "2026-10-20",
  "expected_latest": "2026-10-20",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 314
+  "stocks_flagged": 316
  },
  "flags": [
   {
@@ -139,7 +139,8 @@
    "data_date": "2026-10-20",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -499,7 +500,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1108,7 +1110,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma10",
-    "break_ma20"
+    "break_ma20",
+    "trust_abandon"
    ]
   },
   {
@@ -1125,6 +1128,18 @@
    ]
   },
   {
+   "code": "2883",
+   "name": "凱基金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 95.7,
+   "data_date": "2026-10-20",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
+   ]
+  },
+  {
    "code": "2885",
    "name": "元大金",
    "industry": "金融保險業",
@@ -1133,7 +1148,8 @@
    "data_date": "2026-10-20",
    "market_filtered": true,
    "flags": [
-    "break_ma10"
+    "break_ma10",
+    "trust_abandon"
    ]
   },
   {
@@ -2673,7 +2689,8 @@
    "flags": [
     "break_ma10",
     "break_ma20",
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -3050,6 +3067,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "6691",
+   "name": "洋基工程",
+   "industry": "其他電子業",
+   "industry_rank": 18.0,
+   "rs_rank": 76.0,
+   "data_date": "2026-10-20",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
