@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-10-19",
- "close": 108.15,
- "ma20": 112.235,
- "ma60": 107.1733,
+ "data_date": "2026-10-20",
+ "close": 107.25,
+ "ma20": 112.195,
+ "ma60": 107.2292,
  "above_ma60": true,
- "ma60_slope": 0.6867,
- "ma60_slope_pct": 0.64,
- "change_pct": -0.78,
- "range_pct": 1.1,
+ "ma60_slope": 0.6318,
+ "ma60_slope_pct": 0.59,
+ "change_pct": -0.83,
+ "range_pct": 1.16,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -7.17,
+ "drawdown_from_60d_high_pct": -7.94,
  "ladder": {
   "since_high_date": "2026-10-06",
   "level": 2,
@@ -38,7 +38,7 @@
   "change_pct": -3.63,
   "high": 110.15,
   "low": 108.55,
-  "days_since": 2,
+  "days_since": 3,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
   "broke_low": true,
@@ -48,7 +48,7 @@
  "follow_through": {
   "low_date": "2026-07-30",
   "low_close": 93.5,
-  "rally_day": 54,
+  "rally_day": 55,
   "ftd": {
    "date": "2026-08-05",
    "day_from_low": 4,
@@ -77,11 +77,11 @@
   "收盤低於恐慌日（2026-10-15）低點"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-10-19",
+  "status": "正常",
+  "expected_latest": "2026-10-20",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-20T00:28:38+08:00",
+ "generated_at": "2026-10-20T15:35:32+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
