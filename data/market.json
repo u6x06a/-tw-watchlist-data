@@ -15,23 +15,26 @@
  },
  "drawdown_from_60d_high_pct": -7.94,
  "ladder": {
-  "since_high_date": "2026-10-06",
-  "level": 2,
-  "steps": [
-   {
-    "type": "daily_drop>=3%",
-    "date": "2026-10-15",
-    "change_pct": -3.63,
-    "level": 1
-   },
-   {
-    "type": "drawdown>=5%",
-    "date": "2026-10-15",
-    "drawdown_pct": -6.52,
-    "level": 2
-   }
-  ],
-  "new_step_today": []
+  "active": false,
+  "level": 0,
+  "max_level": 5,
+  "start_date": null,
+  "steps": [],
+  "new_step_today": [],
+  "ended_today": false,
+  "last_entry_cost": null,
+  "next_add_price": null,
+  "reset_ref_range_high": null,
+  "watch": {
+   "range_low": 107.1,
+   "range_high": 116.6,
+   "range_pct": 8.87,
+   "below_range_low": false,
+   "vol_ratio": 1.09,
+   "breakdown_ok": false,
+   "panic_ok": false
+  },
+  "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
  "panic_day": {
   "date": "2026-10-15",
@@ -81,7 +84,7 @@
   "expected_latest": "2026-10-20",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-20T21:36:32+08:00",
+ "generated_at": "2026-10-20T22:19:33+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
@@ -89,12 +92,22 @@
   "slope_lookback": 5,
   "high_lookback": 60,
   "ladder": {
-   "daily_drop_pct": 3,
-   "drawdown_steps_pct": [
-    5,
-    10,
-    15
-   ]
+   "tranches": 5,
+   "add_drop_pct": 4,
+   "breakdown": {
+    "range_days": 20,
+    "max_range_pct": 10,
+    "vol_days": 20,
+    "vol_mult": 1.5
+   },
+   "panic": {
+    "daily_drop_pct": 4,
+    "vol_days": 20,
+    "vol_mult": 2.0
+   },
+   "reset": {
+    "mode": "reclaim_range_high"
+   }
   },
   "panic": {
    "daily_drop_pct": 3,

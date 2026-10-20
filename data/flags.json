@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T21:36:44+08:00",
+ "generated_at": "2026-10-20T22:19:42+08:00",
  "data_date": "2026-10-20",
  "expected_latest": "2026-10-20",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 356
+  "stocks_flagged": 355
  },
  "flags": [
   {
@@ -348,7 +348,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.402
+   "foreign_pct_chg_20d": -1.232
   },
   {
    "code": "1907",
@@ -1645,7 +1645,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.093
+   "foreign_pct_chg_20d": -1.076
   },
   {
    "code": "3149",
@@ -1759,7 +1759,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -5.736
+   "foreign_pct_chg_20d": -5.442
   },
   {
    "code": "3260",
@@ -1773,7 +1773,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -9.195
+   "foreign_pct_chg_20d": -9.152
   },
   {
    "code": "3264",
@@ -1787,7 +1787,7 @@
     "break_ma20",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.84
+   "foreign_pct_chg_20d": -1.754
   },
   {
    "code": "3265",
@@ -1826,7 +1826,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.335
+   "foreign_pct_chg_20d": -1.254
   },
   {
    "code": "3312",
@@ -1852,7 +1852,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.748
+   "foreign_pct_chg_20d": -2.703
   },
   {
    "code": "3324",
@@ -1865,7 +1865,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.435
+   "foreign_pct_chg_20d": -1.415
   },
   {
    "code": "3357",
@@ -1914,7 +1914,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.974
+   "foreign_pct_chg_20d": -1.833
   },
   {
    "code": "3376",
@@ -2002,8 +2002,10 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.492
   },
   {
    "code": "3504",
@@ -2291,7 +2293,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.065
+   "foreign_pct_chg_20d": -1.047
   },
   {
    "code": "4551",
@@ -2392,7 +2394,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.752
+   "foreign_pct_chg_20d": -2.702
   },
   {
    "code": "4763",
@@ -2433,7 +2435,7 @@
     "break_ma20",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -7.684
+   "foreign_pct_chg_20d": -7.485
   },
   {
    "code": "4915",
@@ -2472,7 +2474,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.315
+   "foreign_pct_chg_20d": -1.309
   },
   {
    "code": "4931",
@@ -2497,7 +2499,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -4.943
+   "foreign_pct_chg_20d": -4.927
   },
   {
    "code": "4956",
@@ -2536,7 +2538,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.652
+   "foreign_pct_chg_20d": -1.646
   },
   {
    "code": "4967",
@@ -2676,7 +2678,7 @@
     "break_ma10",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.109
+   "foreign_pct_chg_20d": -2.035
   },
   {
    "code": "5328",
@@ -2715,7 +2717,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.626
+   "foreign_pct_chg_20d": -2.603
   },
   {
    "code": "5386",
@@ -2876,7 +2878,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.2
+   "foreign_pct_chg_20d": -2.184
   },
   {
    "code": "6138",
@@ -2915,19 +2917,6 @@
    "flags": [
     "limit_up_then_heavy_black"
    ]
-  },
-  {
-   "code": "6147",
-   "name": "頎邦",
-   "industry": "半導體業",
-   "industry_rank": 27.0,
-   "rs_rank": 91.8,
-   "data_date": "2026-10-20",
-   "market_filtered": true,
-   "flags": [
-    "foreign_holding_drop"
-   ],
-   "foreign_pct_chg_20d": -1.129
   },
   {
    "code": "6155",
@@ -2977,7 +2966,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.105
+   "foreign_pct_chg_20d": -1.1
   },
   {
    "code": "6177",
@@ -3002,7 +2991,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.705
+   "foreign_pct_chg_20d": -1.621
   },
   {
    "code": "6182",
@@ -3112,7 +3101,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.793
+   "foreign_pct_chg_20d": -1.7
   },
   {
    "code": "6223",
@@ -3177,7 +3166,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.419
+   "foreign_pct_chg_20d": -1.736
   },
   {
    "code": "6265",
@@ -3331,7 +3320,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.014
+   "foreign_pct_chg_20d": -1.009
   },
   {
    "code": "6442",
@@ -3434,7 +3423,7 @@
     "break_ma20",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.715
+   "foreign_pct_chg_20d": -1.67
   },
   {
    "code": "6488",
@@ -3485,7 +3474,7 @@
     "break_ma10",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.221
+   "foreign_pct_chg_20d": -1.922
   },
   {
    "code": "6515",
@@ -3522,7 +3511,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.138
+   "foreign_pct_chg_20d": -1.132
   },
   {
    "code": "6531",
@@ -3720,7 +3709,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.168
+   "foreign_pct_chg_20d": -1.127
   },
   {
    "code": "6715",
@@ -3748,7 +3737,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.454
+   "foreign_pct_chg_20d": -2.421
   },
   {
    "code": "6719",
@@ -3871,10 +3860,8 @@
    "data_date": "2026-10-20",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost",
-    "foreign_holding_drop"
-   ],
-   "foreign_pct_chg_20d": -1.026
+    "all_ma_lost"
+   ]
   },
   {
    "code": "6830",
@@ -3939,7 +3926,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.331
+   "foreign_pct_chg_20d": -1.315
   },
   {
    "code": "6919",
@@ -4290,7 +4277,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.642
+   "foreign_pct_chg_20d": -1.514
   },
   {
    "code": "8096",
@@ -4354,7 +4341,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.522
+   "foreign_pct_chg_20d": -1.517
   },
   {
    "code": "8182",
