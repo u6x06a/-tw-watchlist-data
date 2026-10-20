@@ -12,6 +12,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from adjlib import load_adjusted  # noqa: E402
+from ladder543 import run_ladder  # noqa: E402
 from common import CODE_OK, load_config, path, read_json  # noqa: E402
 
 
@@ -220,32 +221,22 @@ class Panel:
             ma60 = self.ma(int(mc["ma_long"]))[b].values
             chg = np.r_[np.nan, c[1:] / c[:-1] - 1] * 100
             rows = []
-            hl = int(mc["high_lookback"])
-            lad, pc = mc["ladder"], mc["panic"]
+            pc = mc["panic"]
+            lad_rows = run_ladder(list(self.dates), c.astype(float), h.astype(float), l.astype(float),
+                                  self.RV[b].values.astype(float), mc["ladder"])
             for i in range(len(c)):
                 if np.isnan(c[i]):
                     rows.append({})
                     continue
-                lo_i = max(0, i - hl + 1)
-                i_hi = lo_i + int(np.nanargmax(c[lo_i:i + 1]))
-                steps = []
-                for k in range(i_hi + 1, i + 1):
-                    if chg[k] <= -float(lad["daily_drop_pct"]):
-                        steps.append(("daily", k))
-                for sp in lad["drawdown_steps_pct"]:
-                    for k in range(i_hi + 1, i + 1):
-                        if (c[k] / c[i_hi] - 1) * 100 <= -float(sp):
-                            steps.append((f"dd{sp}", k))
-                            break
-                new = [s for s in steps if s[1] == i]
                 panic = [k for k in range(max(1, i - int(pc["lookback_days"]) + 1), i + 1)
                          if chg[k] <= -float(pc["daily_drop_pct"])]
                 below_panic = bool(panic and c[i] < l[panic[-1]])
                 above = bool(c[i] > ma60[i]) if not np.isnan(ma60[i]) else None
                 rows.append({"date": self.dates[i], "change_pct": chg[i], "above_ma60": above,
-                             "ladder_level": len(steps), "ladder_new": [s[0] for s in new],
+                             "ladder_level": lad_rows[i]["level"], "ladder_new": [x["type"] for x in lad_rows[i]["new"]],
+                             "ladder_start": lad_rows[i]["start_date"],
                              "panic_date": self.dates[panic[-1]] if panic else None, "below_panic_low": below_panic,
-                             "filtered": (above is False) or below_panic, "high_date": self.dates[i_hi]})
+                             "filtered": (above is False) or below_panic})
             return rows
         return self._c("market", f)
 

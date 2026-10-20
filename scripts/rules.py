@@ -302,7 +302,7 @@ def evaluate(P, i, opts=None):
                 continue
             s = base(code, "E1")
             s.update({"key": {"ladder_level": mk["ladder_level"], "new_steps": mk["ladder_new"],
-                              "since_high": mk["high_date"], "bench_change_pct": _f(mk["change_pct"], 2)},
+                              "cycle_start": mk["ladder_start"], "bench_change_pct": _f(mk["change_pct"], 2)},
                       "ratio": e1["ratio"], "entry_ref": _f(C[code].iat[i]), "stop": None, "risk_per_share": None,
                       "needs_news_check": False})
             if code == "00685L":

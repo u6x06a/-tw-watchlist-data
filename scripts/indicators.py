@@ -23,6 +23,7 @@ import pandas as pd
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from adjlib import load_adjusted  # noqa: E402
+from ladder543 import run_ladder  # noqa: E402
 from common import CODE_OK, load_config, log, now_tw, path, read_json, write_json  # noqa: E402
 
 OUT = path("data", "indicators.json")
@@ -351,23 +352,16 @@ def market_block(bg, inst, margin, cfg, meta):
     i_hi = len(c) - hl + int(np.argmax(c[-hl:]))
     out["high_60d"] = {"date": d[i_hi], "close": rnd(c[i_hi])}
     out["drawdown_from_60d_high_pct"] = pct(c[-1], c[i_hi])
-    # 543 階梯：自近 60 日高點以來
-    lad = mc["ladder"]
+    # 543 階梯（蔡明翰）：逐日回放整段歷史，取最後一天的狀態；規則見 scripts/ladder543.py
     chg = np.r_[np.nan, c[1:] / c[:-1] - 1] * 100
-    steps = []
-    for i in range(i_hi + 1, len(c)):
-        if chg[i] <= -float(lad["daily_drop_pct"]):
-            steps.append({"type": f"daily_drop>={lad['daily_drop_pct']}%", "date": d[i], "change_pct": rnd(chg[i], 2)})
-    for sp in lad["drawdown_steps_pct"]:
-        for i in range(i_hi + 1, len(c)):
-            if (c[i] / c[i_hi] - 1) * 100 <= -float(sp):
-                steps.append({"type": f"drawdown>={sp}%", "date": d[i], "drawdown_pct": pct(c[i], c[i_hi])})
-                break
-    steps.sort(key=lambda x: x["date"])
-    for k, s in enumerate(steps, 1):
-        s["level"] = k
-    out["ladder"] = {"since_high_date": d[i_hi], "level": len(steps), "steps": steps,
-                     "new_step_today": [s for s in steps if s["date"] == d[-1]]}
+    lad_rows = run_ladder(list(d), c.astype(float), h.astype(float), l.astype(float), v, mc["ladder"])
+    lr = lad_rows[-1]
+    out["ladder"] = {"active": lr["active"], "level": lr["level"], "max_level": lr["max_level"],
+                     "start_date": lr["start_date"], "steps": lr["steps"], "new_step_today": lr["new"],
+                     "ended_today": lr["ended_today"], "last_entry_cost": rnd(lr["last_cost"], 2),
+                     "next_add_price": lr["next_add_price"], "reset_ref_range_high": rnd(lr["range_high"], 2),
+                     "watch": lr["watch"], "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 "
+                                                  f"{mc['ladder']['add_drop_pct']}% 才加下一筆"}
     # 恐慌日
     pc = mc["panic"]
     lbk = int(pc["lookback_days"])
@@ -561,7 +555,7 @@ def main():
         mk["generated_at"] = out["generated_at"]
         mk["params"] = cfg["market"]
         write_json(MARKET_OUT, mk)
-        log(f"market.json：{mk['data_date']} {mk['status']} {mk['status_reasons']}；階梯 {mk['ladder']['level']}")
+        log(f"market.json：{mk['data_date']} {mk['status']} {mk['status_reasons']}；階梯 {mk['ladder']['level']}/{mk['ladder']['max_level']}")
     log(f"寫入 {OUT}：{len(stocks)} 檔（ok {out['counts']['ok']}）；產業 {len(ind)}；資料日期 {data_date}")
 
 
