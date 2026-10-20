@@ -175,6 +175,70 @@
    "finished_at": "2026-10-20T21:32:27+08:00",
    "seconds": 2.5,
    "output_data_date": "2026-10-20"
+  },
+  "companies": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:32:33+08:00",
+   "finished_at": "2026-10-20T21:32:33+08:00",
+   "seconds": 0.2,
+   "output_data_date": "2026-10-19"
+  },
+  "revenue": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:32:33+08:00",
+   "finished_at": "2026-10-20T21:32:34+08:00",
+   "seconds": 0.5,
+   "output_data_date": "2026-09"
+  },
+  "institutional": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:32:34+08:00",
+   "finished_at": "2026-10-20T21:33:43+08:00",
+   "seconds": 69.0,
+   "output_data_date": "2026-10-20"
+  },
+  "chips": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:33:43+08:00",
+   "finished_at": "2026-10-20T21:35:18+08:00",
+   "seconds": 95.8,
+   "output_data_date": "2026-10-20"
+  },
+  "adjust": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:35:19+08:00",
+   "finished_at": "2026-10-20T21:36:20+08:00",
+   "seconds": 61.8,
+   "output_data_date": "2026-10-20"
+  },
+  "indicators": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:36:20+08:00",
+   "finished_at": "2026-10-20T21:36:33+08:00",
+   "seconds": 12.0,
+   "output_data_date": "2026-10-20"
+  },
+  "screen": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:36:33+08:00",
+   "finished_at": "2026-10-20T21:36:44+08:00",
+   "seconds": 11.2,
+   "output_data_date": "2026-10-20"
+  },
+  "paper": {
+   "status": "ok",
+   "exit_code": 0,
+   "started_at": "2026-10-20T21:36:44+08:00",
+   "finished_at": "2026-10-20T21:37:27+08:00",
+   "seconds": 43.3,
+   "output_data_date": "2026-10-20"
   }
  },
  "markets": {
