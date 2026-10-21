@@ -69,11 +69,11 @@
   "days_available": 287
  },
  "margin_total": {
-  "data_date": "2026-10-20",
+  "data_date": "2026-10-21",
   "unit": "千元（上市 + 上櫃融資金額）",
-  "value_k": 853108341.0,
-  "chg_20d_pct": 7.81,
-  "days_available": 286
+  "value_k": 860341776.0,
+  "chg_20d_pct": 7.72,
+  "days_available": 287
  },
  "status": "過濾中",
  "status_reasons": [
@@ -84,7 +84,7 @@
   "expected_latest": "2026-10-21",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-21T20:56:56+08:00",
+ "generated_at": "2026-10-21T21:47:27+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
