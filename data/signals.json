@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:36:04+08:00",
+ "generated_at": "2026-10-21T17:05:24+08:00",
  "data_date": "2026-10-21",
  "expected_latest": "2026-10-21",
  "data_stale": false,
@@ -116,7 +116,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 233.0,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -144,7 +144,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 43.5,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -172,7 +172,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 21.8,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -200,7 +200,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 282.5,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -228,7 +228,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 144.0,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -256,7 +256,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 377.5,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -284,7 +284,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 66.2,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -312,7 +312,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 34.45,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -340,7 +340,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 74.0,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -368,7 +368,7 @@
    "stop_basis": "entry-10%",
    "signal_bar_low": 32.35,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -424,7 +424,7 @@
    "stop_basis": "entry-2ATR",
    "signal_bar_low": 80.7,
    "chips_confirm": true,
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": false
   },
@@ -453,7 +453,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -500,7 +500,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -578,7 +578,7 @@
    "rule": "L1",
    "data_date": "2026-10-21",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -594,11 +594,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 77.0,
     "batch2_lower_1atr": 72.9082,
     "batch2_reclaim_ma5": 78.78,
     "batch3_reclaim_ma20": 73.15
@@ -782,7 +782,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -1017,7 +1017,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": true,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-21T15:36:04+08:00",
+ "generated_at": "2026-10-21T17:05:24+08:00",
  "data_date": "2026-10-21",
  "expected_latest": "2026-10-21",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 159
+  "stocks_flagged": 165
  },
  "flags": [
   {
@@ -28,6 +28,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "1216",
+   "name": "統一",
+   "industry": "食品工業",
+   "industry_rank": 35.0,
+   "rs_rank": 73.0,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
@@ -333,6 +345,18 @@
    ]
   },
   {
+   "code": "2324",
+   "name": "仁寶",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 14.0,
+   "rs_rank": 77.1,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
+   ]
+  },
+  {
    "code": "2327",
    "name": "國巨*",
    "industry": "電子零組件業",
@@ -342,6 +366,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "2330",
+   "name": "台積電",
+   "industry": "半導體業",
+   "industry_rank": 17.0,
+   "rs_rank": 66.5,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -625,6 +661,18 @@
    ]
   },
   {
+   "code": "3034",
+   "name": "聯詠",
+   "industry": "半導體業",
+   "industry_rank": 17.0,
+   "rs_rank": 88.9,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
+   ]
+  },
+  {
    "code": "3042",
    "name": "晶技",
    "industry": "電子零組件業",
@@ -634,6 +682,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "3044",
+   "name": "健鼎",
+   "industry": "電子零組件業",
+   "industry_rank": 5.0,
+   "rs_rank": 92.1,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
@@ -1453,6 +1513,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "6505",
+   "name": "台塑化",
+   "industry": "油電燃氣業",
+   "industry_rank": 19.0,
+   "rs_rank": 96.8,
+   "data_date": "2026-10-21",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
