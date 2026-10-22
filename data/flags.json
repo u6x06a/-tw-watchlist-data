@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T15:35:43+08:00",
+ "generated_at": "2026-10-22T17:05:53+08:00",
  "data_date": "2026-10-22",
  "expected_latest": "2026-10-22",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 394
+  "stocks_flagged": 398
  },
  "flags": [
   {
@@ -99,7 +99,8 @@
    "data_date": "2026-10-22",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -600,7 +601,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1327,6 +1329,18 @@
    ]
   },
   {
+   "code": "2801",
+   "name": "彰銀",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 92.5,
+   "data_date": "2026-10-22",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
+   ]
+  },
+  {
    "code": "2812",
    "name": "台中銀",
    "industry": "金融保險業",
@@ -1336,6 +1350,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "2892",
+   "name": "第一金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 93.0,
+   "data_date": "2026-10-22",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
@@ -1496,6 +1522,18 @@
    "flags": [
     "break_ma10",
     "break_ma20"
+   ]
+  },
+  {
+   "code": "3045",
+   "name": "台灣大",
+   "industry": "通信網路業",
+   "industry_rank": 27.0,
+   "rs_rank": 84.1,
+   "data_date": "2026-10-22",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
@@ -3358,6 +3396,18 @@
    "flags": [
     "limit_up_then_heavy_black",
     "break_ma10"
+   ]
+  },
+  {
+   "code": "6214",
+   "name": "精誠",
+   "industry": "資訊服務業",
+   "industry_rank": 9.0,
+   "rs_rank": 95.7,
+   "data_date": "2026-10-22",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
    ]
   },
   {
