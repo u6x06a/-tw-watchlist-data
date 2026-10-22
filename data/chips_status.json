@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T21:45:39+08:00",
+ "generated_at": "2026-10-22T22:30:20+08:00",
  "expected_latest_trading_date": "2026-10-22",
  "foreign_holding": {
   "latest_date": {
@@ -18,7 +18,7 @@
    },
    "2026-10-22": {
     "TWSE": "ok:1359",
-    "TPEX": "ok:893"
+    "TPEX": "ok:895"
    }
   }
  },
