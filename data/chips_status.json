@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22T22:30:20+08:00",
+ "generated_at": "2026-10-23T15:33:21+08:00",
  "expected_latest_trading_date": "2026-10-22",
  "foreign_holding": {
   "latest_date": {
@@ -44,8 +44,8 @@
   }
  },
  "tdcc": {
-  "latest_week": "2026-10-08",
-  "codes": 3371,
-  "weeks_kept": 2
+  "latest_week": "2026-10-22",
+  "codes": 3378,
+  "weeks_kept": 3
  }
 }
