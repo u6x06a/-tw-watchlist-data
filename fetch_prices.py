@@ -641,6 +641,8 @@ def main():
     for r in g_rows:
         put(merged, r)
     meta["partial_bars"] = g_partial
+    # 台股連假／颱風假期間全市場 0 筆是正常的；只要美股／匯率有抓到資料就照常寫入（否則美股會被一起卡住）
+    ok_any = ok_any or bool(g_rows)
 
     if not ok_any:
         print("所有台股來源都失敗，保留舊資料不覆寫。", file=sys.stderr)
