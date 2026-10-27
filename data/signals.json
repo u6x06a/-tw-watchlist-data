@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T17:06:25+08:00",
+ "generated_at": "2026-10-27T21:13:52+08:00",
  "data_date": "2026-10-27",
  "expected_latest": "2026-10-27",
  "data_stale": false,
@@ -8,7 +8,7 @@
  "quarter_end_window": false,
  "chips_data_available": {
   "institutional": true,
-  "margin": false
+  "margin": true
  },
  "counts": {
   "R1": 4,
@@ -162,7 +162,7 @@
    "trend_template_pass": null,
    "key": {
     "gain_pct": 8.55,
-    "vol_vs_ma5_prev": 10.17,
+    "vol_vs_ma5_prev": 10.34,
     "vol_ma5_vs_ma20_prev": 0.685,
     "ma20": 33.3325,
     "atr14": 1.0471
@@ -190,7 +190,7 @@
    "trend_template_pass": false,
    "key": {
     "gain_pct": 7.24,
-    "vol_vs_ma5_prev": 1.82,
+    "vol_vs_ma5_prev": 1.83,
     "vol_ma5_vs_ma20_prev": 0.595,
     "ma20": 1825.25,
     "atr14": 83.7905
@@ -248,7 +248,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -295,7 +295,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -342,7 +342,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -389,7 +389,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -436,7 +436,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -483,7 +483,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -530,7 +530,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -577,8 +577,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -624,7 +626,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -671,8 +673,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -718,7 +722,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -765,8 +769,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -812,7 +818,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -859,7 +865,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -906,8 +912,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -953,7 +961,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1000,8 +1008,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -1047,8 +1057,10 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
-   "chips_warning_reasons": [],
+   "chips_warning": true,
+   "chips_warning_reasons": [
+    "下跌期間融資增加（散戶接刀，止穩可信度下降）"
+   ],
    "needs_news_check": true
   },
   {
@@ -1094,7 +1106,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1141,7 +1153,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1188,7 +1200,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1235,7 +1247,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1282,7 +1294,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
@@ -1329,7 +1341,7 @@
     "cost_stop_pct": 15.0,
     "cost_stop_note": "平均成本 −15% 由儀表板端計算"
    },
-   "chips_warning": null,
+   "chips_warning": false,
    "chips_warning_reasons": [],
    "needs_news_check": true
   },
