@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T21:13:52+08:00",
+ "generated_at": "2026-10-27T22:28:15+08:00",
  "data_date": "2026-10-27",
  "expected_latest": "2026-10-27",
  "data_stale": false,
@@ -351,7 +351,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -6.723
+   "foreign_pct_chg_20d": -6.677
   },
   {
    "code": "2009",
@@ -424,7 +424,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.802
+   "foreign_pct_chg_20d": -1.771
   },
   {
    "code": "2233",
@@ -1472,7 +1472,7 @@
     "break_ma20",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.108
+   "foreign_pct_chg_20d": -1.085
   },
   {
    "code": "3131",
@@ -1626,7 +1626,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -8.94
+   "foreign_pct_chg_20d": -8.883
   },
   {
    "code": "3264",
@@ -1639,7 +1639,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -5.637
+   "foreign_pct_chg_20d": -5.606
   },
   {
    "code": "3265",
@@ -1677,7 +1677,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.537
+   "foreign_pct_chg_20d": -1.474
   },
   {
    "code": "3305",
@@ -1705,7 +1705,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.684
+   "foreign_pct_chg_20d": -2.661
   },
   {
    "code": "3324",
@@ -1718,7 +1718,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.249
+   "foreign_pct_chg_20d": -1.239
   },
   {
    "code": "3339",
@@ -1870,7 +1870,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -4.278
+   "foreign_pct_chg_20d": -4.269
   },
   {
    "code": "3504",
@@ -1896,7 +1896,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.807
+   "foreign_pct_chg_20d": -1.787
   },
   {
    "code": "3543",
@@ -2163,7 +2163,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.841
+   "foreign_pct_chg_20d": -2.801
   },
   {
    "code": "4763",
@@ -2317,7 +2317,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -4.403
+   "foreign_pct_chg_20d": -4.343
   },
   {
    "code": "4949",
@@ -2696,7 +2696,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.543
+   "foreign_pct_chg_20d": -1.46
   },
   {
    "code": "5904",
@@ -2748,7 +2748,7 @@
    "flags": [
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -2.575
+   "foreign_pct_chg_20d": -2.282
   },
   {
    "code": "6133",
@@ -2872,7 +2872,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.385
+   "foreign_pct_chg_20d": -1.368
   },
   {
    "code": "6182",
@@ -2886,7 +2886,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -4.379
+   "foreign_pct_chg_20d": -4.265
   },
   {
    "code": "6190",
@@ -3126,7 +3126,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.964
+   "foreign_pct_chg_20d": -1.939
   },
   {
    "code": "6265",
@@ -3166,7 +3166,7 @@
     "trust_abandon",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.756
+   "foreign_pct_chg_20d": -1.628
   },
   {
    "code": "6278",
@@ -3293,7 +3293,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.278
+   "foreign_pct_chg_20d": -1.257
   },
   {
    "code": "6442",
@@ -3386,7 +3386,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.805
+   "foreign_pct_chg_20d": -1.766
   },
   {
    "code": "6515",
@@ -3805,7 +3805,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.233
+   "foreign_pct_chg_20d": -1.185
   },
   {
    "code": "6919",
@@ -4133,7 +4133,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.792
+   "foreign_pct_chg_20d": -1.674
   },
   {
    "code": "8096",
@@ -4222,7 +4222,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.742
+   "foreign_pct_chg_20d": -1.732
   },
   {
    "code": "8182",
@@ -4314,7 +4314,7 @@
     "all_ma_lost",
     "foreign_holding_drop"
    ],
-   "foreign_pct_chg_20d": -1.584
+   "foreign_pct_chg_20d": -1.443
   },
   {
    "code": "8422",

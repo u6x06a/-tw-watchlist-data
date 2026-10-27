@@ -85,7 +85,7 @@
   "expected_latest": "2026-10-27",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-27T21:13:41+08:00",
+ "generated_at": "2026-10-27T22:28:06+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
