@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-27T15:36:12+08:00",
+ "generated_at": "2026-10-27T17:06:25+08:00",
  "data_date": "2026-10-27",
  "expected_latest": "2026-10-27",
  "data_stale": false,
@@ -476,7 +476,8 @@
    "data_date": "2026-10-27",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1014,7 +1015,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
