@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T17:01:15+08:00",
+ "updated_at": "2026-10-28T21:57:55+08:00",
  "sources": {
   "2408": "bulk-TWSE",
   "3017": "bulk-TWSE",
@@ -71,6 +71,27 @@
   ],
   "USDTWD=X": [
    "2026-10-28"
+  ],
+  "GOOG": [
+   "2026-10-28"
+  ],
+  "MS": [
+   "2026-10-28"
+  ],
+  "QQQM": [
+   "2026-10-28"
+  ],
+  "SOXX": [
+   "2026-10-28"
+  ],
+  "VOO": [
+   "2026-10-28"
+  ],
+  "SPCX": [
+   "2026-10-28"
+  ],
+  "NVDA": [
+   "2026-10-28"
   ]
  },
  "fallback_rows": 0,
@@ -141,7 +162,7 @@
    "2026-10-23": "ok",
    "2026-10-26": "ok",
    "2026-10-27": "ok",
-   "2026-10-28": "not_yet_open"
+   "2026-10-28": "in_session"
   },
   "available": true,
   "note": "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
@@ -150,86 +171,22 @@
   "fetch_prices": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-10-28T17:01:12+08:00",
-   "finished_at": "2026-10-28T17:02:32+08:00",
-   "seconds": 79.9,
+   "started_at": "2026-10-28T21:57:53+08:00",
+   "finished_at": "2026-10-28T21:59:11+08:00",
+   "seconds": 78.2,
    "output_data_date": "2026-10-28"
   },
   "market_status": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-10-28T17:02:32+08:00",
-   "finished_at": "2026-10-28T17:02:35+08:00",
+   "started_at": "2026-10-28T21:59:11+08:00",
+   "finished_at": "2026-10-28T21:59:13+08:00",
    "seconds": 2.3,
-   "output_data_date": "2026-10-28"
-  },
-  "companies": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:02:41+08:00",
-   "finished_at": "2026-10-28T17:02:41+08:00",
-   "seconds": 0.2,
-   "output_data_date": "2026-10-19"
-  },
-  "revenue": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:02:41+08:00",
-   "finished_at": "2026-10-28T17:02:41+08:00",
-   "seconds": 0.4,
-   "output_data_date": "2026-09"
-  },
-  "institutional": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:02:41+08:00",
-   "finished_at": "2026-10-28T17:03:32+08:00",
-   "seconds": 50.5,
-   "output_data_date": "2026-10-28"
-  },
-  "chips": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:03:32+08:00",
-   "finished_at": "2026-10-28T17:04:58+08:00",
-   "seconds": 86.3,
-   "output_data_date": "2026-10-27"
-  },
-  "adjust": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:04:58+08:00",
-   "finished_at": "2026-10-28T17:06:28+08:00",
-   "seconds": 89.9,
-   "output_data_date": "2026-10-28"
-  },
-  "indicators": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:06:28+08:00",
-   "finished_at": "2026-10-28T17:06:41+08:00",
-   "seconds": 12.7,
-   "output_data_date": "2026-10-28"
-  },
-  "screen": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:06:41+08:00",
-   "finished_at": "2026-10-28T17:06:51+08:00",
-   "seconds": 10.0,
-   "output_data_date": "2026-10-28"
-  },
-  "paper": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-10-28T17:06:51+08:00",
-   "finished_at": "2026-10-28T17:07:42+08:00",
-   "seconds": 50.7,
    "output_data_date": "2026-10-28"
   }
  },
  "markets": {
-  "generated_at": "2026-10-28T17:02:32+08:00",
+  "generated_at": "2026-10-28T21:59:11+08:00",
   "TWSE": {
    "expected_latest": "2026-10-28",
    "data_latest": "2026-10-28",
@@ -270,11 +227,33 @@
    "data_latest": "2026-10-27",
    "data_matches_expected": true,
    "status": "正常",
-   "reason": "紐約時間 2026-10-28（pre_open）；最近已收盤交易日 2026-10-27",
-   "session_state": "pre_open",
+   "reason": "紐約時間 2026-10-28（in_session）；最近已收盤交易日 2026-10-27",
+   "session_state": "in_session",
    "ny_date": "2026-10-28",
    "stale_codes": [],
-   "partial_bars_excluded": {}
+   "partial_bars_excluded": {
+    "GOOG": [
+     "2026-10-28"
+    ],
+    "MS": [
+     "2026-10-28"
+    ],
+    "QQQM": [
+     "2026-10-28"
+    ],
+    "SOXX": [
+     "2026-10-28"
+    ],
+    "VOO": [
+     "2026-10-28"
+    ],
+    "SPCX": [
+     "2026-10-28"
+    ],
+    "NVDA": [
+     "2026-10-28"
+    ]
+   }
   }
  }
 }
