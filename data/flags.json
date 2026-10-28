@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-28T15:36:54+08:00",
+ "generated_at": "2026-10-28T17:06:51+08:00",
  "data_date": "2026-10-28",
  "expected_latest": "2026-10-28",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 305
+  "stocks_flagged": 306
  },
  "flags": [
   {
@@ -687,6 +687,18 @@
    "flags": [
     "all_ma_lost",
     "weak_vs_market"
+   ]
+  },
+  {
+   "code": "2330",
+   "name": "台積電",
+   "industry": "半導體業",
+   "industry_rank": 7.0,
+   "rs_rank": 66.0,
+   "data_date": "2026-10-28",
+   "market_filtered": false,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
