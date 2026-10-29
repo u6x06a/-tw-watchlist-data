@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-10-28",
- "close": 108.65,
- "ma20": 111.435,
- "ma60": 107.8342,
- "above_ma60": true,
- "ma60_slope": 0.6608,
- "ma60_slope_pct": 0.62,
- "change_pct": 1.92,
- "range_pct": 0.8,
+ "data_date": "2026-10-29",
+ "close": 107.25,
+ "ma20": 111.1775,
+ "ma60": 108.0633,
+ "above_ma60": false,
+ "ma60_slope": 0.8342,
+ "ma60_slope_pct": 0.78,
+ "change_pct": -1.29,
+ "range_pct": 1.89,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -6.74,
+ "drawdown_from_60d_high_pct": -7.94,
  "ladder": {
   "active": false,
   "level": 0,
@@ -30,7 +30,7 @@
    "range_high": 116.6,
    "range_pct": 10.21,
    "below_range_low": false,
-   "vol_ratio": 0.45,
+   "vol_ratio": 0.72,
    "breakdown_ok": false,
    "panic_ok": false
   },
@@ -41,21 +41,21 @@
   "change_pct": -3.63,
   "high": 110.15,
   "low": 108.55,
-  "days_since": 7,
+  "days_since": 8,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
   "broke_low": true,
   "broke_low_date": "2026-10-19",
-  "currently_below_low": false
+  "currently_below_low": true
  },
  "follow_through": {
-  "low_date": "2026-07-30",
-  "low_close": 93.5,
-  "rally_day": 59,
+  "low_date": "2026-08-04",
+  "low_close": 100.65,
+  "rally_day": 57,
   "ftd": {
-   "date": "2026-08-05",
+   "date": "2026-08-10",
    "day_from_low": 4,
-   "change_pct": 3.13
+   "change_pct": 1.36
   },
   "low_undercut_after": false
  },
@@ -75,14 +75,17 @@
   "chg_20d_pct": 3.22,
   "days_available": 290
  },
- "status": "正常",
- "status_reasons": [],
+ "status": "過濾中",
+ "status_reasons": [
+  "收盤在季線（MA60）下",
+  "收盤低於恐慌日（2026-10-15）低點"
+ ],
  "market_data_status": {
   "status": "正常",
-  "expected_latest": "2026-10-28",
+  "expected_latest": "2026-10-29",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-28T23:58:37+08:00",
+ "generated_at": "2026-10-29T15:37:17+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
