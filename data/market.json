@@ -63,17 +63,17 @@
   "data_date": "2026-11-02",
   "unit": "TWD",
   "foreign_net": -73520805132.0,
-  "trust_net": 36117119119.0,
+  "trust_net": 33815831633.0,
   "foreign_streak": -3,
   "trust_streak": 15,
   "days_available": 293
  },
  "margin_total": {
-  "data_date": "2026-10-30",
+  "data_date": "2026-11-02",
   "unit": "千元（上市 + 上櫃融資金額）",
-  "value_k": 828769231.0,
-  "chg_20d_pct": -0.43,
-  "days_available": 292
+  "value_k": 827110895.0,
+  "chg_20d_pct": -1.31,
+  "days_available": 293
  },
  "status": "過濾中",
  "status_reasons": [
@@ -81,11 +81,11 @@
   "收盤低於恐慌日（2026-10-15）低點"
  ],
  "market_data_status": {
-  "status": "正常",
+  "status": "尚未公布",
   "expected_latest": "2026-11-02",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-02T17:06:00+08:00",
+ "generated_at": "2026-11-03T01:04:20+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
