@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-10-30",
- "close": 104.95,
- "ma20": 110.86,
- "ma60": 108.0983,
+ "data_date": "2026-11-02",
+ "close": 104.1,
+ "ma20": 110.4625,
+ "ma60": 108.1333,
  "above_ma60": false,
- "ma60_slope": 0.7617,
- "ma60_slope_pct": 0.71,
- "change_pct": -2.14,
- "range_pct": 1.35,
+ "ma60_slope": 0.7058,
+ "ma60_slope_pct": 0.66,
+ "change_pct": -0.81,
+ "range_pct": 1.33,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -9.91,
+ "drawdown_from_60d_high_pct": -10.64,
  "ladder": {
   "active": false,
   "level": 0,
@@ -26,11 +26,11 @@
   "next_add_price": null,
   "reset_ref_range_high": null,
   "watch": {
-   "range_low": 105.8,
+   "range_low": 103.85,
    "range_high": 116.6,
-   "range_pct": 10.21,
-   "below_range_low": true,
-   "vol_ratio": 1.88,
+   "range_pct": 12.28,
+   "below_range_low": false,
+   "vol_ratio": 1.27,
    "breakdown_ok": false,
    "panic_ok": false
   },
@@ -41,7 +41,7 @@
   "change_pct": -3.63,
   "high": 110.15,
   "low": 108.55,
-  "days_since": 9,
+  "days_since": 10,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
   "broke_low": true,
@@ -51,7 +51,7 @@
  "follow_through": {
   "low_date": "2026-08-04",
   "low_close": 100.65,
-  "rally_day": 58,
+  "rally_day": 59,
   "ftd": {
    "date": "2026-08-10",
    "day_from_low": 4,
@@ -82,10 +82,10 @@
  ],
  "market_data_status": {
   "status": "正常",
-  "expected_latest": "2026-10-30",
+  "expected_latest": "2026-11-02",
   "data_matches_expected": true
  },
- "generated_at": "2026-10-30T23:52:06+08:00",
+ "generated_at": "2026-11-02T15:36:20+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
