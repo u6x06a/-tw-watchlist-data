@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T15:36:29+08:00",
+ "generated_at": "2026-11-02T17:06:10+08:00",
  "data_date": "2026-11-02",
  "expected_latest": "2026-11-02",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 405
+  "stocks_flagged": 406
  },
  "flags": [
   {
@@ -738,6 +738,18 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "2377",
+   "name": "微星",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 22.0,
+   "rs_rank": 92.4,
+   "data_date": "2026-11-02",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
