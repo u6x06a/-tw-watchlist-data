@@ -56,13 +56,13 @@
   "low_undercut_after": false
  },
  "institutional_twse": {
-  "data_date": "2026-11-03",
+  "data_date": "2026-11-04",
   "unit": "TWD",
-  "foreign_net": -107306720357.0,
-  "trust_net": 18460158558.0,
-  "foreign_streak": -4,
-  "trust_streak": 16,
-  "days_available": 294
+  "foreign_net": -149899834076.0,
+  "trust_net": 27631127976.0,
+  "foreign_streak": -5,
+  "trust_streak": 17,
+  "days_available": 295
  },
  "margin_total": {
   "data_date": "2026-11-03",
@@ -81,7 +81,7 @@
   "expected_latest": "2026-11-04",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-04T15:37:57+08:00",
+ "generated_at": "2026-11-04T17:06:55+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,

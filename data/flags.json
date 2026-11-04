@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-04T15:38:07+08:00",
+ "generated_at": "2026-11-04T17:07:05+08:00",
  "data_date": "2026-11-04",
  "expected_latest": "2026-11-04",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 536
+  "stocks_flagged": 541
  },
  "flags": [
   {
@@ -964,6 +964,7 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "trust_abandon",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
@@ -1823,6 +1824,7 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "trust_abandon",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
@@ -2062,6 +2064,42 @@
    "revenue_ym": "2026-09"
   },
   {
+   "code": "2880",
+   "name": "華南金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 94.6,
+   "data_date": "2026-11-04",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
+   ]
+  },
+  {
+   "code": "2881",
+   "name": "富邦金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 96.0,
+   "data_date": "2026-11-04",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
+   ]
+  },
+  {
+   "code": "2882",
+   "name": "國泰金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 93.1,
+   "data_date": "2026-11-04",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
+   ]
+  },
+  {
    "code": "2883",
    "name": "凱基金",
    "industry": "金融保險業",
@@ -2082,6 +2120,7 @@
    "data_date": "2026-11-04",
    "market_filtered": true,
    "flags": [
+    "foreign_trust_opposite_at_high",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
@@ -2097,6 +2136,30 @@
    "flags": [
     "break_ma60",
     "all_ma_lost"
+   ]
+  },
+  {
+   "code": "2890",
+   "name": "永豐金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 93.0,
+   "data_date": "2026-11-04",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
+   ]
+  },
+  {
+   "code": "2891",
+   "name": "中信金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 91.2,
+   "data_date": "2026-11-04",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
