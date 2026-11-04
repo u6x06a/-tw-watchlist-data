@@ -59,17 +59,17 @@
   "data_date": "2026-11-04",
   "unit": "TWD",
   "foreign_net": -149899834076.0,
-  "trust_net": 27631127976.0,
+  "trust_net": 27258458843.0,
   "foreign_streak": -5,
   "trust_streak": 17,
   "days_available": 295
  },
  "margin_total": {
-  "data_date": "2026-11-03",
+  "data_date": "2026-11-04",
   "unit": "千元（上市 + 上櫃融資金額）",
-  "value_k": 796337364.0,
-  "chg_20d_pct": -6.17,
-  "days_available": 294
+  "value_k": 787865089.0,
+  "chg_20d_pct": -8.03,
+  "days_available": 295
  },
  "status": "過濾中",
  "status_reasons": [
@@ -81,7 +81,7 @@
   "expected_latest": "2026-11-04",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-04T17:06:55+08:00",
+ "generated_at": "2026-11-04T23:25:44+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
