@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T23:24:54+08:00",
+ "updated_at": "2026-11-06T00:24:41+08:00",
  "sources": {
   "2408": "bulk-TWSE",
   "3017": "bulk-TWSE",
@@ -25,24 +25,24 @@
  "errors": {},
  "bulk": {
   "dates_requested": 9,
-  "dates_with_data": 2,
-  "rows": 4717,
+  "dates_with_data": 1,
+  "rows": 2359,
   "errors": {},
   "by_date": {
-   "2026-11-04": {
-    "TWSE": "ok:1359",
-    "TPEX": "ok:999"
-   },
    "2026-11-05": {
     "TWSE": "ok:1358",
     "TPEX": "ok:1001"
+   },
+   "2026-11-06": {
+    "TWSE": "no_data",
+    "TPEX": "no_data"
    }
   }
  },
  "ref_events": {
   "status": "ok",
-  "rows_checked": 4717,
-  "events": 32
+  "rows_checked": 2359,
+  "events": 9
  },
  "global_status": {
   "005930.KS": "ok",
@@ -124,7 +124,6 @@
  "tw_codes_on_latest_date": 2359,
  "calendar": {
   "TWSE": {
-   "2026-10-19": "ok",
    "2026-10-20": "ok",
    "2026-10-21": "ok",
    "2026-10-22": "ok",
@@ -137,10 +136,10 @@
    "2026-11-02": "ok",
    "2026-11-03": "ok",
    "2026-11-04": "ok",
-   "2026-11-05": "ok"
+   "2026-11-05": "ok",
+   "2026-11-06": "pending"
   },
   "NYSE": {
-   "2026-10-16": "ok",
    "2026-10-19": "ok",
    "2026-10-20": "ok",
    "2026-10-21": "ok",
@@ -154,7 +153,8 @@
    "2026-11-02": "ok",
    "2026-11-03": "ok",
    "2026-11-04": "ok",
-   "2026-11-05": "in_session"
+   "2026-11-05": "in_session",
+   "2026-11-06": "not_yet_open"
   },
   "available": true,
   "note": "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
@@ -163,105 +163,41 @@
   "fetch_prices": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-05T23:24:46+08:00",
-   "finished_at": "2026-11-05T23:26:58+08:00",
-   "seconds": 132.3,
+   "started_at": "2026-11-06T00:24:38+08:00",
+   "finished_at": "2026-11-06T00:25:50+08:00",
+   "seconds": 71.6,
    "output_data_date": "2026-11-05"
   },
   "market_status": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-05T23:26:58+08:00",
-   "finished_at": "2026-11-05T23:27:00+08:00",
-   "seconds": 1.8,
-   "output_data_date": "2026-11-05"
-  },
-  "companies": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:27:08+08:00",
-   "finished_at": "2026-11-05T23:27:08+08:00",
-   "seconds": 0.1,
-   "output_data_date": "2026-10-19"
-  },
-  "revenue": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:27:08+08:00",
-   "finished_at": "2026-11-05T23:27:16+08:00",
-   "seconds": 8.1,
-   "output_data_date": "2026-09"
-  },
-  "institutional": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:27:16+08:00",
-   "finished_at": "2026-11-05T23:28:04+08:00",
-   "seconds": 48.3,
-   "output_data_date": "2026-11-05"
-  },
-  "chips": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:28:04+08:00",
-   "finished_at": "2026-11-05T23:29:22+08:00",
-   "seconds": 77.5,
-   "output_data_date": "2026-11-05"
-  },
-  "adjust": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:29:22+08:00",
-   "finished_at": "2026-11-05T23:30:05+08:00",
-   "seconds": 43.1,
-   "output_data_date": "2026-11-05"
-  },
-  "indicators": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:30:05+08:00",
-   "finished_at": "2026-11-05T23:30:15+08:00",
-   "seconds": 9.3,
-   "output_data_date": "2026-11-05"
-  },
-  "screen": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:30:15+08:00",
-   "finished_at": "2026-11-05T23:30:23+08:00",
-   "seconds": 8.1,
-   "output_data_date": "2026-11-05"
-  },
-  "paper": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-05T23:30:23+08:00",
-   "finished_at": "2026-11-05T23:30:59+08:00",
-   "seconds": 35.8,
+   "started_at": "2026-11-06T00:25:50+08:00",
+   "finished_at": "2026-11-06T00:25:52+08:00",
+   "seconds": 2.3,
    "output_data_date": "2026-11-05"
   }
  },
  "markets": {
-  "generated_at": "2026-11-05T23:26:58+08:00",
+  "generated_at": "2026-11-06T00:25:50+08:00",
   "TWSE": {
    "expected_latest": "2026-11-05",
    "data_latest": "2026-11-05",
    "data_matches_expected": true,
-   "status": "正常",
-   "reason": "已取得今日資料",
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
    "codes_on_latest": 1351,
    "today_is_session": true,
-   "previous_session": "2026-11-04"
+   "previous_session": "2026-11-05"
   },
   "TPEX": {
    "expected_latest": "2026-11-05",
    "data_latest": "2026-11-05",
    "data_matches_expected": true,
-   "status": "正常",
-   "reason": "已取得今日資料",
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
    "codes_on_latest": 997,
    "today_is_session": true,
-   "previous_session": "2026-11-04"
+   "previous_session": "2026-11-05"
   },
   "tw_calendar": {
    "source": "2026:cache",
@@ -271,11 +207,11 @@
     "2026-10-23"
    ],
    "recent_sessions": [
-    "2026-10-30",
     "2026-11-02",
     "2026-11-03",
     "2026-11-04",
-    "2026-11-05"
+    "2026-11-05",
+    "2026-11-06"
    ]
   },
   "NYSE": {
