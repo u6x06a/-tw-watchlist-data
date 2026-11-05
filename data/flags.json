@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T17:07:29+08:00",
+ "generated_at": "2026-11-05T23:30:23+08:00",
  "data_date": "2026-11-05",
  "expected_latest": "2026-11-05",
  "data_stale": false,
@@ -8,14 +8,14 @@
  "quarter_end_window": false,
  "chips_data_available": {
   "institutional": true,
-  "margin": false
+  "margin": true
  },
  "notes": [
   "market_wide_selloff=true（0050 當日跌 ≥ 2%）：儀表板遇到這天觸發停損，改為先減半、隔日收盤確認",
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 587
+  "stocks_flagged": 591
  },
  "flags": [
   {
@@ -91,8 +91,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.406,
    "revenue_ym": "2026-09"
   },
   {
@@ -255,8 +257,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.119
   },
   {
    "code": "1528",
@@ -281,8 +285,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.27,
    "revenue_ym": "2026-09"
   },
   {
@@ -319,8 +325,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.522
   },
   {
    "code": "1595",
@@ -480,8 +488,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.293,
    "revenue_ym": "2026-09"
   },
   {
@@ -520,8 +530,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -4.002,
    "revenue_ym": "2026-09"
   },
   {
@@ -627,8 +639,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -7.422,
    "revenue_ym": "2026-09"
   },
   {
@@ -858,8 +872,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.249
   },
   {
    "code": "2302",
@@ -885,8 +901,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.398,
    "revenue_ym": "2026-09"
   },
   {
@@ -900,8 +918,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.478,
    "revenue_ym": "2026-09"
   },
   {
@@ -913,8 +933,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.302
   },
   {
    "code": "2312",
@@ -953,8 +975,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.709
   },
   {
    "code": "2317",
@@ -992,8 +1016,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.817,
    "revenue_ym": "2026-09"
   },
   {
@@ -1058,8 +1084,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -5.537,
    "revenue_ym": "2026-09"
   },
   {
@@ -1085,8 +1113,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.906,
    "revenue_ym": "2026-09"
   },
   {
@@ -1295,8 +1325,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.35,
    "revenue_ym": "2026-09"
   },
   {
@@ -1308,8 +1340,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.061
   },
   {
    "code": "2371",
@@ -1361,8 +1395,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.967,
    "revenue_ym": "2026-09"
   },
   {
@@ -1414,8 +1450,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.682,
    "revenue_ym": "2026-09"
   },
   {
@@ -1490,8 +1528,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.09,
    "revenue_ym": "2026-09"
   },
   {
@@ -1527,8 +1567,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.431
   },
   {
    "code": "2408",
@@ -1541,8 +1583,10 @@
    "flags": [
     "all_ma_lost",
     "trust_abandon",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.57,
    "revenue_ym": "2026-09"
   },
   {
@@ -1554,8 +1598,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.41
   },
   {
    "code": "2413",
@@ -1591,8 +1637,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -5.122,
    "revenue_ym": "2026-09"
   },
   {
@@ -1647,8 +1695,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.201,
    "revenue_ym": "2026-09"
   },
   {
@@ -1660,8 +1710,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.661
   },
   {
    "code": "2451",
@@ -1686,8 +1738,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.438
   },
   {
    "code": "2455",
@@ -1710,8 +1764,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.214
   },
   {
    "code": "2464",
@@ -1787,8 +1843,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.122,
    "revenue_ym": "2026-09"
   },
   {
@@ -1826,8 +1884,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.662
   },
   {
    "code": "2480",
@@ -1866,8 +1926,10 @@
    "market_filtered": true,
    "flags": [
     "limit_up_then_heavy_black",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.656
   },
   {
    "code": "2484",
@@ -1879,8 +1941,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.587,
    "revenue_ym": "2026-09"
   },
   {
@@ -1892,8 +1956,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.449
   },
   {
    "code": "2486",
@@ -1919,8 +1985,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.551,
    "revenue_ym": "2026-09"
   },
   {
@@ -1947,8 +2015,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.067,
    "revenue_ym": "2026-09"
   },
   {
@@ -2354,8 +2424,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.571,
    "revenue_ym": "2026-09"
   },
   {
@@ -2367,8 +2439,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.799
   },
   {
    "code": "3010",
@@ -2432,8 +2506,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.241,
    "revenue_ym": "2026-09"
   },
   {
@@ -2459,8 +2535,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.598,
    "revenue_ym": "2026-09"
   },
   {
@@ -2530,8 +2608,10 @@
    "market_filtered": true,
    "flags": [
     "break_ma10",
-    "break_ma20"
-   ]
+    "break_ma20",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.529
   },
   {
    "code": "3033",
@@ -2543,8 +2623,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.09,
    "revenue_ym": "2026-09"
   },
   {
@@ -2600,8 +2682,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.189,
    "revenue_ym": "2026-09"
   },
   {
@@ -2695,8 +2779,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.957,
    "revenue_ym": "2026-09"
   },
   {
@@ -2709,8 +2795,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.954,
    "revenue_ym": "2026-09"
   },
   {
@@ -2739,6 +2827,19 @@
     "break_ma60",
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "3114",
+   "name": "好德",
+   "industry": "電子零組件業",
+   "industry_rank": 34.0,
+   "rs_rank": 93.2,
+   "data_date": "2026-11-05",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.522
   },
   {
    "code": "3131",
@@ -2804,8 +2905,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.056
   },
   {
    "code": "3162",
@@ -2845,8 +2948,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.201,
    "revenue_ym": "2026-09"
   },
   {
@@ -2859,8 +2964,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -4.075,
    "revenue_ym": "2026-09"
   },
   {
@@ -2873,8 +2980,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.167,
    "revenue_ym": "2026-09"
   },
   {
@@ -2937,8 +3046,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.165,
    "revenue_ym": "2026-09"
   },
   {
@@ -2951,8 +3062,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.715,
    "revenue_ym": "2026-09"
   },
   {
@@ -2977,8 +3090,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -8.886,
    "revenue_ym": "2026-09"
   },
   {
@@ -2991,8 +3106,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -6.458,
    "revenue_ym": "2026-09"
   },
   {
@@ -3055,8 +3172,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.985,
    "revenue_ym": "2026-09"
   },
   {
@@ -3198,8 +3317,10 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.089
   },
   {
    "code": "3413",
@@ -3264,8 +3385,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.423,
    "revenue_ym": "2026-09"
   },
   {
@@ -3341,8 +3464,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -5.489,
    "revenue_ym": "2026-09"
   },
   {
@@ -3354,8 +3479,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.137,
    "revenue_ym": "2026-09"
   },
   {
@@ -3393,8 +3520,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.203
   },
   {
    "code": "3526",
@@ -3405,8 +3534,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.137
   },
   {
    "code": "3529",
@@ -3457,8 +3588,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.067,
    "revenue_ym": "2026-09"
   },
   {
@@ -3471,8 +3604,10 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.056
   },
   {
    "code": "3545",
@@ -3510,8 +3645,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.356,
    "revenue_ym": "2026-09"
   },
   {
@@ -3528,6 +3665,19 @@
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
+  },
+  {
+   "code": "3576",
+   "name": "聯合再生",
+   "industry": "光電業",
+   "industry_rank": 29.0,
+   "rs_rank": 53.0,
+   "data_date": "2026-11-05",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.177
   },
   {
    "code": "3580",
@@ -3553,8 +3703,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.0
   },
   {
    "code": "3583",
@@ -3565,8 +3717,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.703
   },
   {
    "code": "3587",
@@ -3633,8 +3787,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.169,
    "revenue_ym": "2026-09"
   },
   {
@@ -3689,8 +3845,10 @@
     "break_ma10",
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.714,
    "revenue_ym": "2026-09"
   },
   {
@@ -3703,8 +3861,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.337,
    "revenue_ym": "2026-09"
   },
   {
@@ -3744,8 +3904,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.848
   },
   {
    "code": "3675",
@@ -3784,8 +3946,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.082
   },
   {
    "code": "3689",
@@ -3897,8 +4061,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.128,
    "revenue_ym": "2026-09"
   },
   {
@@ -4130,8 +4296,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.553
   },
   {
    "code": "4760",
@@ -4272,8 +4440,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.935,
    "revenue_ym": "2026-09"
   },
   {
@@ -4415,8 +4585,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.658,
    "revenue_ym": "2026-09"
   },
   {
@@ -4468,8 +4640,10 @@
    "flags": [
     "break_ma10",
     "break_ma20",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.929
   },
   {
    "code": "4971",
@@ -4547,8 +4721,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.884,
    "revenue_ym": "2026-09"
   },
   {
@@ -4667,8 +4843,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.979,
    "revenue_ym": "2026-09"
   },
   {
@@ -5160,8 +5338,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.843
   },
   {
    "code": "6141",
@@ -5235,8 +5415,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "break_ma10"
-   ]
+    "break_ma10",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.021
   },
   {
    "code": "6153",
@@ -5247,8 +5429,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.41
   },
   {
    "code": "6155",
@@ -5302,8 +5486,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.982
   },
   {
    "code": "6174",
@@ -5332,6 +5518,19 @@
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
+  },
+  {
+   "code": "6176",
+   "name": "瑞儀",
+   "industry": "光電業",
+   "industry_rank": 29.0,
+   "rs_rank": 7.2,
+   "data_date": "2026-11-05",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.664
   },
   {
    "code": "6179",
@@ -5454,8 +5653,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.633,
    "revenue_ym": "2026-09"
   },
   {
@@ -5509,8 +5710,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.129,
    "revenue_ym": "2026-09"
   },
   {
@@ -5551,8 +5754,10 @@
     "break_ma10",
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.49,
    "revenue_ym": "2026-09"
   },
   {
@@ -5645,8 +5850,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.263
   },
   {
    "code": "6245",
@@ -5671,8 +5878,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.156,
    "revenue_ym": "2026-09"
   },
   {
@@ -5685,8 +5894,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.647,
    "revenue_ym": "2026-09"
   },
   {
@@ -5699,8 +5910,10 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.398
   },
   {
    "code": "6271",
@@ -5726,8 +5939,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.101,
    "revenue_ym": "2026-09"
   },
   {
@@ -5770,8 +5985,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.793,
    "revenue_ym": "2026-09"
   },
   {
@@ -5798,8 +6015,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -3.907,
    "revenue_ym": "2026-09"
   },
   {
@@ -5977,6 +6196,19 @@
    "revenue_ym": "2026-09"
   },
   {
+   "code": "6443",
+   "name": "元晶",
+   "industry": "光電業",
+   "industry_rank": 29.0,
+   "rs_rank": 9.6,
+   "data_date": "2026-11-05",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.021
+  },
+  {
    "code": "6446",
    "name": "藥華藥",
    "industry": "生技醫療業",
@@ -6000,8 +6232,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.325,
    "revenue_ym": "2026-09"
   },
   {
@@ -6052,8 +6286,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -7.134
   },
   {
    "code": "6491",
@@ -6093,8 +6329,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -5.437,
    "revenue_ym": "2026-09"
   },
   {
@@ -6172,8 +6410,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.5,
    "revenue_ym": "2026-09"
   },
   {
@@ -6187,8 +6427,10 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.076,
    "revenue_ym": "2026-09"
   },
   {
@@ -6200,8 +6442,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.636
   },
   {
    "code": "6538",
@@ -6334,8 +6578,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.986
   },
   {
    "code": "6664",
@@ -6400,8 +6646,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -9.131,
    "revenue_ym": "2026-09"
   },
   {
@@ -6453,8 +6701,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.084,
    "revenue_ym": "2026-09"
   },
   {
@@ -6520,8 +6770,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.151,
    "revenue_ym": "2026-09"
   },
   {
@@ -6533,8 +6785,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.304
   },
   {
    "code": "6719",
@@ -6626,8 +6880,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -6.921,
    "revenue_ym": "2026-09"
   },
   {
@@ -6870,8 +7126,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.62,
    "revenue_ym": "2026-09"
   },
   {
@@ -7150,8 +7408,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -7.197,
    "revenue_ym": "2026-09"
   },
   {
@@ -7254,8 +7514,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.342,
    "revenue_ym": "2026-09"
   },
   {
@@ -7475,8 +7737,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -5.381,
    "revenue_ym": "2026-09"
   },
   {
@@ -7551,8 +7815,10 @@
    "data_date": "2026-11-05",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.596
   },
   {
    "code": "8271",
@@ -7564,8 +7830,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -1.696,
    "revenue_ym": "2026-09"
   },
   {
@@ -7606,8 +7874,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "foreign_holding_drop",
     "good_news_priced_in"
    ],
+   "foreign_pct_chg_20d": -2.689,
    "revenue_ym": "2026-09"
   },
   {
