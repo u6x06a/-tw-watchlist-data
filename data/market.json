@@ -77,11 +77,11 @@
   "收盤低於恐慌日（2026-11-03）低點"
  ],
  "market_data_status": {
-  "status": "正常",
+  "status": "尚未公布",
   "expected_latest": "2026-11-05",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-05T23:30:14+08:00",
+ "generated_at": "2026-11-06T00:29:26+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,

@@ -17473,19 +17473,6 @@
  },
  {
   "code": "1315",
-  "date": "2025-09-01",
-  "prev_close": 66.5,
-  "ref": 64.5,
-  "factor": 0.9699248120300752,
-  "kind": "息",
-  "market": "TWSE",
-  "category": "exright",
-  "source": "TWT49U",
-  "ref_full": 64.5,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "1315",
   "date": "2026-04-24",
   "prev_close": 65.7,
   "ref": 63.2,
@@ -26958,19 +26945,6 @@
  },
  {
   "code": "3528",
-  "date": "2025-09-01",
-  "prev_close": 73.9,
-  "ref": 70.9,
-  "factor": 0.959404600811908,
-  "kind": "息",
-  "market": "TWSE",
-  "category": "exright",
-  "source": "TWT49U",
-  "ref_full": 70.9,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "3528",
   "date": "2026-08-27",
   "prev_close": 83.4,
   "ref": 82.02,
@@ -28430,19 +28404,6 @@
  },
  {
   "code": "4138",
-  "date": "2025-09-01",
-  "prev_close": 76.8,
-  "ref": 69.82,
-  "factor": 0.9091145833333333,
-  "kind": "除權",
-  "market": "TPEX",
-  "category": "exright",
-  "source": "exDailyQ",
-  "ref_full": 69.82,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "4138",
   "date": "2026-04-23",
   "prev_close": 65.5,
   "ref": 61.3,
@@ -28721,19 +28682,6 @@
   "category": "exright",
   "source": "exDailyQ",
   "ref_full": 42.85,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "4306",
-  "date": "2025-09-01",
-  "prev_close": 15.8,
-  "ref": 14.5,
-  "factor": 0.9177215189873418,
-  "kind": "權息",
-  "market": "TWSE",
-  "category": "exright",
-  "source": "TWT49U",
-  "ref_full": 14.5,
   "ref_basis": "dividend_only"
  },
  {
@@ -33007,19 +32955,6 @@
   "ref_basis": "dividend_only"
  },
  {
-  "code": "6140",
-  "date": "2025-09-01",
-  "prev_close": 41.75,
-  "ref": 37.95,
-  "factor": 0.9089820359281438,
-  "kind": "除權",
-  "market": "TPEX",
-  "category": "exright",
-  "source": "exDailyQ",
-  "ref_full": 37.95,
-  "ref_basis": "dividend_only"
- },
- {
   "code": "6142",
   "date": "2026-10-27",
   "prev_close": 8.71,
@@ -33956,19 +33891,6 @@
   "category": "exright",
   "source": "exDailyQ",
   "ref_full": 24.5,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "6234",
-  "date": "2025-09-01",
-  "prev_close": 27.4,
-  "ref": 26.95,
-  "factor": 0.9835766423357665,
-  "kind": "除息",
-  "market": "TPEX",
-  "category": "exright",
-  "source": "exDailyQ",
-  "ref_full": 26.95,
   "ref_basis": "dividend_only"
  },
  {
@@ -35599,19 +35521,6 @@
   "category": "exright",
   "source": "exDailyQ",
   "ref_full": 58.26,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "6591",
-  "date": "2025-09-01",
-  "prev_close": 100.5,
-  "ref": 100.5,
-  "factor": 1.0,
-  "kind": "權",
-  "market": "TWSE",
-  "category": "exright",
-  "source": "TWT49U",
-  "ref_full": 98.34,
   "ref_basis": "dividend_only"
  },
  {
@@ -38626,19 +38535,6 @@
   "category": "exright",
   "source": "exDailyQ",
   "ref_full": 1482.0,
-  "ref_basis": "dividend_only"
- },
- {
-  "code": "7753",
-  "date": "2025-09-01",
-  "prev_close": 54.8,
-  "ref": 53.47,
-  "factor": 0.9757299270072993,
-  "kind": "除息",
-  "market": "TPEX",
-  "category": "exright",
-  "source": "exDailyQ",
-  "ref_full": 53.47,
   "ref_basis": "dividend_only"
  },
  {
