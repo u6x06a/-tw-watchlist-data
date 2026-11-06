@@ -52,6 +52,19 @@
   "ref_basis": "dividend_only"
  },
  {
+  "code": "00400A",
+  "date": "2026-11-06",
+  "prev_close": 12.06,
+  "ref": 11.94,
+  "factor": 0.990049751243781,
+  "kind": "息",
+  "market": "TWSE",
+  "category": "exright",
+  "source": "TWT49U",
+  "ref_full": 11.94,
+  "ref_basis": "dividend_only"
+ },
+ {
   "code": "00401A",
   "date": "2026-08-14",
   "prev_close": 13.81,
@@ -21421,6 +21434,19 @@
   "category": "exright",
   "source": "TWT49U",
   "ref_full": 54.3,
+  "ref_basis": "dividend_only"
+ },
+ {
+  "code": "2414",
+  "date": "2026-11-06",
+  "prev_close": 48.3,
+  "ref": 48.3,
+  "factor": 1.0,
+  "kind": "權",
+  "market": "TWSE",
+  "category": "exright",
+  "source": "TWT49U",
+  "ref_full": 48.04,
   "ref_basis": "dividend_only"
  },
  {

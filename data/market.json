@@ -1,56 +1,76 @@
 {
  "bench": "0050",
- "data_date": "2026-11-05",
- "close": 97.15,
- "ma20": 108.26,
- "ma60": 107.9642,
+ "data_date": "2026-11-06",
+ "close": 92.5,
+ "ma20": 107.06,
+ "ma60": 107.7917,
  "above_ma60": false,
- "ma60_slope": -0.0992,
- "ma60_slope_pct": -0.09,
- "change_pct": -2.7,
- "range_pct": 2.85,
+ "ma60_slope": -0.3067,
+ "ma60_slope_pct": -0.28,
+ "change_pct": -4.79,
+ "range_pct": 7.1,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -16.61,
+ "drawdown_from_60d_high_pct": -20.6,
  "ladder": {
-  "active": false,
-  "level": 0,
+  "active": true,
+  "level": 1,
   "max_level": 5,
-  "start_date": null,
-  "steps": [],
-  "new_step_today": [],
+  "start_date": "2026-11-06",
+  "steps": [
+   {
+    "level": 1,
+    "date": "2026-11-06",
+    "type": "panic",
+    "price": 92.5,
+    "vol_ratio": 5.18,
+    "range_pct": 20.33,
+    "change_pct": -4.79
+   }
+  ],
+  "new_step_today": [
+   {
+    "level": 1,
+    "date": "2026-11-06",
+    "type": "panic",
+    "price": 92.5,
+    "vol_ratio": 5.18,
+    "range_pct": 20.33,
+    "change_pct": -4.79
+   }
+  ],
   "ended_today": false,
-  "last_entry_cost": null,
-  "next_add_price": null,
-  "reset_ref_range_high": null,
+  "last_entry_cost": 92.5,
+  "next_add_price": 88.8,
+  "reset_ref_range_high": 116.6,
   "watch": {
-   "range_low": 97.55,
+   "range_low": 96.9,
    "range_high": 116.6,
-   "range_pct": 19.53,
+   "range_pct": 20.33,
    "below_range_low": true,
-   "vol_ratio": 2.99,
+   "vol_ratio": 5.18,
    "breakdown_ok": false,
-   "panic_ok": false
+   "panic_ok": true
   },
   "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
  "panic_day": {
-  "date": "2026-11-03",
-  "change_pct": -3.36,
-  "high": 103.35,
-  "low": 100.5,
-  "days_since": 2,
+  "date": "2026-11-06",
+  "change_pct": -4.79,
+  "high": 94.45,
+  "low": 87.55,
+  "days_since": 0,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
-  "broke_low": true,
-  "broke_low_date": "2026-11-04",
-  "currently_below_low": true
+  "broke_low": false,
+  "broke_low_date": null,
+  "currently_below_low": false
  },
  "follow_through": {
-  "low_date": "2026-11-05",
-  "low_close": 97.15,
+  "low_date": "2026-11-06",
+  "low_close": 92.5,
   "rally_day": 0,
   "ftd": null,
   "low_undercut_after": false
@@ -73,15 +93,14 @@
  },
  "status": "過濾中",
  "status_reasons": [
-  "收盤在季線（MA60）下",
-  "收盤低於恐慌日（2026-11-03）低點"
+  "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-05",
+  "status": "正常",
+  "expected_latest": "2026-11-06",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-06T01:21:55+08:00",
+ "generated_at": "2026-11-06T15:35:58+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
