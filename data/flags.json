@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06T15:36:06+08:00",
+ "generated_at": "2026-11-06T17:07:11+08:00",
  "data_date": "2026-11-06",
  "expected_latest": "2026-11-06",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 593
+  "stocks_flagged": 594
  },
  "flags": [
   {
@@ -1737,7 +1737,8 @@
    "data_date": "2026-11-06",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -2251,6 +2252,7 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "trust_abandon",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
@@ -2264,7 +2266,8 @@
    "data_date": "2026-11-06",
    "market_filtered": true,
    "flags": [
-    "break_ma20"
+    "break_ma20",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -2328,9 +2331,22 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
+    "foreign_trust_opposite_at_high",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
+  },
+  {
+   "code": "2886",
+   "name": "兆豐金",
+   "industry": "金融保險業",
+   "industry_rank": 1.0,
+   "rs_rank": 94.9,
+   "data_date": "2026-11-06",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
+   ]
   },
   {
    "code": "2887",
@@ -2378,7 +2394,8 @@
    "data_date": "2026-11-06",
    "market_filtered": true,
    "flags": [
-    "break_ma10"
+    "break_ma10",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -3328,6 +3345,7 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
+    "trust_abandon",
     "good_news_priced_in"
    ],
    "revenue_ym": "2026-09"
@@ -5476,7 +5494,8 @@
    "data_date": "2026-11-06",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {

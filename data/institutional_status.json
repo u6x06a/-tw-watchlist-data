@@ -1,7 +1,7 @@
 {
- "generated_at": "2026-11-06T15:33:37+08:00",
+ "generated_at": "2026-11-06T17:04:09+08:00",
  "latest_date": {
-  "TWSE": "2026-11-05",
+  "TWSE": "2026-11-06",
   "TPEX": "2026-11-06"
  },
  "expected_latest_trading_date": "2026-11-06",
@@ -16,7 +16,7 @@
    "TPEX": "ok:907"
   },
   "2026-11-06": {
-   "TWSE": "pending（交易所尚未公布）",
+   "TWSE": "ok:1334",
    "TPEX": "ok:918"
   }
  },
