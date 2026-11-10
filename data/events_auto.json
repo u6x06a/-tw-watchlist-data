@@ -9919,6 +9919,19 @@
   "ref_basis": "dividend_only"
  },
  {
+  "code": "00940",
+  "date": "2026-11-10",
+  "prev_close": 12.09,
+  "ref": 12.03,
+  "factor": 0.9950372208436724,
+  "kind": "息",
+  "market": "TWSE",
+  "category": "exright",
+  "source": "TWT49U",
+  "ref_full": 12.03,
+  "ref_basis": "dividend_only"
+ },
+ {
   "code": "00942B",
   "date": "2025-09-15",
   "prev_close": 14.46,
