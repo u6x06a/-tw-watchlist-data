@@ -39508,6 +39508,19 @@
   "ref_basis": "dividend_only"
  },
  {
+  "code": "8390",
+  "date": "2026-11-11",
+  "prev_close": 81.9,
+  "ref": 81.9,
+  "factor": 1.0,
+  "kind": "除權",
+  "market": "TPEX",
+  "category": "exright",
+  "source": "exDailyQ",
+  "ref_full": 80.37,
+  "ref_basis": "dividend_only"
+ },
+ {
   "code": "8401",
   "date": "2026-03-27",
   "prev_close": 26.6,

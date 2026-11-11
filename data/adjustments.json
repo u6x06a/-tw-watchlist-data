@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-11T01:03:04+08:00",
- "data_date": "2026-11-10",
+ "generated_at": "2026-11-11T15:36:18+08:00",
+ "data_date": "2026-11-11",
  "price_basis": "台股：還原分割/減資/除權息（往前乘係數）；GLOBAL：yfinance 原值",
  "events_status": "fetched",
  "events_by_reason": {
@@ -139,6 +139,7 @@
   "除權息（權息），含現金增資認購（除權息參考價 38.69；依 exright_ref=dividend_only 還原）": 1,
   "除權息（權息），含現金增資認購（除權息參考價 87.53；依 exright_ref=dividend_only 還原）": 1,
   "除權息（權息），含現金增資認購（除權息參考價 44.12；依 exright_ref=dividend_only 還原）": 1,
+  "除權息（除權），含現金增資認購（除權息參考價 80.37；依 exright_ref=dividend_only 還原）": 1,
   "除權息（除權），含現金增資認購（除權息參考價 14.68；依 exright_ref=dividend_only 還原）": 1,
   "除權息（權），含現金增資認購（除權息參考價 44.92；依 exright_ref=dividend_only 還原）": 1,
   "除權息（權），含現金增資認購（除權息參考價 22.49；依 exright_ref=dividend_only 還原）": 1,
@@ -147,13 +148,13 @@
  "ref_events_coverage": {
   "TWSE": [
    "2025-08-14",
-   "2026-11-10",
-   300
+   "2026-11-11",
+   301
   ],
   "TPEX": [
    "2025-08-14",
-   "2026-11-10",
-   300
+   "2026-11-11",
+   301
   ]
  },
  "manual_events": [
@@ -176,7 +177,7 @@
   }
  ],
  "tpex_no_trade_ref_diff_skipped": {
-  "count": 1655,
+  "count": 1666,
   "note": "櫃買無成交日後的漲跌基準差異，非公司事件，未還原",
   "examples": [
    {
@@ -380,5 +381,5 @@
   ]
  },
  "output_scope": "tracked",
- "rows": 8486
+ "rows": 8517
 }
