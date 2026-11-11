@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T17:07:44+08:00",
+ "generated_at": "2026-11-11T23:10:12+08:00",
  "data_date": "2026-11-11",
  "expected_latest": "2026-11-11",
  "data_stale": false,
@@ -8,14 +8,14 @@
  "quarter_end_window": false,
  "chips_data_available": {
   "institutional": true,
-  "margin": false
+  "margin": true
  },
  "notes": [
   "market_wide_selloff=true（0050 當日跌 ≥ 2%）：儀表板遇到這天觸發停損，改為先減半、隔日收盤確認",
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 243
+  "stocks_flagged": 324
  },
  "flags": [
   {
@@ -55,6 +55,19 @@
    ]
   },
   {
+   "code": "1303",
+   "name": "南亞",
+   "industry": "塑膠工業",
+   "industry_rank": 16.0,
+   "rs_rank": 99.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.589
+  },
+  {
    "code": "1312",
    "name": "國喬",
    "industry": "塑膠工業",
@@ -64,8 +77,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.2
   },
   {
    "code": "1314",
@@ -76,8 +91,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.696
   },
   {
    "code": "1319",
@@ -117,6 +134,32 @@
    ]
   },
   {
+   "code": "1519",
+   "name": "華城",
+   "industry": "電機機械",
+   "industry_rank": 29.0,
+   "rs_rank": 7.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.26
+  },
+  {
+   "code": "1560",
+   "name": "中砂",
+   "industry": "電機機械",
+   "industry_rank": 29.0,
+   "rs_rank": 82.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.189
+  },
+  {
    "code": "1595",
    "name": "川寶",
    "industry": "半導體業",
@@ -141,6 +184,19 @@
    ]
   },
   {
+   "code": "1605",
+   "name": "華新",
+   "industry": "電器電纜",
+   "industry_rank": 15.0,
+   "rs_rank": 45.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.491
+  },
+  {
    "code": "1608",
    "name": "華榮",
    "industry": "電器電纜",
@@ -161,8 +217,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.079
   },
   {
    "code": "1615",
@@ -236,8 +294,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.209
   },
   {
    "code": "1736",
@@ -287,6 +347,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "1815",
+   "name": "富喬",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 97.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.463
   },
   {
    "code": "1907",
@@ -349,6 +422,19 @@
    ]
   },
   {
+   "code": "2103",
+   "name": "台橡",
+   "industry": "橡膠工業",
+   "industry_rank": 6.0,
+   "rs_rank": 74.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.367
+  },
+  {
    "code": "2105",
    "name": "正新",
    "industry": "橡膠工業",
@@ -397,6 +483,18 @@
    ]
   },
   {
+   "code": "2221",
+   "name": "大甲",
+   "industry": "其他",
+   "industry_rank": 20.0,
+   "rs_rank": 99.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "chips_weakening_at_high"
+   ]
+  },
+  {
    "code": "2233",
    "name": "宇隆",
    "industry": "汽車工業",
@@ -417,8 +515,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.119
   },
   {
    "code": "2241",
@@ -429,8 +529,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.519
+  },
+  {
+   "code": "2301",
+   "name": "光寶科",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 31.0,
+   "rs_rank": 78.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.216
   },
   {
    "code": "2302",
@@ -441,8 +556,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.206
+  },
+  {
+   "code": "2303",
+   "name": "聯電",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 39.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.487
   },
   {
    "code": "2305",
@@ -455,8 +585,23 @@
    "flags": [
     "break_ma60",
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.615
+  },
+  {
+   "code": "2308",
+   "name": "台達電",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 4.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.508
   },
   {
    "code": "2312",
@@ -469,6 +614,32 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "2313",
+   "name": "華通",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 24.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.49
+  },
+  {
+   "code": "2316",
+   "name": "楠梓電",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 38.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.822
   },
   {
    "code": "2323",
@@ -492,8 +663,23 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.522
+  },
+  {
+   "code": "2327",
+   "name": "國巨*",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 14.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.459
   },
   {
    "code": "2328",
@@ -521,6 +707,32 @@
    ]
   },
   {
+   "code": "2337",
+   "name": "旺宏",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 0.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.554
+  },
+  {
+   "code": "2340",
+   "name": "台亞",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 92.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.253
+  },
+  {
    "code": "2342",
    "name": "茂矽",
    "industry": "半導體業",
@@ -533,6 +745,32 @@
    ]
   },
   {
+   "code": "2344",
+   "name": "華邦電",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 41.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.131
+  },
+  {
+   "code": "2345",
+   "name": "智邦",
+   "industry": "通信網路業",
+   "industry_rank": 35.0,
+   "rs_rank": 4.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.101
+  },
+  {
    "code": "2347",
    "name": "聯強",
    "industry": "電子通路業",
@@ -543,6 +781,19 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "2351",
+   "name": "順德",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 37.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.19
   },
   {
    "code": "2352",
@@ -569,6 +820,32 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "2360",
+   "name": "致茂",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 2.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.132
+  },
+  {
+   "code": "2368",
+   "name": "金像電",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 53.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.506
   },
   {
    "code": "2371",
@@ -632,6 +909,19 @@
    ]
   },
   {
+   "code": "2383",
+   "name": "台光電",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 36.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.961
+  },
+  {
    "code": "2385",
    "name": "群光",
    "industry": "電子零組件業",
@@ -680,6 +970,32 @@
    ]
   },
   {
+   "code": "2404",
+   "name": "漢唐",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 53.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.577
+  },
+  {
+   "code": "2408",
+   "name": "南亞科",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 79.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.457
+  },
+  {
    "code": "2409",
    "name": "友達",
    "industry": "光電業",
@@ -688,8 +1004,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.329
   },
   {
    "code": "2412",
@@ -714,6 +1032,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "2426",
+   "name": "鼎元",
+   "industry": "光電業",
+   "industry_rank": 30.0,
+   "rs_rank": 92.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.172
   },
   {
    "code": "2428",
@@ -741,6 +1072,32 @@
    ]
   },
   {
+   "code": "2441",
+   "name": "超豐",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 72.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.356
+  },
+  {
+   "code": "2449",
+   "name": "京元電子",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 29.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.352
+  },
+  {
    "code": "2451",
    "name": "創見",
    "industry": "半導體業",
@@ -753,6 +1110,32 @@
    ]
   },
   {
+   "code": "2454",
+   "name": "聯發科",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 83.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.28
+  },
+  {
+   "code": "2455",
+   "name": "全新",
+   "industry": "通信網路業",
+   "industry_rank": 35.0,
+   "rs_rank": 68.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.113
+  },
+  {
    "code": "2458",
    "name": "義隆",
    "industry": "半導體業",
@@ -762,8 +1145,10 @@
    "market_filtered": true,
    "flags": [
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.367
   },
   {
    "code": "2467",
@@ -774,7 +1159,21 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "trust_abandon"
+    "trust_abandon",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.5
+  },
+  {
+   "code": "2468",
+   "name": "華經",
+   "industry": "資訊服務業",
+   "industry_rank": 2.0,
+   "rs_rank": 99.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "chips_weakening_at_high"
    ]
   },
   {
@@ -798,8 +1197,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.539
   },
   {
    "code": "2481",
@@ -812,6 +1213,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "2484",
+   "name": "希華",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 90.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.267
   },
   {
    "code": "2485",
@@ -837,6 +1251,19 @@
     "all_ma_lost",
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "2492",
+   "name": "華新科",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 88.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.447
   },
   {
    "code": "2498",
@@ -1072,6 +1499,19 @@
    ]
   },
   {
+   "code": "3017",
+   "name": "奇鋐",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 31.0,
+   "rs_rank": 88.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.66
+  },
+  {
    "code": "3022",
    "name": "威強電",
    "industry": "電腦及週邊設備業",
@@ -1082,6 +1522,19 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "3023",
+   "name": "信邦",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 35.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.112
   },
   {
    "code": "3028",
@@ -1128,8 +1581,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.497
   },
   {
    "code": "3034",
@@ -1156,6 +1611,71 @@
    ]
   },
   {
+   "code": "3036",
+   "name": "文曄",
+   "industry": "電子通路業",
+   "industry_rank": 33.0,
+   "rs_rank": 22.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.267
+  },
+  {
+   "code": "3037",
+   "name": "欣興",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 57.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.712
+  },
+  {
+   "code": "3044",
+   "name": "健鼎",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 84.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.013
+  },
+  {
+   "code": "3088",
+   "name": "艾訊",
+   "industry": "電腦及週邊設備業",
+   "industry_rank": 31.0,
+   "rs_rank": 24.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.781
+  },
+  {
+   "code": "3090",
+   "name": "日電貿",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 36.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.172
+  },
+  {
    "code": "3094",
    "name": "聯傑",
    "industry": "半導體業",
@@ -1168,6 +1688,32 @@
    ]
   },
   {
+   "code": "3167",
+   "name": "大量",
+   "industry": "電機機械",
+   "industry_rank": 29.0,
+   "rs_rank": 92.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.385
+  },
+  {
+   "code": "3189",
+   "name": "景碩",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 88.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.912
+  },
+  {
    "code": "3209",
    "name": "全科",
    "industry": "電子通路業",
@@ -1176,8 +1722,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "limit_up_then_heavy_black"
-   ]
+    "limit_up_then_heavy_black",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.541
   },
   {
    "code": "3231",
@@ -1188,8 +1736,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.559
+  },
+  {
+   "code": "3234",
+   "name": "光環",
+   "industry": "通信網路業",
+   "industry_rank": 35.0,
+   "rs_rank": 93.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.694
   },
   {
    "code": "3236",
@@ -1202,6 +1765,32 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "3260",
+   "name": "威剛",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 13.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -8.982
+  },
+  {
+   "code": "3264",
+   "name": "欣銓",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 38.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -8.258
   },
   {
    "code": "3265",
@@ -1226,6 +1815,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "3305",
+   "name": "昇貿",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 26.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.453
   },
   {
    "code": "3362",
@@ -1273,8 +1875,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.344
   },
   {
    "code": "3441",
@@ -1285,8 +1889,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "limit_up_then_heavy_black"
-   ]
+    "limit_up_then_heavy_black",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.421
+  },
+  {
+   "code": "3443",
+   "name": "創意",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 97.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.219
   },
   {
    "code": "3450",
@@ -1338,6 +1957,19 @@
    ]
   },
   {
+   "code": "3491",
+   "name": "昇達科",
+   "industry": "通信網路業",
+   "industry_rank": 35.0,
+   "rs_rank": 48.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.248
+  },
+  {
    "code": "3498",
    "name": "陽程",
    "industry": "其他電子業",
@@ -1346,8 +1978,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.157
   },
   {
    "code": "3504",
@@ -1382,8 +2016,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.038
+  },
+  {
+   "code": "3526",
+   "name": "凡甲",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 4.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.043
   },
   {
    "code": "3532",
@@ -1420,8 +2069,10 @@
    "flags": [
     "break_ma10",
     "break_ma60",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.509
   },
   {
    "code": "3545",
@@ -1458,8 +2109,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.68
   },
   {
    "code": "3592",
@@ -1475,6 +2128,45 @@
    ]
   },
   {
+   "code": "3624",
+   "name": "光頡",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 96.0,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.542
+  },
+  {
+   "code": "3653",
+   "name": "健策",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 97.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.2
+  },
+  {
+   "code": "3661",
+   "name": "世芯-KY",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 28.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.193
+  },
+  {
    "code": "3663",
    "name": "鑫科",
    "industry": "其他電子業",
@@ -1487,6 +2179,19 @@
    ]
   },
   {
+   "code": "3665",
+   "name": "貿聯-KY",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 11.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.402
+  },
+  {
    "code": "3673",
    "name": "TPK-KY",
    "industry": "光電業",
@@ -1495,8 +2200,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.482
   },
   {
    "code": "3675",
@@ -1511,6 +2218,19 @@
    ]
   },
   {
+   "code": "3680",
+   "name": "家登",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 35.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.576
+  },
+  {
    "code": "3685",
    "name": "元創精密",
    "industry": "電機機械",
@@ -1521,8 +2241,10 @@
    "flags": [
     "break_ma10",
     "all_ma_lost",
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.11
   },
   {
    "code": "3691",
@@ -1548,6 +2270,19 @@
     "all_ma_lost",
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "3711",
+   "name": "日月光投控",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 85.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.716
   },
   {
    "code": "3717",
@@ -1658,6 +2393,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "4741",
+   "name": "泓瀚",
+   "industry": "化學工業",
+   "industry_rank": 11.0,
+   "rs_rank": 90.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.27
   },
   {
    "code": "4743",
@@ -1819,6 +2567,19 @@
    ]
   },
   {
+   "code": "4958",
+   "name": "臻鼎-KY",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 83.0,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.852
+  },
+  {
    "code": "4960",
    "name": "誠美材",
    "industry": "光電業",
@@ -1839,8 +2600,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.731
+  },
+  {
+   "code": "4976",
+   "name": "佳凌",
+   "industry": "光電業",
+   "industry_rank": 30.0,
+   "rs_rank": 62.1,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.098
   },
   {
    "code": "4991",
@@ -1877,6 +2653,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "5274",
+   "name": "信驊",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 16.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.012
   },
   {
    "code": "5284",
@@ -2050,6 +2839,19 @@
    ]
   },
   {
+   "code": "6139",
+   "name": "亞翔",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 27.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.412
+  },
+  {
    "code": "6141",
    "name": "柏承",
    "industry": "電子零組件業",
@@ -2058,8 +2860,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.88
   },
   {
    "code": "6146",
@@ -2094,8 +2898,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.174
   },
   {
    "code": "6155",
@@ -2130,8 +2936,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.098
   },
   {
    "code": "6174",
@@ -2142,8 +2950,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.066
   },
   {
    "code": "6176",
@@ -2154,8 +2964,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.271
   },
   {
    "code": "6179",
@@ -2206,6 +3018,19 @@
    ]
   },
   {
+   "code": "6196",
+   "name": "帆宣",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 53.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.588
+  },
+  {
    "code": "6197",
    "name": "佳必琪",
    "industry": "電子零組件業",
@@ -2216,6 +3041,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "6202",
+   "name": "盛群",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 19.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.286
   },
   {
    "code": "6207",
@@ -2238,8 +3076,23 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.435
+  },
+  {
+   "code": "6223",
+   "name": "旺矽",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 6.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.212
   },
   {
    "code": "6226",
@@ -2274,8 +3127,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.449
   },
   {
    "code": "6261",
@@ -2286,8 +3141,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.232
   },
   {
    "code": "6265",
@@ -2302,6 +3159,19 @@
    ]
   },
   {
+   "code": "6274",
+   "name": "台燿",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 10.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.5
+  },
+  {
    "code": "6277",
    "name": "宏正",
    "industry": "電腦及週邊設備業",
@@ -2313,6 +3183,32 @@
     "all_ma_lost",
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "6282",
+   "name": "康舒",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 8.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.12
+  },
+  {
+   "code": "6285",
+   "name": "啟碁",
+   "industry": "通信網路業",
+   "industry_rank": 35.0,
+   "rs_rank": 8.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.261
   },
   {
    "code": "6290",
@@ -2412,6 +3308,19 @@
    ]
   },
   {
+   "code": "6488",
+   "name": "環球晶",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 17.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -6.971
+  },
+  {
    "code": "6491",
    "name": "晶碩",
    "industry": "生技醫療業",
@@ -2438,6 +3347,19 @@
    ]
   },
   {
+   "code": "6510",
+   "name": "精測",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 55.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.632
+  },
+  {
    "code": "6517",
    "name": "保勝光學",
    "industry": "光電業",
@@ -2449,6 +3371,19 @@
     "all_ma_lost",
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "6531",
+   "name": "愛普*",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 10.0,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.763
   },
   {
    "code": "6532",
@@ -2525,6 +3460,32 @@
    ]
   },
   {
+   "code": "6672",
+   "name": "騰輝電子-KY",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 99.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -8.578
+  },
+  {
+   "code": "6691",
+   "name": "洋基工程",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 65.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.47
+  },
+  {
    "code": "6695",
    "name": "芯鼎",
    "industry": "半導體業",
@@ -2537,6 +3498,18 @@
    ]
   },
   {
+   "code": "6697",
+   "name": "東捷資訊",
+   "industry": "資訊服務業",
+   "industry_rank": 2.0,
+   "rs_rank": 97.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "chips_weakening_at_high"
+   ]
+  },
+  {
    "code": "6716",
    "name": "應廣",
    "industry": "半導體業",
@@ -2545,8 +3518,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.735
   },
   {
    "code": "6719",
@@ -2573,6 +3548,19 @@
    ]
   },
   {
+   "code": "6742",
+   "name": "澤米",
+   "industry": "光電業",
+   "industry_rank": 30.0,
+   "rs_rank": 91.7,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.297
+  },
+  {
    "code": "6753",
    "name": "龍德造船",
    "industry": "航運業",
@@ -2593,8 +3581,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.512
   },
   {
    "code": "6788",
@@ -2607,6 +3597,32 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "6805",
+   "name": "富世達",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 88.2,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.902
+  },
+  {
+   "code": "6834",
+   "name": "天二科技",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 96.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.519
   },
   {
    "code": "6861",
@@ -2702,8 +3718,10 @@
    "data_date": "2026-11-11",
    "market_filtered": true,
    "flags": [
-    "weak_vs_market"
-   ]
+    "weak_vs_market",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.052
   },
   {
    "code": "6957",
@@ -2766,6 +3784,19 @@
    ]
   },
   {
+   "code": "7795",
+   "name": "長廣",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 42.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.232
+  },
+  {
    "code": "8016",
    "name": "矽創",
    "industry": "半導體業",
@@ -2778,6 +3809,19 @@
    ]
   },
   {
+   "code": "8021",
+   "name": "尖點",
+   "industry": "其他電子業",
+   "industry_rank": 27.0,
+   "rs_rank": 55.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -6.876
+  },
+  {
    "code": "8043",
    "name": "蜜望實",
    "industry": "電子零組件業",
@@ -2788,6 +3832,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "8046",
+   "name": "南電",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 85.5,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.883
   },
   {
    "code": "8050",
@@ -2815,6 +3872,19 @@
    ]
   },
   {
+   "code": "8086",
+   "name": "宏捷科",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 18.9,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.134
+  },
+  {
    "code": "8114",
    "name": "振樺電",
    "industry": "電腦及週邊設備業",
@@ -2827,6 +3897,19 @@
    ]
   },
   {
+   "code": "8150",
+   "name": "南茂",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 73.4,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.715
+  },
+  {
    "code": "8240",
    "name": "華宏",
    "industry": "光電業",
@@ -2837,6 +3920,19 @@
    "flags": [
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "8358",
+   "name": "金居",
+   "industry": "電子零組件業",
+   "industry_rank": 32.0,
+   "rs_rank": 44.8,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.161
   },
   {
    "code": "8383",
@@ -2923,6 +4019,32 @@
     "all_ma_lost",
     "weak_vs_market"
    ]
+  },
+  {
+   "code": "8996",
+   "name": "高力",
+   "industry": "電機機械",
+   "industry_rank": 29.0,
+   "rs_rank": 94.6,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.267
+  },
+  {
+   "code": "9105",
+   "name": "泰金寶-DR",
+   "industry": "存託憑證",
+   "industry_rank": 3.0,
+   "rs_rank": 86.3,
+   "data_date": "2026-11-11",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.111
   },
   {
    "code": "9904",
