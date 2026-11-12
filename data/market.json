@@ -86,11 +86,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "正常",
+  "status": "尚未公布",
   "expected_latest": "2026-11-12",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-13T00:01:12+08:00",
+ "generated_at": "2026-11-13T00:50:30+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
