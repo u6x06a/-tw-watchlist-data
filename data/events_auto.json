@@ -27482,6 +27482,19 @@
   "ref_basis": "dividend_only"
  },
  {
+  "code": "3680",
+  "date": "2026-11-12",
+  "prev_close": 435.5,
+  "ref": 425.59,
+  "factor": 0.9772445464982777,
+  "kind": "除息",
+  "market": "TPEX",
+  "category": "exright",
+  "source": "exDailyQ",
+  "ref_full": 425.59,
+  "ref_basis": "dividend_only"
+ },
+ {
   "code": "3684",
   "date": "2026-06-23",
   "prev_close": 59.8,
