@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-11-12",
- "close": 100.95,
- "ma20": 104.215,
- "ma60": 107.4675,
+ "data_date": "2026-11-13",
+ "close": 102.5,
+ "ma20": 103.69,
+ "ma60": 107.4025,
  "above_ma60": false,
- "ma60_slope": -0.4967,
- "ma60_slope_pct": -0.46,
- "change_pct": -2.18,
- "range_pct": 3.29,
+ "ma60_slope": -0.3892,
+ "ma60_slope_pct": -0.36,
+ "change_pct": 1.54,
+ "range_pct": 2.28,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -13.35,
+ "drawdown_from_60d_high_pct": -12.02,
  "ladder": {
   "active": true,
   "level": 1,
@@ -40,7 +40,7 @@
    "range_high": 113.75,
    "range_pct": 29.93,
    "below_range_low": false,
-   "vol_ratio": 0.57,
+   "vol_ratio": 0.54,
    "breakdown_ok": false,
    "panic_ok": false
   },
@@ -51,7 +51,7 @@
   "change_pct": -4.79,
   "high": 94.45,
   "low": 87.55,
-  "days_since": 4,
+  "days_since": 5,
   "reclaimed_high": true,
   "reclaimed_high_date": "2026-11-09",
   "broke_low": false,
@@ -61,7 +61,7 @@
  "follow_through": {
   "low_date": "2026-11-06",
   "low_close": 92.5,
-  "rally_day": 4,
+  "rally_day": 5,
   "ftd": null,
   "low_undercut_after": false
  },
@@ -72,7 +72,7 @@
   "trust_net": 12567559808.0,
   "foreign_streak": -11,
   "trust_streak": 23,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-12",
@@ -86,11 +86,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-12",
+  "status": "正常",
+  "expected_latest": "2026-11-13",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-13T01:34:58+08:00",
+ "generated_at": "2026-11-13T15:37:31+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
