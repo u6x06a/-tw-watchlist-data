@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T15:38:29+08:00",
+ "generated_at": "2026-11-16T17:07:56+08:00",
  "data_date": "2026-11-16",
  "expected_latest": "2026-11-16",
  "data_stale": false,
@@ -148,7 +148,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -164,11 +164,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 67.0,
     "batch2_lower_1atr": 62.8685,
     "batch2_reclaim_ma5": 69.3,
     "batch3_reclaim_ma20": 71.815
@@ -242,7 +242,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -258,11 +258,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 4815.0,
     "batch2_lower_1atr": 4279.7375,
     "batch2_reclaim_ma5": 5556.0,
     "batch3_reclaim_ma20": 6037.5
@@ -305,7 +305,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -399,7 +399,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -540,7 +540,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -759,7 +759,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -775,11 +775,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 880.0,
     "batch2_lower_1atr": 784.874,
     "batch2_reclaim_ma5": 982.8,
     "batch3_reclaim_ma20": 1133.45
@@ -822,7 +822,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -900,7 +900,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -916,11 +916,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 396.0,
     "batch2_lower_1atr": 358.3377,
     "batch2_reclaim_ma5": 431.5,
     "batch3_reclaim_ma20": 477.875
@@ -994,7 +994,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -1010,11 +1010,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 113.0,
     "batch2_lower_1atr": 102.3948,
     "batch2_reclaim_ma5": 127.4,
     "batch3_reclaim_ma20": 146.025
@@ -1135,7 +1135,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -1151,11 +1151,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 3795.0,
     "batch2_lower_1atr": 3423.1415,
     "batch2_reclaim_ma5": 4196.0,
     "batch3_reclaim_ma20": 4569.0
@@ -1276,7 +1276,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -1292,11 +1292,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 1380.0,
     "batch2_lower_1atr": 1258.5066,
     "batch2_reclaim_ma5": 1509.0,
     "batch3_reclaim_ma20": 1634.5
@@ -1386,7 +1386,7 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": false,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
@@ -1417,7 +1417,7 @@
    "rule": "L1",
    "data_date": "2026-11-16",
    "market_filtered": true,
-   "status": "跌深觀察",
+   "status": "可分批第一批",
    "quality": "ok",
    "idiosyncratic": false,
    "key": {
@@ -1433,11 +1433,11 @@
    "stabilize": {
     "a_shadow_or_above_prev_high": false,
     "b_vol_below_3d_avg": true,
-    "c_foreign_shrink_or_trust_turn": false,
+    "c_foreign_shrink_or_trust_turn": true,
     "rule": "三項中兩項"
    },
    "plan": {
-    "batch1": null,
+    "batch1": 3695.0,
     "batch2_lower_1atr": 3333.5342,
     "batch2_reclaim_ma5": 4088.0,
     "batch3_reclaim_ma20": 4654.75
