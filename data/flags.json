@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T15:36:52+08:00",
+ "generated_at": "2026-11-17T17:07:09+08:00",
  "data_date": "2026-11-17",
  "expected_latest": "2026-11-17",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 518
+  "stocks_flagged": 519
  },
  "flags": [
   {
@@ -40,6 +40,18 @@
    "market_filtered": true,
    "flags": [
     "break_ma60"
+   ]
+  },
+  {
+   "code": "1216",
+   "name": "統一",
+   "industry": "食品工業",
+   "industry_rank": 19.0,
+   "rs_rank": 88.7,
+   "data_date": "2026-11-17",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1437,7 +1449,8 @@
    "data_date": "2026-11-17",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -2188,7 +2201,8 @@
    "data_date": "2026-11-17",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -4682,7 +4696,8 @@
    "data_date": "2026-11-17",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
