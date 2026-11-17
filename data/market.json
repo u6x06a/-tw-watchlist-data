@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-11-16",
- "close": 96.45,
- "ma20": 103.0675,
- "ma60": 107.2358,
+ "data_date": "2026-11-17",
+ "close": 94.0,
+ "ma20": 102.3175,
+ "ma60": 107.0542,
  "above_ma60": false,
- "ma60_slope": -0.4425,
- "ma60_slope_pct": -0.41,
- "change_pct": -5.9,
- "range_pct": 4.88,
+ "ma60_slope": -0.5425,
+ "ma60_slope_pct": -0.5,
+ "change_pct": -2.54,
+ "range_pct": 4.35,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -17.21,
+ "drawdown_from_60d_high_pct": -19.31,
  "ladder": {
   "active": true,
   "level": 1,
@@ -37,10 +37,10 @@
   "reset_ref_range_high": 116.6,
   "watch": {
    "range_low": 87.55,
-   "range_high": 110.15,
-   "range_pct": 25.81,
+   "range_high": 109.7,
+   "range_pct": 25.3,
    "below_range_low": false,
-   "vol_ratio": 1.48,
+   "vol_ratio": 1.73,
    "breakdown_ok": false,
    "panic_ok": false
   },
@@ -51,17 +51,17 @@
   "change_pct": -5.9,
   "high": 101.45,
   "low": 96.45,
-  "days_since": 0,
+  "days_since": 1,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
-  "broke_low": false,
-  "broke_low_date": null,
-  "currently_below_low": false
+  "broke_low": true,
+  "broke_low_date": "2026-11-17",
+  "currently_below_low": true
  },
  "follow_through": {
   "low_date": "2026-11-06",
   "low_close": 92.5,
-  "rally_day": 6,
+  "rally_day": 7,
   "ftd": null,
   "low_undercut_after": false
  },
@@ -72,7 +72,7 @@
   "trust_net": -18301702536.0,
   "foreign_streak": -1,
   "trust_streak": -1,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-16",
@@ -83,14 +83,15 @@
  },
  "status": "過濾中",
  "status_reasons": [
-  "收盤在季線（MA60）下"
+  "收盤在季線（MA60）下",
+  "收盤低於恐慌日（2026-11-16）低點"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-16",
+  "status": "正常",
+  "expected_latest": "2026-11-17",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-17T03:33:19+08:00",
+ "generated_at": "2026-11-17T15:36:41+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
