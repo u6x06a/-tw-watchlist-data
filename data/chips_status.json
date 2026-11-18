@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-18T02:25:51+08:00",
- "expected_latest_trading_date": "2026-11-17",
+ "generated_at": "2026-11-18T15:34:17+08:00",
+ "expected_latest_trading_date": "2026-11-18",
  "foreign_holding": {
   "latest_date": {
    "TWSE": "2026-11-17",
@@ -8,10 +8,6 @@
   },
   "recent_file_days": 60,
   "by_date": {
-   "2026-11-13": {
-    "TWSE": "ok:1366",
-    "TPEX": "ok:898"
-   },
    "2026-11-16": {
     "TWSE": "ok:1366",
     "TPEX": "ok:899"
@@ -19,6 +15,10 @@
    "2026-11-17": {
     "TWSE": "ok:1366",
     "TPEX": "ok:899"
+   },
+   "2026-11-18": {
+    "TWSE": "pending（交易所尚未公布）",
+    "TPEX": "pending（交易所尚未公布）"
    }
   }
  },
@@ -29,10 +29,6 @@
   },
   "recent_file_days": 300,
   "by_date": {
-   "2026-11-13": {
-    "TWSE": "ok:1309",
-    "TPEX": "ok:936"
-   },
    "2026-11-16": {
     "TWSE": "ok:1309",
     "TPEX": "ok:937"
@@ -40,6 +36,10 @@
    "2026-11-17": {
     "TWSE": "ok:1310",
     "TPEX": "ok:937"
+   },
+   "2026-11-18": {
+    "TWSE": "pending（交易所尚未公布）",
+    "TPEX": "pending（交易所尚未公布）"
    }
   }
  },
