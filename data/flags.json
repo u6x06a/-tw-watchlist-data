@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T15:38:25+08:00",
+ "generated_at": "2026-11-18T17:06:59+08:00",
  "data_date": "2026-11-18",
  "expected_latest": "2026-11-18",
  "data_stale": false,
@@ -27,7 +27,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -53,7 +54,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "break_ma20"
+    "break_ma20",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -932,7 +934,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -1076,7 +1079,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -1719,7 +1723,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1732,7 +1737,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -2023,7 +2029,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -3254,7 +3261,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -5529,7 +5537,8 @@
    "data_date": "2026-11-18",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -5746,7 +5755,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma10",
-    "break_ma20"
+    "break_ma20",
+    "trust_abandon"
    ]
   },
   {
