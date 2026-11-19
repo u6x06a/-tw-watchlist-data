@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-11-18",
- "close": 94.1,
- "ma20": 101.615,
- "ma60": 106.9042,
+ "data_date": "2026-11-19",
+ "close": 90.2,
+ "ma20": 100.7625,
+ "ma60": 106.6775,
  "above_ma60": false,
- "ma60_slope": -0.6592,
- "ma60_slope_pct": -0.61,
- "change_pct": 0.11,
- "range_pct": 3.83,
+ "ma60_slope": -0.79,
+ "ma60_slope_pct": -0.74,
+ "change_pct": -4.14,
+ "range_pct": 4.99,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -19.23,
+ "drawdown_from_60d_high_pct": -22.58,
  "ladder": {
   "active": true,
   "level": 1,
@@ -40,28 +40,28 @@
    "range_high": 109.2,
    "range_pct": 24.73,
    "below_range_low": false,
-   "vol_ratio": 1.21,
+   "vol_ratio": 1.82,
    "breakdown_ok": false,
    "panic_ok": false
   },
   "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
  "panic_day": {
-  "date": "2026-11-16",
-  "change_pct": -5.9,
-  "high": 101.45,
-  "low": 96.45,
-  "days_since": 2,
+  "date": "2026-11-19",
+  "change_pct": -4.14,
+  "high": 94.5,
+  "low": 89.8,
+  "days_since": 0,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
-  "broke_low": true,
-  "broke_low_date": "2026-11-17",
-  "currently_below_low": true
+  "broke_low": false,
+  "broke_low_date": null,
+  "currently_below_low": false
  },
  "follow_through": {
-  "low_date": "2026-11-06",
-  "low_close": 92.5,
-  "rally_day": 8,
+  "low_date": "2026-11-19",
+  "low_close": 90.2,
+  "rally_day": 0,
   "ftd": null,
   "low_undercut_after": false
  },
@@ -72,7 +72,7 @@
   "trust_net": 16611584089.0,
   "foreign_streak": -3,
   "trust_streak": 1,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-18",
@@ -83,15 +83,14 @@
  },
  "status": "過濾中",
  "status_reasons": [
-  "收盤在季線（MA60）下",
-  "收盤低於恐慌日（2026-11-16）低點"
+  "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-18",
+  "status": "正常",
+  "expected_latest": "2026-11-19",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-19T02:00:30+08:00",
+ "generated_at": "2026-11-19T15:37:26+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
