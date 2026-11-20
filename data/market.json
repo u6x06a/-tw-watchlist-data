@@ -83,17 +83,17 @@
  "institutional_twse": {
   "data_date": "2026-11-20",
   "unit": "TWD",
-  "foreign_net": -9413073072.0,
-  "trust_net": -8749306916.0,
+  "foreign_net": -9510543572.0,
+  "trust_net": -7346992003.0,
   "foreign_streak": -5,
   "trust_streak": -1,
   "days_available": 300
  },
  "margin_total": {
-  "data_date": "2026-11-19",
+  "data_date": "2026-11-20",
   "unit": "千元（上市 + 上櫃融資金額）",
-  "value_k": 631781230.0,
-  "chg_20d_pct": -25.94,
+  "value_k": 568080099.0,
+  "chg_20d_pct": -33.97,
   "days_available": 300
  },
  "status": "過濾中",
@@ -101,11 +101,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "正常",
+  "status": "休市",
   "expected_latest": "2026-11-20",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-20T17:06:27+08:00",
+ "generated_at": "2026-11-21T00:07:25+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
