@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T15:37:41+08:00",
+ "generated_at": "2026-11-20T17:06:35+08:00",
  "data_date": "2026-11-20",
  "expected_latest": "2026-11-20",
  "data_stale": false,
@@ -1758,7 +1758,8 @@
    "data_date": "2026-11-20",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -1978,7 +1979,8 @@
    "data_date": "2026-11-20",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -5199,7 +5201,8 @@
    "data_date": "2026-11-20",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
