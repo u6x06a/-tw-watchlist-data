@@ -1,22 +1,22 @@
 {
  "bench": "0050",
- "data_date": "2026-11-19",
- "close": 90.2,
- "ma20": 100.7625,
- "ma60": 106.6775,
+ "data_date": "2026-11-20",
+ "close": 84.45,
+ "ma20": 99.5775,
+ "ma60": 106.3408,
  "above_ma60": false,
- "ma60_slope": -0.79,
- "ma60_slope_pct": -0.74,
- "change_pct": -4.14,
- "range_pct": 4.99,
+ "ma60_slope": -1.0617,
+ "ma60_slope_pct": -0.99,
+ "change_pct": -6.37,
+ "range_pct": 4.55,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -22.58,
+ "drawdown_from_60d_high_pct": -27.51,
  "ladder": {
   "active": true,
-  "level": 1,
+  "level": 2,
   "max_level": 5,
   "start_date": "2026-11-06",
   "steps": [
@@ -28,29 +28,44 @@
     "vol_ratio": 5.18,
     "range_pct": 20.33,
     "change_pct": -4.79
+   },
+   {
+    "level": 2,
+    "date": "2026-11-20",
+    "type": "add",
+    "price": 84.45,
+    "drop_from_prev_pct": -8.7
    }
   ],
-  "new_step_today": [],
+  "new_step_today": [
+   {
+    "level": 2,
+    "date": "2026-11-20",
+    "type": "add",
+    "price": 84.45,
+    "drop_from_prev_pct": -8.7
+   }
+  ],
   "ended_today": false,
-  "last_entry_cost": 92.5,
-  "next_add_price": 88.8,
+  "last_entry_cost": 84.45,
+  "next_add_price": 81.07,
   "reset_ref_range_high": 116.6,
   "watch": {
    "range_low": 87.55,
    "range_high": 109.2,
    "range_pct": 24.73,
-   "below_range_low": false,
-   "vol_ratio": 1.82,
+   "below_range_low": true,
+   "vol_ratio": 3.18,
    "breakdown_ok": false,
-   "panic_ok": false
+   "panic_ok": true
   },
   "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
  "panic_day": {
-  "date": "2026-11-19",
-  "change_pct": -4.14,
-  "high": 94.5,
-  "low": 89.8,
+  "date": "2026-11-20",
+  "change_pct": -6.37,
+  "high": 88.05,
+  "low": 83.95,
   "days_since": 0,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
@@ -59,8 +74,8 @@
   "currently_below_low": false
  },
  "follow_through": {
-  "low_date": "2026-11-19",
-  "low_close": 90.2,
+  "low_date": "2026-11-20",
+  "low_close": 84.45,
   "rally_day": 0,
   "ftd": null,
   "low_undercut_after": false
@@ -72,7 +87,7 @@
   "trust_net": 4389988208.0,
   "foreign_streak": -4,
   "trust_streak": 2,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-19",
@@ -86,11 +101,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-19",
+  "status": "正常",
+  "expected_latest": "2026-11-20",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-20T02:13:13+08:00",
+ "generated_at": "2026-11-20T15:37:30+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
