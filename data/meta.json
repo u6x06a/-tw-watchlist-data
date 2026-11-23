@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T17:01:24+08:00",
+ "updated_at": "2026-11-24T03:10:26+08:00",
  "sources": {
   "2408": "bulk-TWSE",
   "3017": "bulk-TWSE",
@@ -25,24 +25,24 @@
  "errors": {},
  "bulk": {
   "dates_requested": 9,
-  "dates_with_data": 2,
-  "rows": 4710,
+  "dates_with_data": 1,
+  "rows": 2351,
   "errors": {},
   "by_date": {
-   "2026-11-20": {
-    "TWSE": "ok:1360",
-    "TPEX": "ok:999"
-   },
    "2026-11-23": {
     "TWSE": "ok:1362",
     "TPEX": "ok:989"
+   },
+   "2026-11-24": {
+    "TWSE": "no_data",
+    "TPEX": "no_data"
    }
   }
  },
  "ref_events": {
   "status": "ok",
-  "rows_checked": 4710,
-  "events": 24
+  "rows_checked": 2351,
+  "events": 8
  },
  "global_status": {
   "005930.KS": "ok",
@@ -62,6 +62,27 @@
    "2026-11-23"
   ],
   "USDTWD=X": [
+   "2026-11-23"
+  ],
+  "GOOG": [
+   "2026-11-23"
+  ],
+  "MS": [
+   "2026-11-23"
+  ],
+  "QQQM": [
+   "2026-11-23"
+  ],
+  "SOXX": [
+   "2026-11-23"
+  ],
+  "VOO": [
+   "2026-11-23"
+  ],
+  "SPCX": [
+   "2026-11-23"
+  ],
+  "NVDA": [
    "2026-11-23"
   ]
  },
@@ -103,7 +124,6 @@
  "tw_codes_on_latest_date": 2351,
  "calendar": {
   "TWSE": {
-   "2026-11-04": "ok",
    "2026-11-05": "ok",
    "2026-11-06": "ok",
    "2026-11-09": "ok",
@@ -116,10 +136,10 @@
    "2026-11-18": "ok",
    "2026-11-19": "ok",
    "2026-11-20": "ok",
-   "2026-11-23": "ok"
+   "2026-11-23": "ok",
+   "2026-11-24": "pending"
   },
   "NYSE": {
-   "2026-11-03": "ok",
    "2026-11-04": "ok",
    "2026-11-05": "ok",
    "2026-11-06": "ok",
@@ -133,7 +153,8 @@
    "2026-11-18": "ok",
    "2026-11-19": "ok",
    "2026-11-20": "ok",
-   "2026-11-23": "not_yet_open"
+   "2026-11-23": "in_session",
+   "2026-11-24": "not_yet_open"
   },
   "available": true,
   "note": "closed=休市；pending=交易日但資料尚未公布；missing=過去交易日卻沒資料；in_session=盤中（K棒未收盤，已排除）"
@@ -142,119 +163,55 @@
   "fetch_prices": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-23T17:01:22+08:00",
-   "finished_at": "2026-11-23T17:03:15+08:00",
-   "seconds": 112.5,
+   "started_at": "2026-11-24T03:10:24+08:00",
+   "finished_at": "2026-11-24T03:11:40+08:00",
+   "seconds": 75.9,
    "output_data_date": "2026-11-23"
   },
   "market_status": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-23T17:03:15+08:00",
-   "finished_at": "2026-11-23T17:03:20+08:00",
-   "seconds": 5.2,
-   "output_data_date": "2026-11-23"
-  },
-  "companies": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:03:25+08:00",
-   "finished_at": "2026-11-23T17:03:26+08:00",
-   "seconds": 0.1,
-   "output_data_date": "2026-10-19"
-  },
-  "revenue": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:03:26+08:00",
-   "finished_at": "2026-11-23T17:03:26+08:00",
-   "seconds": 0.3,
-   "output_data_date": "2026-10"
-  },
-  "institutional": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:03:26+08:00",
-   "finished_at": "2026-11-23T17:08:16+08:00",
-   "seconds": 289.8,
-   "output_data_date": "2026-11-23"
-  },
-  "chips": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:08:16+08:00",
-   "finished_at": "2026-11-23T17:10:12+08:00",
-   "seconds": 116.0,
-   "output_data_date": "2026-11-20"
-  },
-  "adjust": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:10:12+08:00",
-   "finished_at": "2026-11-23T17:11:20+08:00",
-   "seconds": 68.4,
-   "output_data_date": "2026-11-23"
-  },
-  "indicators": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:11:20+08:00",
-   "finished_at": "2026-11-23T17:11:28+08:00",
-   "seconds": 7.7,
-   "output_data_date": "2026-11-23"
-  },
-  "screen": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:11:28+08:00",
-   "finished_at": "2026-11-23T17:11:35+08:00",
-   "seconds": 7.1,
-   "output_data_date": "2026-11-23"
-  },
-  "paper": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-23T17:11:35+08:00",
-   "finished_at": "2026-11-23T17:12:10+08:00",
-   "seconds": 35.2,
+   "started_at": "2026-11-24T03:11:40+08:00",
+   "finished_at": "2026-11-24T03:11:42+08:00",
+   "seconds": 1.7,
    "output_data_date": "2026-11-23"
   }
  },
  "markets": {
-  "generated_at": "2026-11-23T17:03:15+08:00",
+  "generated_at": "2026-11-24T03:11:40+08:00",
   "TWSE": {
    "expected_latest": "2026-11-23",
    "data_latest": "2026-11-23",
    "data_matches_expected": true,
-   "status": "正常",
-   "reason": "已取得今日資料",
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
    "codes_on_latest": 1351,
    "today_is_session": true,
-   "previous_session": "2026-11-20"
+   "previous_session": "2026-11-23"
   },
   "TPEX": {
    "expected_latest": "2026-11-23",
    "data_latest": "2026-11-23",
    "data_matches_expected": true,
-   "status": "正常",
-   "reason": "已取得今日資料",
+   "status": "尚未公布",
+   "reason": "今天是交易日，尚未到 14:30",
    "codes_on_latest": 984,
    "today_is_session": true,
-   "previous_session": "2026-11-20"
+   "previous_session": "2026-11-23"
   },
   "tw_calendar": {
-   "source": "2026:fetched",
+   "source": "2026:cache",
    "xtai_vs_twse_conflicts": [],
    "extra_closed": [
     "2026-07-10",
     "2026-10-23"
    ],
    "recent_sessions": [
-    "2026-11-17",
     "2026-11-18",
     "2026-11-19",
     "2026-11-20",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
    ]
   },
   "NYSE": {
@@ -262,11 +219,33 @@
    "data_latest": "2026-11-20",
    "data_matches_expected": true,
    "status": "正常",
-   "reason": "紐約時間 2026-11-23（pre_open）；最近已收盤交易日 2026-11-20",
-   "session_state": "pre_open",
+   "reason": "紐約時間 2026-11-23（in_session）；最近已收盤交易日 2026-11-20",
+   "session_state": "in_session",
    "ny_date": "2026-11-23",
    "stale_codes": [],
-   "partial_bars_excluded": {}
+   "partial_bars_excluded": {
+    "GOOG": [
+     "2026-11-23"
+    ],
+    "MS": [
+     "2026-11-23"
+    ],
+    "QQQM": [
+     "2026-11-23"
+    ],
+    "SOXX": [
+     "2026-11-23"
+    ],
+    "VOO": [
+     "2026-11-23"
+    ],
+    "SPCX": [
+     "2026-11-23"
+    ],
+    "NVDA": [
+     "2026-11-23"
+    ]
+   }
   }
  }
 }
