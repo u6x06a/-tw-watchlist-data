@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-11-20",
- "close": 84.45,
- "ma20": 99.5775,
- "ma60": 106.3408,
+ "data_date": "2026-11-23",
+ "close": 87.0,
+ "ma20": 98.5825,
+ "ma60": 106.0608,
  "above_ma60": false,
- "ma60_slope": -1.0617,
- "ma60_slope_pct": -0.99,
- "change_pct": -6.37,
- "range_pct": 4.55,
+ "ma60_slope": -1.175,
+ "ma60_slope_pct": -1.1,
+ "change_pct": 3.02,
+ "range_pct": 4.74,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -27.51,
+ "drawdown_from_60d_high_pct": -25.32,
  "ladder": {
   "active": true,
   "level": 2,
@@ -37,27 +37,19 @@
     "drop_from_prev_pct": -8.7
    }
   ],
-  "new_step_today": [
-   {
-    "level": 2,
-    "date": "2026-11-20",
-    "type": "add",
-    "price": 84.45,
-    "drop_from_prev_pct": -8.7
-   }
-  ],
+  "new_step_today": [],
   "ended_today": false,
   "last_entry_cost": 84.45,
   "next_add_price": 81.07,
   "reset_ref_range_high": 116.6,
   "watch": {
-   "range_low": 87.55,
-   "range_high": 109.2,
-   "range_pct": 24.73,
-   "below_range_low": true,
-   "vol_ratio": 3.18,
+   "range_low": 83.95,
+   "range_high": 109.15,
+   "range_pct": 30.02,
+   "below_range_low": false,
+   "vol_ratio": 1.63,
    "breakdown_ok": false,
-   "panic_ok": true
+   "panic_ok": false
   },
   "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
@@ -66,7 +58,7 @@
   "change_pct": -6.37,
   "high": 88.05,
   "low": 83.95,
-  "days_since": 0,
+  "days_since": 1,
   "reclaimed_high": false,
   "reclaimed_high_date": null,
   "broke_low": false,
@@ -76,7 +68,7 @@
  "follow_through": {
   "low_date": "2026-11-20",
   "low_close": 84.45,
-  "rally_day": 0,
+  "rally_day": 1,
   "ftd": null,
   "low_undercut_after": false
  },
@@ -87,7 +79,7 @@
   "trust_net": -7346992003.0,
   "foreign_streak": -5,
   "trust_streak": -1,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-20",
@@ -101,11 +93,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "休市",
-  "expected_latest": "2026-11-20",
+  "status": "正常",
+  "expected_latest": "2026-11-23",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-21T01:45:41+08:00",
+ "generated_at": "2026-11-23T15:36:58+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
