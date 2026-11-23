@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T17:11:35+08:00",
+ "generated_at": "2026-11-24T03:15:02+08:00",
  "data_date": "2026-11-23",
  "expected_latest": "2026-11-23",
  "data_stale": false,
@@ -8,14 +8,14 @@
  "quarter_end_window": false,
  "chips_data_available": {
   "institutional": true,
-  "margin": false
+  "margin": true
  },
  "notes": [
   "market_wide_selloff=true（0050 當日跌 ≥ 2%）：儀表板遇到這天觸發停損，改為先減半、隔日收盤確認",
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 583
+  "stocks_flagged": 592
  },
  "flags": [
   {
@@ -111,8 +111,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.828
   },
   {
    "code": "1312",
@@ -123,8 +125,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.552
   },
   {
    "code": "1314",
@@ -135,8 +139,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.736
   },
   {
    "code": "1319",
@@ -267,8 +273,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.615
   },
   {
    "code": "1569",
@@ -327,8 +335,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.489
   },
   {
    "code": "1608",
@@ -339,8 +349,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.655
   },
   {
    "code": "1609",
@@ -555,8 +567,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -6.696
   },
   {
    "code": "1907",
@@ -603,8 +617,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.453
   },
   {
    "code": "2030",
@@ -699,8 +715,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.436
   },
   {
    "code": "2105",
@@ -795,8 +813,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.599
   },
   {
    "code": "2301",
@@ -819,8 +839,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.039
   },
   {
    "code": "2303",
@@ -855,8 +877,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.935
   },
   {
    "code": "2312",
@@ -879,8 +903,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.873
   },
   {
    "code": "2316",
@@ -891,8 +917,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.623
   },
   {
    "code": "2317",
@@ -915,8 +943,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.723
   },
   {
    "code": "2327",
@@ -987,8 +1017,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.835
   },
   {
    "code": "2338",
@@ -1035,8 +1067,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.066
   },
   {
    "code": "2347",
@@ -1047,8 +1081,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.492
   },
   {
    "code": "2351",
@@ -1179,8 +1215,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.936
   },
   {
    "code": "2369",
@@ -1287,8 +1325,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.068
   },
   {
    "code": "2388",
@@ -1311,8 +1351,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.175
   },
   {
    "code": "2393",
@@ -1419,8 +1461,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.711
   },
   {
    "code": "2413",
@@ -1431,8 +1475,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.209
   },
   {
    "code": "2421",
@@ -1443,8 +1489,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.197
   },
   {
    "code": "2426",
@@ -1479,8 +1527,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.324
   },
   {
    "code": "2439",
@@ -1515,8 +1565,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.278
   },
   {
    "code": "2453",
@@ -1539,8 +1591,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.458
   },
   {
    "code": "2455",
@@ -1601,6 +1655,19 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "2474",
+   "name": "可成",
+   "industry": "其他電子業",
+   "industry_rank": 33.0,
+   "rs_rank": 86.4,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.339
   },
   {
    "code": "2476",
@@ -1707,8 +1774,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.257
   },
   {
    "code": "2492",
@@ -1719,8 +1788,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.164
   },
   {
    "code": "2493",
@@ -2285,8 +2356,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.311
   },
   {
    "code": "3013",
@@ -2333,8 +2406,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.61
   },
   {
    "code": "3019",
@@ -2357,8 +2432,23 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.438
+  },
+  {
+   "code": "3023",
+   "name": "信邦",
+   "industry": "電子零組件業",
+   "industry_rank": 35.0,
+   "rs_rank": 70.5,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.631
   },
   {
    "code": "3026",
@@ -2381,8 +2471,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.425
   },
   {
    "code": "3029",
@@ -2417,8 +2509,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.56
   },
   {
    "code": "3034",
@@ -2453,8 +2547,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.617
   },
   {
    "code": "3037",
@@ -2465,8 +2561,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.057
   },
   {
    "code": "3042",
@@ -2479,6 +2577,19 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "3044",
+   "name": "健鼎",
+   "industry": "電子零組件業",
+   "industry_rank": 35.0,
+   "rs_rank": 79.1,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.138
   },
   {
    "code": "3045",
@@ -2561,8 +2672,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.131
   },
   {
    "code": "3090",
@@ -2585,8 +2698,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.157
   },
   {
    "code": "3105",
@@ -2705,8 +2820,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.89
   },
   {
    "code": "3209",
@@ -2717,8 +2834,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.295
   },
   {
    "code": "3211",
@@ -2765,8 +2884,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.195
   },
   {
    "code": "3234",
@@ -2813,8 +2934,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.999
   },
   {
    "code": "3265",
@@ -2957,8 +3080,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.602
   },
   {
    "code": "3376",
@@ -3029,8 +3154,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.105
   },
   {
    "code": "3441",
@@ -3233,8 +3360,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.201
   },
   {
    "code": "3563",
@@ -3305,8 +3434,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.994
   },
   {
    "code": "3583",
@@ -3353,8 +3484,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.073
   },
   {
    "code": "3605",
@@ -3413,8 +3546,23 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.234
+  },
+  {
+   "code": "3665",
+   "name": "貿聯-KY",
+   "industry": "其他電子業",
+   "industry_rank": 33.0,
+   "rs_rank": 25.4,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.338
   },
   {
    "code": "3673",
@@ -3449,8 +3597,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.88
   },
   {
    "code": "3689",
@@ -3461,8 +3611,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.25
   },
   {
    "code": "3691",
@@ -3535,8 +3687,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.459
   },
   {
    "code": "3706",
@@ -3583,8 +3737,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.531
   },
   {
    "code": "3717",
@@ -3767,6 +3923,19 @@
    ]
   },
   {
+   "code": "4739",
+   "name": "康普",
+   "industry": "化學工業",
+   "industry_rank": 23.0,
+   "rs_rank": 30.4,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.117
+  },
+  {
    "code": "4741",
    "name": "泓瀚",
    "industry": "化學工業",
@@ -3895,8 +4064,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.768
   },
   {
    "code": "4772",
@@ -4099,8 +4270,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.614
   },
   {
    "code": "4960",
@@ -4219,8 +4392,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.193
   },
   {
    "code": "5228",
@@ -4231,8 +4406,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.806
   },
   {
    "code": "5234",
@@ -4255,8 +4432,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.324
   },
   {
    "code": "5269",
@@ -4435,8 +4614,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.318
   },
   {
    "code": "5439",
@@ -4461,6 +4642,19 @@
    "flags": [
     "all_ma_lost"
    ]
+  },
+  {
+   "code": "5469",
+   "name": "瀚宇博",
+   "industry": "電子零組件業",
+   "industry_rank": 35.0,
+   "rs_rank": 70.8,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.062
   },
   {
    "code": "5475",
@@ -4519,8 +4713,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.812
   },
   {
    "code": "5864",
@@ -4651,8 +4847,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.144
   },
   {
    "code": "6127",
@@ -4819,8 +5017,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.393
   },
   {
    "code": "6179",
@@ -4903,8 +5103,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.308
   },
   {
    "code": "6197",
@@ -4963,8 +5165,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.48
   },
   {
    "code": "6213",
@@ -4975,8 +5179,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.554
   },
   {
    "code": "6214",
@@ -4987,8 +5193,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.184
   },
   {
    "code": "6217",
@@ -5035,8 +5243,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.483
   },
   {
    "code": "6226",
@@ -5131,8 +5341,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.562
   },
   {
    "code": "6265",
@@ -5167,8 +5379,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.299
   },
   {
    "code": "6274",
@@ -5203,8 +5417,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -5.512
   },
   {
    "code": "6282",
@@ -5227,8 +5443,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.474
   },
   {
    "code": "6290",
@@ -5363,6 +5581,19 @@
    ]
   },
   {
+   "code": "6438",
+   "name": "迅得",
+   "industry": "其他電子業",
+   "industry_rank": 33.0,
+   "rs_rank": 52.1,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.213
+  },
+  {
    "code": "6442",
    "name": "光聖",
    "industry": "通信網路業",
@@ -5431,8 +5662,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.669
   },
   {
    "code": "6472",
@@ -5491,8 +5724,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.981
   },
   {
    "code": "6510",
@@ -5503,8 +5738,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.339
   },
   {
    "code": "6515",
@@ -5551,8 +5788,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.692
   },
   {
    "code": "6532",
@@ -5791,8 +6030,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.553
   },
   {
    "code": "6683",
@@ -5827,8 +6068,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.802
   },
   {
    "code": "6693",
@@ -5995,8 +6238,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.199
   },
   {
    "code": "6811",
@@ -6313,6 +6558,19 @@
    ]
   },
   {
+   "code": "7788",
+   "name": "松川精密",
+   "industry": "電子零組件業",
+   "industry_rank": 35.0,
+   "rs_rank": 77.9,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.181
+  },
+  {
    "code": "7792",
    "name": "安葆",
    "industry": "其他電子業",
@@ -6373,6 +6631,19 @@
    ]
   },
   {
+   "code": "8016",
+   "name": "矽創",
+   "industry": "半導體業",
+   "industry_rank": 36.0,
+   "rs_rank": 58.0,
+   "data_date": "2026-11-23",
+   "market_filtered": true,
+   "flags": [
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -2.642
+  },
+  {
    "code": "8021",
    "name": "尖點",
    "industry": "其他電子業",
@@ -6381,8 +6652,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -3.231
   },
   {
    "code": "8027",
@@ -6441,8 +6714,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.369
   },
   {
    "code": "8043",
@@ -6537,8 +6812,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.132
   },
   {
    "code": "8086",
@@ -6609,8 +6886,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.451
   },
   {
    "code": "8110",
@@ -6645,8 +6924,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.152
   },
   {
    "code": "8114",
@@ -6657,8 +6938,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.029
   },
   {
    "code": "8131",
@@ -6681,8 +6964,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -4.325
   },
   {
    "code": "8155",
@@ -6801,8 +7086,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.052
   },
   {
    "code": "8422",
@@ -6885,8 +7172,10 @@
    "data_date": "2026-11-23",
    "market_filtered": true,
    "flags": [
-    "all_ma_lost"
-   ]
+    "all_ma_lost",
+    "foreign_holding_drop"
+   ],
+   "foreign_pct_chg_20d": -1.501
   },
   {
    "code": "9105",
