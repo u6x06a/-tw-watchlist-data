@@ -1,19 +1,19 @@
 {
  "bench": "0050",
- "data_date": "2026-11-24",
- "close": 95.7,
- "ma20": 98.0375,
- "ma60": 105.9158,
+ "data_date": "2026-11-25",
+ "close": 90.3,
+ "ma20": 97.12,
+ "ma60": 105.6558,
  "above_ma60": false,
- "ma60_slope": -1.1383,
- "ma60_slope_pct": -1.06,
- "change_pct": 10.0,
- "range_pct": 0.0,
+ "ma60_slope": -1.2483,
+ "ma60_slope_pct": -1.17,
+ "change_pct": -5.64,
+ "range_pct": 5.9,
  "high_60d": {
   "date": "2026-10-06",
   "close": 116.5
  },
- "drawdown_from_60d_high_pct": -17.85,
+ "drawdown_from_60d_high_pct": -22.49,
  "ladder": {
   "active": true,
   "level": 2,
@@ -47,20 +47,20 @@
    "range_high": 108.65,
    "range_pct": 30.12,
    "below_range_low": false,
-   "vol_ratio": 0.17,
+   "vol_ratio": 1.41,
    "breakdown_ok": false,
    "panic_ok": false
   },
   "rule": "543（蔡明翰）：5 等份；帶量跌破整理區間或恐慌急跌進第 1 筆；之後跌破前一筆成本 4% 才加下一筆"
  },
  "panic_day": {
-  "date": "2026-11-20",
-  "change_pct": -6.37,
-  "high": 88.05,
-  "low": 83.95,
-  "days_since": 2,
-  "reclaimed_high": true,
-  "reclaimed_high_date": "2026-11-24",
+  "date": "2026-11-25",
+  "change_pct": -5.64,
+  "high": 91.85,
+  "low": 86.2,
+  "days_since": 0,
+  "reclaimed_high": false,
+  "reclaimed_high_date": null,
   "broke_low": false,
   "broke_low_date": null,
   "currently_below_low": false
@@ -68,7 +68,7 @@
  "follow_through": {
   "low_date": "2026-11-20",
   "low_close": 84.45,
-  "rally_day": 2,
+  "rally_day": 3,
   "ftd": null,
   "low_undercut_after": false
  },
@@ -79,7 +79,7 @@
   "trust_net": 9763346809.0,
   "foreign_streak": -7,
   "trust_streak": 1,
-  "days_available": 300
+  "days_available": 299
  },
  "margin_total": {
   "data_date": "2026-11-24",
@@ -93,11 +93,11 @@
   "收盤在季線（MA60）下"
  ],
  "market_data_status": {
-  "status": "尚未公布",
-  "expected_latest": "2026-11-24",
+  "status": "正常",
+  "expected_latest": "2026-11-25",
   "data_matches_expected": true
  },
- "generated_at": "2026-11-25T04:10:06+08:00",
+ "generated_at": "2026-11-25T15:36:23+08:00",
  "params": {
   "bench": "0050",
   "ma_short": 20,
