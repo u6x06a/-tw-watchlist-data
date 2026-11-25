@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25T15:36:30+08:00",
+ "generated_at": "2026-11-25T17:07:47+08:00",
  "data_date": "2026-11-25",
  "expected_latest": "2026-11-25",
  "data_stale": false,
@@ -15,7 +15,7 @@
   "window_dressing_possible：季底月份最後 10 個交易日，投信買超可能為作帳"
  ],
  "counts": {
-  "stocks_flagged": 552
+  "stocks_flagged": 554
  },
  "flags": [
   {
@@ -41,6 +41,18 @@
    "flags": [
     "break_ma10",
     "break_ma20"
+   ]
+  },
+  {
+   "code": "1216",
+   "name": "統一",
+   "industry": "食品工業",
+   "industry_rank": 13.0,
+   "rs_rank": 93.4,
+   "data_date": "2026-11-25",
+   "market_filtered": true,
+   "flags": [
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1374,7 +1386,8 @@
    "data_date": "2026-11-25",
    "market_filtered": true,
    "flags": [
-    "break_ma10"
+    "break_ma10",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -1464,7 +1477,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma10",
-    "all_ma_lost"
+    "all_ma_lost",
+    "trust_abandon"
    ]
   },
   {
@@ -2123,6 +2137,18 @@
    ]
   },
   {
+   "code": "2912",
+   "name": "統一超",
+   "industry": "貿易百貨",
+   "industry_rank": 7.0,
+   "rs_rank": 76.6,
+   "data_date": "2026-11-25",
+   "market_filtered": true,
+   "flags": [
+    "trust_abandon"
+   ]
+  },
+  {
    "code": "3004",
    "name": "豐達科",
    "industry": "鋼鐵工業",
@@ -2410,7 +2436,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma60",
-    "all_ma_lost"
+    "all_ma_lost",
+    "foreign_trust_opposite_at_high"
    ]
   },
   {
@@ -4573,7 +4600,8 @@
    "market_filtered": true,
    "flags": [
     "break_ma10",
-    "break_ma20"
+    "break_ma20",
+    "trust_abandon"
    ]
   },
   {
