@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-27T01:40:12+08:00",
+ "updated_at": "2026-11-27T02:21:51+08:00",
  "sources": {
   "2408": "bulk-TWSE",
   "3017": "bulk-TWSE",
@@ -142,86 +142,22 @@
   "fetch_prices": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-27T01:40:10+08:00",
-   "finished_at": "2026-11-27T01:42:05+08:00",
-   "seconds": 115.0,
+   "started_at": "2026-11-27T02:21:49+08:00",
+   "finished_at": "2026-11-27T02:23:06+08:00",
+   "seconds": 77.4,
    "output_data_date": "2026-11-26"
   },
   "market_status": {
    "status": "ok",
    "exit_code": 0,
-   "started_at": "2026-11-27T01:42:05+08:00",
-   "finished_at": "2026-11-27T01:42:07+08:00",
-   "seconds": 2.0,
-   "output_data_date": "2026-11-26"
-  },
-  "companies": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:42:13+08:00",
-   "finished_at": "2026-11-27T01:42:13+08:00",
-   "seconds": 0.1,
-   "output_data_date": "2026-10-19"
-  },
-  "revenue": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:42:13+08:00",
-   "finished_at": "2026-11-27T01:42:13+08:00",
-   "seconds": 0.4,
-   "output_data_date": "2026-10"
-  },
-  "institutional": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:42:13+08:00",
-   "finished_at": "2026-11-27T01:43:06+08:00",
-   "seconds": 52.5,
-   "output_data_date": "2026-11-26"
-  },
-  "chips": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:43:06+08:00",
-   "finished_at": "2026-11-27T01:44:46+08:00",
-   "seconds": 100.1,
-   "output_data_date": "2026-11-26"
-  },
-  "adjust": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:44:46+08:00",
-   "finished_at": "2026-11-27T01:45:33+08:00",
-   "seconds": 47.0,
-   "output_data_date": "2026-11-26"
-  },
-  "indicators": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:45:33+08:00",
-   "finished_at": "2026-11-27T01:45:44+08:00",
-   "seconds": 10.5,
-   "output_data_date": "2026-11-26"
-  },
-  "screen": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:45:44+08:00",
-   "finished_at": "2026-11-27T01:45:53+08:00",
-   "seconds": 9.2,
-   "output_data_date": "2026-11-26"
-  },
-  "paper": {
-   "status": "ok",
-   "exit_code": 0,
-   "started_at": "2026-11-27T01:45:53+08:00",
-   "finished_at": "2026-11-27T01:46:41+08:00",
-   "seconds": 47.7,
+   "started_at": "2026-11-27T02:23:06+08:00",
+   "finished_at": "2026-11-27T02:23:08+08:00",
+   "seconds": 1.5,
    "output_data_date": "2026-11-26"
   }
  },
  "markets": {
-  "generated_at": "2026-11-27T01:42:05+08:00",
+  "generated_at": "2026-11-27T02:23:06+08:00",
   "TWSE": {
    "expected_latest": "2026-11-26",
    "data_latest": "2026-11-26",
