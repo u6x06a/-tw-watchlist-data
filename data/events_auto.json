@@ -27718,6 +27718,19 @@
   "ref_basis": "dividend_only"
  },
  {
+  "code": "3706",
+  "date": "2026-11-27",
+  "prev_close": 60.1,
+  "ref": 60.1,
+  "factor": 1.0,
+  "kind": "權",
+  "market": "TWSE",
+  "category": "exright",
+  "source": "TWT49U",
+  "ref_full": 59.48,
+  "ref_basis": "dividend_only"
+ },
+ {
   "code": "3708",
   "date": "2026-06-26",
   "prev_close": 115.0,
